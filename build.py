@@ -26,8 +26,7 @@ MENU = [
     ('ABOUT', 'professor.html', [('Professor', 'professor.html'), ('Members', 'members.html'), ('Alumni', 'alumni.html')]),
     ('RESEARCH', 'research.html', [('Oxide & Hybrid Semiconductor Materials', 'research.html#synthesis'), ('Perovskite Optoelectronics', 'research.html#applications'),
                                    ('Sustainable Battery Materials', 'research.html#waste'), ('Facilities', 'facilities.html')]),
-    ('PUBLICATIONS', 'publications.html', [('Selected Papers', 'publications.html#selected'), ('All Papers', 'publications.html#all')]
-     + ([('Patents', 'patents.html')] if json.loads((ROOT / 'data' / 'patents.json').read_text(encoding='utf-8')) else [])),
+    ('PUBLICATIONS', 'publications.html', [('Selected Papers', 'publications.html#selected'), ('All Papers', 'publications.html#all'), ('Patents', 'patents.html')]),
     ('COMMUNITY', 'news.html', [('News', 'news.html'), ('Media', 'media.html'), ('Gallery', 'gallery.html')]),
     ('CONTACT', 'contact.html', [('Location', 'contact.html#location'), ('Recruitment', 'contact.html#recruit')]),
 ]
@@ -464,6 +463,9 @@ def build_contact():
 def build_patents():
     pats = D('patents.json')
     if not pats:
+        body = page_head('Publications · Patents', 'Patents') + \
+            '<section class="section"><div class="wrap"><p class="lead">특허 목록을 정리하고 있습니다. 곧 업데이트됩니다.</p></div></section>'
+        page('patents.html', 'Patents', 'PUBLICATIONS', body)
         return
     years = sorted({str(x['year']) for x in pats}, reverse=True)
     out = ''
