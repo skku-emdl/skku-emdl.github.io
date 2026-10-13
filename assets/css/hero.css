@@ -1,0 +1,5 @@
+@keyframes emdl-ray{0%{top:-14%;opacity:0}15%{opacity:1}80%{opacity:.9}100%{top:58%;opacity:0}}
+@keyframes emdl-right{0%{left:-4%;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:104%;opacity:0}}
+@keyframes emdl-left{0%{left:104%;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:-4%;opacity:0}}
+@keyframes emdl-glow{0%,100%{opacity:0}50%{opacity:.22}}
+@media (prefers-reduced-motion:reduce){.emdl-anim{animation:none!important}}

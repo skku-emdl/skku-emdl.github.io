@@ -1,0 +1,693 @@
+[
+ {
+  "n": 66,
+  "year": 2026,
+  "title": "Volatile eutectics to tailor crystallization for perovskite optoelectronics",
+  "authors": "Jason J Yoo, Connor J Dolan, Seongsik Nam, Jinho Lee, Kyu Min Kang, Bong Joo Kang, Rushik Desai, Niranjana Mohan Kumar, Arkita Chakrabarti, Daesoo Kim, Jang Hee Cho, Donghyuk Chung, Jack R Palmer, Kelly X Vences, Zhewen JD Deng, Yanqi Luo, Barry Lai, Tao Zhou, Zhonghou Cai, Martin V Holt, Andrew M Kiss, In Sun Cho, Dong Hyun Kim, Jun Hong Noh, Mariana I Bertoni, Arun Mannodi-Kanakkithodi, Dane W deQuilettes, David P Fenning, Seong Sik Shin*",
+  "venue": "Science (IF 47.3) 394 (6820), 228-233, 2026/10/8",
+  "press": [
+   {
+    "text": "뉴스티앤티 \"성균관대, 결함 대폭 줄인 페로브스카이트 박막 개발\"",
+    "url": "https://www.newstnt.com/news/articleView.html?idxno=722558"
+   },
+   {
+    "text": "핀포인트뉴스 \"성균관대 신성식 교수팀, 초저결함 페로브스카이트 개발… 태양전지·LED 동시 구현\"",
+    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=494820"
+   },
+   {
+    "text": "이뉴스투데이 \"성균관대 신성식 교수팀, 태양전지와 LED를 하나로, 차세대 반도체 기술 개발\"",
+    "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2479600"
+   },
+   {
+    "text": "이데일리 \"성균관대, 초저결함 반도체 박막 개발…태양전지·LED 동시 구현\"",
+    "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03712966645612592"
+   },
+   {
+    "text": "스마트경제 \"하나의 소자로 전기를 만들고 빛까지 낸다…공융 현상 기반 ‘초저결함 페로브스카이트 반도체’ 세계 최초 개발\"",
+    "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130996"
+   }
+  ],
+  "url": "https://www.science.org/doi/abs/10.1126/science.aeb4554",
+  "cover": false
+ },
+ {
+  "n": 65,
+  "year": 2026,
+  "title": "Synergistic mechanochemical surface reconstruction of perovskite layer for efficient and stable carbon-electrode perovskite devices",
+  "authors": "Sae Jin Sung, Yeonsu Jung, Seongsik Nam, Sehyun Kang, Jong Jin Chung, Gabkyung Seo, Jason J. Yoo, Yoo Jae Jeong, Shanshan Gao, In Sun Cho, Nam Joong Jeon, Seong Sik Shin*",
+  "venue": "Chemical Engineering Journal(IF 12.5) 2026/5/15",
+  "press": [],
+  "url": "https://doi.org/10.1016/j.cej.2026.175988",
+  "cover": false
+ },
+ {
+  "n": 64,
+  "year": 2026,
+  "title": "Surface energy modulation of laser-damaged interfaces enables flexible Perovskite Solar Modules exceeding 20% power conversion efficiency",
+  "authors": "Jong-In Huh, Geon Woo Yoon, Oh Yeong Gong, Woo Seok Kang, Dae-Woong Ko, Su Eon Ji, Seongsik Nam, Seong Sik Shin, Gill Sang Han, Hyun Suk Jung",
+  "venue": "ACS Energy Letters(IF 17.5) 2026/4/30",
+  "press": [],
+  "url": "https://pubs.acs.org/doi/full/10.1021/acsenergylett.6c01110",
+  "cover": false
+ },
+ {
+  "n": 63,
+  "year": 2026,
+  "title": "Textured and Hierarchically Porous Hematite Photoanode for Efficient Hydrogen Production via Photoelectrochemical Hydrazine Oxidation",
+  "authors": "Runfa Tan, Yoo Jae Jeong, Hyun Soo Han, Samadhan Kapse, Seong Sik Shin, Xiaolin Zheng, In Sun Cho",
+  "venue": "Nano-Micro Letter(IF 38.5) 2026/1/8",
+  "press": [],
+  "url": "https://link.springer.com/article/10.1007/s40820-025-02045-z",
+  "cover": false
+ },
+ {
+  "n": 62,
+  "year": 2026,
+  "title": "Interlayer engineering in metal halide perovskite photovoltaics",
+  "authors": "Seong Sik Shin, Byung-wook Park, Jun Hong Noh, Sang Il Seok",
+  "venue": "Nature Photonics (IF 32.9) 2026/1/6",
+  "press": [],
+  "url": "https://www.nature.com/articles/s41566-025-01809-8",
+  "cover": false
+ },
+ {
+  "n": 61,
+  "year": 2025,
+  "title": "Perovskite solar cells remain stable under realistic day-night cycling conditions",
+  "authors": "Shanshan Gao, Ah Hyun Shin, Seong Sik Shin*",
+  "venue": "Joule (IF 35.4) 2025/11/19",
+  "press": [],
+  "url": "https://www.cell.com/joule/abstract/S2542-4351(25)00403-9",
+  "cover": false
+ },
+ {
+  "n": 60,
+  "year": 2025,
+  "title": "Nanospacer-Supported Carbon Nanotube Hybrid Electrode for Efficient and Stable Carbon-Based Perovskite Solar Cells",
+  "authors": "Sae Jin Sung, Yeonsu Jung, Gabkyung Seo, Taehoon Kim, Seongsik Nam, Jason J. Yoo, Carlo Andrea Riccardo Perini, Jin Ho Oh, Nam Joong Jeon, Juan-Pablo Correa-Baena, Seong Sik Shin*",
+  "venue": "Advanced Functional Materials (IF 19.0) 2025/10/24",
+  "press": [],
+  "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202514299",
+  "cover": false
+ },
+ {
+  "n": 59,
+  "year": 2025,
+  "title": "Efficient and luminescent perovskite solar cells using defect-suppressed SnO2 via excess ligand strategy",
+  "authors": "Gabkyung Seo, Jason J. Yoo, Seongsik Nam, Da Seul Lee, Shanshan Gao, Bo Kyung Kim, Sae Jin Sung, Bong Joo Kang, Dane W. deQuilettes, Junho Park, Ji-Sang Park, In Sun Cho, Fabian Rotermund, Sang Il Seok & Seong Sik Shin*",
+  "venue": "Nature Energy (IF 56.7) 2025/6/4",
+  "press": [],
+  "url": "https://www.nature.com/articles/s41560-025-01781-1",
+  "cover": true
+ },
+ {
+  "n": 58,
+  "year": 2025,
+  "title": "Interfacial engineering and rapid thermal crystallization of Sb2S3 photoanodes for enhanced photoelectrochemical performances",
+  "authors": "Runfa Tan, Seo Yeong Hong, Yoo Jae Jeong, Seong Sik Shin*, In Sun Cho",
+  "venue": "Journal of Energy Chemistry (IF 14.0) 2025/9",
+  "press": [],
+  "url": "https://www.sciencedirect.com/science/article/pii/S2095495625003596",
+  "cover": false
+ },
+ {
+  "n": 57,
+  "year": 2025,
+  "title": "Toward Sustainable Perovskite Solar Cells: From Lead‐Free Materials to Environmental Concerns and Mitigation Strategies",
+  "authors": "Shanshan Gao, Jeong‐Ju Bae, Da Seul Lee, Tae‐Youl Yang, Seong Sik Shin*",
+  "venue": "EcoMat (IF 10.7) 2025/2/19",
+  "press": [],
+  "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/eom2.70001",
+  "cover": false
+ },
+ {
+  "n": 56,
+  "year": 2024,
+  "title": "Solution-flame hybrid synthesis of defect-enriched meosporous CuOx nanowires for enhanced electrochemical nitrate-to-ammonia production",
+  "authors": "Li Qu, Sungkyu Kim, Runfa Tan, Armugam Sivamtham, Seokgi Kim, Yoo Jae Jeong, Min Cheol Kim,Seong Sik Shin* , Uk Sim, In Sun Cho",
+  "venue": "Journal of Energy Chemistry (IF 14.0) 2024/7/28",
+  "press": [],
+  "url": "",
+  "cover": false
+ },
+ {
+  "n": 55,
+  "year": 2024,
+  "title": "Mitigation of parasitic leakage current in indoor perovskite photovoltaic modules using porous alumina interlayer",
+  "authors": "Gyeong G. Jeon, Da Seul Lee, Min Jun Choi, You-Hyun Seo, Shujuan Huang, Jong H. Kim, Seong Sik Shin*, JinCheol Kim",
+  "venue": "EcoMat (IF 10.7) 2024/5/29",
+  "press": [],
+  "url": "",
+  "cover": false
+ },
+ {
+  "n": 54,
+  "year": 2024,
+  "title": "Cross-Correlation Between Crystallinity and Optoelectronic Properties of Mixed-Perovskite Thin Films Through Multiple Time-Resolved Spectroscopy",
+  "authors": "Junho Park, Bong Joo Kang, Gapkyung Seo, Juwon Kim, Tae Gwan Park, Seongsik Nam, JasonJ. Yoo, Kitae Lee, Young Uk Jeong, Myongkee Park, Seong Sik Shin*, Fabian Rotermund",
+  "venue": "Advanced Energy Materials (IF 27.8) 2024/5/27",
+  "press": [],
+  "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/aenm.202400225",
+  "cover": false
+ },
+ {
+  "n": 53,
+  "year": 2024,
+  "title": "Rapid surface reconstruction of In2S3 photoanode via flame treatment for enhanced photoelectrochemical performance",
+  "authors": "Yoo Jae Jung, Runfa Tan, Seong Sik Nam, Jomg Ho Lee, Sung Kyu Kim, Tae Gyu Lee, Seong Sik Shin*, Xiaolin Zheng, In Sun Cho",
+  "venue": "Advanced Materials (IF 29.4) 2024/5/8",
+  "press": [],
+  "url": "https://onlinelibrary.wiley.com/doi/10.1002/adma.202403164",
+  "cover": false
+ },
+ {
+  "n": 52,
+  "year": 2024,
+  "title": "Pyrophosphate interlayer improves performance of semi-transparent perovskite solar cells",
+  "authors": "Jason J. Yoo, Jin-Won Lee, Yeonkyeong Ju, Bong Joo Kang, YoungWoong Kim, Beom-Soo Kim, Young Yun Kim, Seong sik Shin*, Tae Joo Shin, Nam Joomg Jeon",
+  "venue": "Journal of Materials Chemistry A (IF 11.9) 2024/4/25",
+  "press": [],
+  "url": "https://pubs.rsc.org/en/Content/ArticleLanding/2024/TA/D4TA00899E",
+  "cover": false
+ },
+ {
+  "n": 51,
+  "year": 2024,
+  "title": "Mechanochemical activation of silicon photothermal material for efficient interfacial solar desalination and wastewater purification",
+  "authors": "Tatachari Santhanagopalan Shridharan ,  Arumugam Sivanantham, Jong Ho Lee, Seo Yeong Hong, Yoo Jae Jeong, Seong Sik Shin*, In Sun Cho",
+  "venue": "Chemical Engineering Journal (IF 15.1) 2024/4/15",
+  "press": [],
+  "url": "https://www.sciencedirect.com/science/article/pii/S1385894724017340",
+  "cover": false
+ },
+ {
+  "n": 50,
+  "year": 2024,
+  "title": "Overcoming stability limitations of efficient, flexible perovskite solar modules",
+  "authors": "Da Seul Lee, Ki Woong Kim, You-Hyun Seo, Myung Hyun Ann, Wonkyu Lee, Jiyeon Nam, Jaehoon Chung, Gabkyung Seo, Seongsik Nam, Boo Soo Ma, Teak-Soo Kim, Yoonmook Kang, Nam Joong Jeon, Jangwon Seo, Seong Sik Shin*",
+  "venue": "Joule (IF 39.8) 2024/2/29 (Front Cover)",
+  "press": [
+   {
+    "text": "베리타스알파  \"성균관대 연구진 세계 최초 가볍고 잘 휘어지는 대면적 페로브스카이트 태양전지 개발\"",
+    "url": "https://www.veritas-a.com/news/articleView.html?idxno=496322"
+   }
+  ],
+  "url": "https://www.cell.com/joule/abstract/S2542-4351(24)00063-1",
+  "cover": true
+ },
+ {
+  "n": 49,
+  "year": 2024,
+  "title": "Reduced recombination via tunable surface fields in perovskite thin films",
+  "authors": "Dane W deQuilettes, Jason J Yoo, Roberto Brenes, Felix Utama Kosasih, Madeleine Laitz, Benjia Dak Dou, Daniel J Graham, Kevin Ho, Yangwei Shi, Seong Sik Shin*, Caterina Ducati, Moungi G Bawendi, Vladimir Bulović",
+  "venue": "Nature Energy (IF 56.7) 2024/2/28",
+  "press": [
+   {
+    "text": "조선비즈  \"페로브스카이트 태양전지 효율 높이는 원리 밝혀냈다 \"",
+    "url": "https://biz.chosun.com/nsearch/?query=%EC%8B%A0%EC%84%B1%EC%8B%9D&siteid=chosunbiz&website=chosunbiz&opt_chk=true"
+   }
+  ],
+  "url": "https://www.nature.com/articles/s41560-024-01470-5",
+  "cover": false
+ },
+ {
+  "n": 48,
+  "year": 2023,
+  "title": "Engineering Perovskite Precursor Inks for Scalable Production of High‐Efficiency Perovskite Photovoltaic Modules",
+  "authors": "Jaehoon Chung, Seung‐Woo Kim, You Li, Tamanna Mariam, Xiaoming Wang, Manoj Rajakaruna, Muhammad Mohsin Saeed, Abasi Abudulimu, Seong Sik Shin, Kathryn N Guye, Zixu Huang, Robert JE Westbrook, Emily Miller, Biwas Subedi, Nikolas J Podraza, Michael J Heben, Randy J Ellingson, David S Ginger, Zhaoning Song, Yanfa Yan",
+  "venue": "Advanced Energy Materials (IF 27.8)  2023/4/22",
+  "press": [],
+  "url": "https://doi.org/10.1002/aenm.202300595",
+  "cover": false
+ },
+ {
+  "n": 47,
+  "year": 2023,
+  "title": "Alkylammonium bis (trifluoromethylsulfonyl) imide as dopants in hole-transporting layer for efficient and stable perovskite solar cells",
+  "authors": "Youngwoong Kim, Geunjin Kim, Eun Young Park, Chan Su Moon, Seung Joo Lee, Jason J Yoo, Seongsik Nam, Jino Im,Seong Sik Shin, Nam Joong Jeon, Jangwon Seo",
+  "venue": "Energy & Environmental Science 2023/3/29",
+  "press": [],
+  "url": "https://doi.org/10.1039/D2EE04045J",
+  "cover": false
+ },
+ {
+  "n": 46,
+  "year": 2022,
+  "title": "Toward Efficient Perovskite Solar Cells: Progress, Strategies, and Perspectives",
+  "authors": "JJ Yoo, Seong Sik Shin*, J Seo",
+  "venue": "ACS Energy Letters (IF 22.0) 7, 2084-2091",
+  "press": [],
+  "url": "https://doi.org/10.1021/acsenergylett.2c00592",
+  "cover": false
+ },
+ {
+  "n": 45,
+  "year": 2022,
+  "title": "Molecular Engineering for Function‐Tailored Interface Modifier in High‐Performance Perovskite Solar Cells",
+  "authors": "SJ Sung, J Im, G Kim, CS Moon, JJ Yoo, Seong Sik Shin, NJ Jeon, BS Ma, ...",
+  "venue": "Advanced Energy Materials (IF 27.8) , 2200758",
+  "press": [],
+  "url": "https://doi.org/10.1002/aenm.202200758",
+  "cover": false
+ },
+ {
+  "n": 44,
+  "year": 2021,
+  "title": "Efficient perovskite solar cells via improved carrier management",
+  "authors": "JJ Yoo, G Seo, MR Chua, TG Park, Y Lu, F Rotermund, YK Kim, CS Moon, NJ Jeon, JP Correa-Baena, V Bulović, Seong Sik Shin*, M Bawendi, J Seo",
+  "venue": "Nature (IF 64.8) 590 (7847), 587-593 (Front Cover)",
+  "press": [],
+  "url": "https://doi.org/10.1038/s41586-021-03285-w",
+  "cover": true
+ },
+ {
+  "n": 43,
+  "year": 2021,
+  "title": "High Efficiency Perovskite Solar Cells Exceeding 22% via a Photo‐Assisted Two‐Step Sequential Deposition",
+  "authors": "DG Lee, DH Kim, JM Lee, BJ Kim, JY Kim, Seong Sik Shin*, HS Jung",
+  "venue": "Advanced Functional Materials (IF 19.0), 2006718",
+  "press": [],
+  "url": "https://doi.org/10.1002/adfm.202006718",
+  "cover": false
+ },
+ {
+  "n": 42,
+  "year": 2021,
+  "title": "High-performance bulky crystalline copper bismuthate photocathode for enhanced solar water splitting",
+  "authors": "G Seo, B Kim, SW Hwang, Seong Sik Shin*, IS Cho",
+  "venue": "Nano Energy(IF 17.6) 80, 105568",
+  "press": [],
+  "url": "https://doi.org/10.1016/j.nanoen.2020.105568",
+  "cover": false
+ },
+ {
+  "n": 41,
+  "year": 2021,
+  "title": "Selective defect passivation and topographical control of 4-dimethylaminopyridine at grain boundary for efficient and stable planar perovskite solar cells",
+  "authors": "S Song, EY Park, BS Ma, DJ Kim, HH Park, YY Kim, Seong Sik Shin, NJ Jeon, TS Kim, J Seo",
+  "venue": "Advanced Energy Materials (IF 27.8) 11 (10), 2003382",
+  "press": [],
+  "url": "https://doi.org/10.1002/aenm.202003382",
+  "cover": false
+ },
+ {
+  "n": 40,
+  "year": 2020,
+  "title": "Transparent Electrodes Consisting of a Surface‐Treated Buffer Layer Based on Tungsten Oxide for Semitransparent Perovskite Solar Cells and Four‐Terminal Tandem Applications",
+  "authors": "HH Park, J Kim, G Kim, H Jung, S Kim, CS Moon, SJ Lee, Seong Sik Shin, X Hao, JS Yun, MA Green, A WY Ho‐Baillie, NJ Jeon, TY Yang, J Seo",
+  "venue": "Small Methods (IF 12.4) 4 (5), 2000074",
+  "press": [],
+  "url": "https://doi.org/10.1002/smtd.202000074",
+  "cover": false
+ },
+ {
+  "n": 39,
+  "year": 2020,
+  "title": "Defect-tolerant sodium-based dopant in charge transport layers for highly efficient and stable perovskite solar cells",
+  "authors": "SM Bang, Seong Sik Shin, NJ Jeon, YY Kim, G Kim, TY Yang, J Seo",
+  "venue": "ACS Energy Letters (IF 22.0) 5 (4), 1198-1205",
+  "press": [],
+  "url": "https://doi.org/10.1021/acsenergylett.0c00514",
+  "cover": false
+ },
+ {
+  "n": 38,
+  "year": 2020,
+  "title": "Record-efficiency flexible perovskite solar cell and module enabled by a porous-planar structure as an electron transport layer",
+  "authors": "J Chung, Seong Sik Shin, K Hwang, G Kim, KW Kim, W Kim, BS Ma, YK Kim, TS Kim, J Seo",
+  "venue": "Energy & Environmental Science (IF 32.5) 13 (12), 4854-4861",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:pUxgyZctzPYC",
+  "cover": false
+ },
+ {
+  "n": 37,
+  "year": 2019,
+  "title": "Metal oxide charge transport layers for efficient and stable perovskite solar cells",
+  "authors": "Seong Sik Shin, SJ Lee, SI Seok",
+  "venue": "Advanced Functional Materials (IF 19.0) 29 (47), 1900455",
+  "press": [],
+  "url": "https://doi.org/10.1002/adfm.201900455",
+  "cover": false
+ },
+ {
+  "n": 36,
+  "year": 2019,
+  "title": "Impact of electrode materials on process environmental stability of efficient perovskite solar cells",
+  "authors": "J Chung+, Seong Sik Shin+, G Kim, NJ Jeon, TY Yang, JH Noh, J Seo",
+  "venue": "Joule (IF 39.8) 3 (8), 1977-1985",
+  "press": [],
+  "url": "https://doi.org/10.1016/j.joule.2019.05.018",
+  "cover": false
+ },
+ {
+  "n": 35,
+  "year": 2019,
+  "title": "Achieving long‐term operational stability of perovskite solar cells with a stabilized efficiency exceeding 20% after 1000 h",
+  "authors": "TY Yang, NJ Jeon, HW Shin, Seong Sik Shin, YY Kim, J Seo",
+  "venue": "Advanced Science (IF 15.1) 6 (14), 1900528",
+  "press": [],
+  "url": "https://doi.org/10.1002/advs.201900528",
+  "cover": false
+ },
+ {
+  "n": 34,
+  "year": 2019,
+  "title": "Exploring wide bandgap metal oxides for perovskite solar cells",
+  "authors": "Seong Sik Shin, SJ Lee, SI Seok",
+  "venue": "APL Materials 7 (2), 022401",
+  "press": [],
+  "url": "https://doi.org/10.1063/1.5055607",
+  "cover": false
+ },
+ {
+  "n": 33,
+  "year": 2019,
+  "title": "An interface stabilized perovskite solar cell with high stabilized efficiency and low voltage loss",
+  "authors": "JJ Yoo, S Wieghold, MC Sponseller, MR Chua, SN Bertram, NTP Hartono, ...JS Tresback, E C Hansen, JP Correa-Baena, V Bulović, T Buonassisi, Seong Sik Shin*, M Bawendi",
+  "venue": "Energy & Environmental Science (IF 32.5) 12 (7), 2192-2199",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:DIubQTN3OvUC",
+  "cover": false
+ },
+ {
+  "n": 32,
+  "year": 2019,
+  "title": "Energy-level engineering of the electron transporting layer for improving open-circuit voltage in dye and perovskite-based solar cells",
+  "authors": "Seong Sik Shin, JH Suk, BJ Kang, W Yin, SJ Lee, JH Noh, TK Ahn, F Rotermund, IS Cho, SI Seok",
+  "venue": "Energy & Environmental Science (IF 32.5) 12 (3), 958-964",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:cSdaV2aYdYsC",
+  "cover": false
+ },
+ {
+  "n": 31,
+  "year": 2018,
+  "title": "Precursor concentration affects grain size, crystal orientation, and local performance in mixed-ion lead perovskite solar cells",
+  "authors": "S Wieghold, JP Correa-Baena, L Nienhaus, S Sun, KE Shulenberger, Z Liu, JS Tresback, Seong Sik Shin, M Bawendi, T Buonassisi",
+  "venue": "ACS Applied Energy Materials 1 (12), 6801-6808",
+  "press": [],
+  "url": "https://doi.org/10.1021/acsaem.8b00913",
+  "cover": false
+ },
+ {
+  "n": 30,
+  "year": 2018,
+  "title": "A-Site Cation in Inorganic A3Sb2I9 Perovskite Influences Structural Dimensionality, Exciton Binding Energy, and Solar Cell Performance",
+  "authors": "JP Correa-Baena, L Nienhaus, RC Kurchin, Seong Sik Shin, S Wieghold, ...",
+  "venue": "Chemistry of Materials 30 (11), 3734-3742",
+  "press": [],
+  "url": "https://doi.org/10.1021/acs.chemmater.8b00676",
+  "cover": false
+ },
+ {
+  "n": 29,
+  "year": 2018,
+  "title": "Solvent-engineering method to deposit compact bismuth-based thin films: mechanism and application to photovoltaics",
+  "authors": "Seong Sik Shin, JP Correa Baena, RC Kurchin, A Polizzotti, JJ Yoo, S Wieghold, M Bawendi, T Buonassisi",
+  "venue": "Chemistry of Materials 30 (2), 336-343",
+  "press": [],
+  "url": "https://doi.org/10.1021/acs.chemmater.7b03227",
+  "cover": false
+ },
+ {
+  "n": 28,
+  "year": 2017,
+  "title": "Reducing carrier density in formamidinium tin perovskites and its beneficial effects on stability and efficiency of perovskite solar cells",
+  "authors": "SJ Lee, Seong Sik Shin, J Im, TK Ahn, JH Noh, NJ Jeon, SI Seok, J Seo",
+  "venue": "ACS Energy Letters (IF 22.0) 3 (1), 46-53",
+  "press": [],
+  "url": "https://doi.org/10.1021/acsenergylett.7b00976",
+  "cover": false
+ },
+ {
+  "n": 27,
+  "year": 2017,
+  "title": "Improving the carrier lifetime of tin sulfide via prediction and mitigation of harmful point defects",
+  "authors": "A Polizzotti, A Faghaninia, JR Poindexter, L Nienhaus, V Steinmann, R Hoye, A Felten, A Deyine, N Mangan, JP Correa-Baena, Seong Sik Shin, S Jaffer, M Bawendi, C Lo, T Buonassisi",
+  "venue": "The journal of physical chemistry letters 8 (15), 3661-3667",
+  "press": [],
+  "url": "https://doi.org/10.1021/acs.jpclett.7b01406",
+  "cover": false
+ },
+ {
+  "n": 26,
+  "year": 2017,
+  "title": "Iodide management in formamidinium-lead-halide–based perovskite layers for efficient solar cells",
+  "authors": "WS Yang, BW Park, EH Jung, NJ Jeon, YC Kim, DU Lee, Seong Sik Shin, J Seo, ...",
+  "venue": "Science (IF 56.9) 356 (6345), 1376-1379",
+  "press": [],
+  "url": "https://doi.org/10.1126/science.aan2412",
+  "cover": false
+ },
+ {
+  "n": 25,
+  "year": 2017,
+  "title": "Colloidally prepared La-doped BaSnO3 electrodes for efficient, photostable perovskite solar cells",
+  "authors": "Seong Sik Shin, EJ Yeom, WS Yang, S Hur, MG Kim, J Im, J Seo, JH Noh, ...",
+  "venue": "Science (IF 56.9) 356 (6334), 167-171",
+  "press": [],
+  "url": "https://doi.org/10.1126/science.aam6620",
+  "cover": false
+ },
+ {
+  "n": 24,
+  "year": 2017,
+  "title": "Facile one-pot synthesis of self-assembled quantum-rod TiO2 spheres with enhanced charge transport properties for dye-sensitized solar cells and solar water-splitting",
+  "authors": "DW Kim, JU Kim, Seong Sik Shin, JY Cho, IS Cho",
+  "venue": "Journal of Alloys and Compounds 697, 222-230",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:sgsej9ZJWHMC",
+  "cover": false
+ },
+ {
+  "n": 23,
+  "year": 2017,
+  "title": "Controllable synthesis of single crystalline Sn-based oxides and their application in perovskite solar cells",
+  "authors": "EJ Yeom, Seong Sik Shin, WS Yang, SJ Lee, W Yin, D Kim, JH Noh, TK Ahn, ...",
+  "venue": "Journal of Materials Chemistry A (IF 11.9) 5 (1), 79-86",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:bXQfdp6S9ecC",
+  "cover": false
+ },
+ {
+  "n": 22,
+  "year": 2016,
+  "title": "Tailoring of electron-collecting oxide nanoparticulate layer for flexible perovskite solar cells",
+  "authors": "Seong Sik Shin, WS Yang, EJ Yeom, SJ Lee, NJ Jeon, YC Joo, IJ Park, JH Noh, ...",
+  "venue": "The journal of physical chemistry letters 7 (10), 1845-1851",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:eO3_k5sD8BwC",
+  "cover": false
+ },
+ {
+  "n": 21,
+  "year": 2016,
+  "title": "Fabrication of Efficient Formamidinium Tin Iodide Perovskite Solar Cells through SnF2–Pyrazine Complex",
+  "authors": "SJ Lee, Seong Sik Shin, YC Kim, D Kim, TK Ahn, JH Noh, J Seo, SI Seok",
+  "venue": "Journal of the American Chemical Society (IF 15.0) 138 (12), 3974-3977",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:pS0ncopqnHgC",
+  "cover": false
+ },
+ {
+  "n": 20,
+  "year": 2015,
+  "title": "Facile preparation of TiO2 nanobranch/nanoparticle hybrid architecture with enhanced light harvesting properties for dye-sensitized solar cells",
+  "authors": "JS Kim, Seong Sik Shin, HS Han, S Shin, JH Suk, K Kang, KS Hong, IS Cho",
+  "venue": "Journal of Nanomaterials 2015",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:mUJArPsKIAAC",
+  "cover": false
+ },
+ {
+  "n": 19,
+  "year": 2015,
+  "title": "Efficient CH3NH3PbI3 Perovskite Solar Cells Employing Nanostructured p‐Type NiO Electrode Formed by a Pulsed Laser Deposition",
+  "authors": "JH Park, J Seo, S Park, Seong Sik Shin, YC Kim, NJ Jeon, HW Shin, TK Ahn, ...",
+  "venue": "Advanced Materials (IF 29.4) 27 (27), 4013-4019",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:WAzi4Gm8nLoC",
+  "cover": false
+ },
+ {
+  "n": 18,
+  "year": 2015,
+  "title": "High-performance flexible perovskite solar cells exploiting Zn2SnO4 prepared in solution below 100° C",
+  "authors": "Seong Sik Shin, WS Yang, JH Noh, JH Suk, NJ Jeon, JH Park, JS Kim, ...",
+  "venue": "Nature communications (IF 16.6) 6 (1), 1-8",
+  "press": [],
+  "url": "https://doi.org/10.1038/ncomms8410",
+  "cover": false
+ },
+ {
+  "n": 17,
+  "year": 2015,
+  "title": "Fabrication of metal-oxide-free CH 3 NH 3 PbI 3 perovskite solar cells processed at low temperature",
+  "authors": "S Ryu, J Seo, Seong Sik Shin, YC Kim, NJ Jeon, JH Noh, SI Seok",
+  "venue": "Journal of Materials Chemistry A (IF 11.9) 3 (7), 3271-3275",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:oi2SiIJ9l4AC",
+  "cover": false
+ },
+ {
+  "n": 16,
+  "year": 2014,
+  "title": "Anionic Ligand Assisted Synthesis of 3-D Hollow TiO2 Architecture with Enhanced Photoelectrochemical Performance",
+  "authors": "Seong Sik Shin, DW Kim, JH Park, DH Kim, JS Kim, KS Hong, IS Cho",
+  "venue": "Langmuir 30 (51), 15531-15539",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:WF5omc3nYNoC",
+  "cover": false
+ },
+ {
+  "n": 15,
+  "year": 2014,
+  "title": "Three-dimensional hierarchical Li4Ti5O12 nanoarchitecture by a simple hydrothermal method",
+  "authors": "S Park, SD Seo, HJ Kim, CW Lee, HJ Song, Seong Sik Shin, HK Park, KS Hong, ...",
+  "venue": "Journal of Nanoscience and Nanotechnology 14 (12), 9307-9312",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:w0F2JDEymm0C",
+  "cover": false
+ },
+ {
+  "n": 14,
+  "year": 2014,
+  "title": "Zn2SnO4-Based Photoelectrodes for Organolead Halide Perovskite Solar Cells",
+  "authors": "LS Oh, DH Kim, JA Lee, Seong Sik Shin, JW Lee, IJ Park, MJ Ko, NG Park, ...",
+  "venue": "The Journal of Physical Chemistry C 118 (40), 22991-22994",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:LkGwnXOMwfcC",
+  "cover": false
+ },
+ {
+  "n": 13,
+  "year": 2014,
+  "title": "Sn self-doped α-Fe2O3 nanobranch arrays supported on a transparent, conductive SnO2 trunk to improve photoelectrochemical water oxidation",
+  "authors": "S Park, HJ Kim, CW Lee, HJ Song, Seong Sik Shin, SW Seo, HK Park, S Lee, DWKim, KS Hong",
+  "venue": "International journal of hydrogen energy 39 (29), 16459-16467",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:_FxGoFyzp5QC",
+  "cover": false
+ },
+ {
+  "n": 12,
+  "year": 2014,
+  "title": "Controlled Interfacial Electron Dynamics in Highly Efficient Zn2SnO4‐Based Dye‐Sensitized Solar Cells",
+  "authors": "Seong Sik Shin, DW Kim, D Hwang, JH Suk, LS Oh, BS Han, DH Kim, JS Kim, D Kim, JY Kim, KS Hong",
+  "venue": "ChemSusChem 7 (2), 501-509",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:ufrVoPGSRksC",
+  "cover": false
+ },
+ {
+  "n": 11,
+  "year": 2014,
+  "title": "A Hierarchically Organized Photoelectrode Architecture for Highly Efficient CdS/CdSe‐Sensitized Solar Cells",
+  "authors": "JH Park, DH Kim, Seong Sik Shin, HS Han, MH Lee, HS Jung, JH Noh, KS Hong",
+  "venue": "Advanced Energy Materials (IF 27.8) 4 (3), 1300395",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:W7OEmFMy1HYC",
+  "cover": false
+ },
+ {
+  "n": 10,
+  "year": 2014,
+  "title": "1-D structured flexible supercapacitor electrodes with prominent electronic/ionic transport capabilities",
+  "authors": "JS Kim, Seong Sik Shin, HS Han, LS Oh, DH Kim, JH Kim, KS Hong, JY Kim",
+  "venue": "ACS applied materials & interfaces 6 (1), 268-274",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:zYLM7Y9cAGgC",
+  "cover": false
+ },
+ {
+  "n": 9,
+  "year": 2013,
+  "title": "BaSnO3 Perovskite Nanoparticles for High Efficiency Dye‐Sensitized Solar Cells",
+  "authors": "DW Kim, SS Shin, S Lee, IS Cho, DH Kim, CW Lee, HS Jung, KS Hong",
+  "venue": "ChemSusChem 6 (3), 449-454",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:IjCSPb-OGe4C",
+  "cover": false
+ },
+ {
+  "n": 8,
+  "year": 2013,
+  "title": "Improved Quantum Efficiency of Highly Efficient Perovskite BaSnO3-Based Dye-Sensitized Solar Cells",
+  "authors": "SS Shin, JS Kim, JH Suk, KD Lee, DW Kim, JH Park, IS Cho, KS Hong, ...",
+  "venue": "ACS nano (IF 19.1) 7 (2), 1027-1035",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:SrKkpNFED5gC",
+  "cover": false
+ },
+ {
+  "n": 7,
+  "year": 2012,
+  "title": "Simple synthesis and characterization of SrSnO3 nanoparticles with enhanced photocatalytic activity",
+  "authors": "CW Lee, DW Kim, IS Cho, S Park, Seong Sik Shin, SW Seo, KS Hong",
+  "venue": "International journal of hydrogen energy 37 (14), 10557-10563",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:2osOgNQ5qMEC",
+  "cover": false
+ },
+ {
+  "n": 6,
+  "year": 2012,
+  "title": "Influence of niobium doping in hierarchically organized titania nanostructure on performance of dye-sensitized solar cells",
+  "authors": "JH Park, JH Noh, BS Han, Seong Sik Shin, IJ Park, DH Kim, KS Hong",
+  "venue": "Journal of Nanoscience and Nanotechnology 12 (6), 5091-5095",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:Tyk-4Ss8FVUC",
+  "cover": false
+ },
+ {
+  "n": 5,
+  "year": 2012,
+  "title": "Surface modified TiO2 nanostructure with 3D urchin-like morphology for dye-sensitized solar cell application",
+  "authors": "Seong Sik Shin, DW Kim, S Lee, IS Cho, DH Kim, JH Park, KS Hong",
+  "venue": "Journal of Nanoscience and Nanotechnology 12 (2), 1305-1309",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:UeHWp8X0CEIC",
+  "cover": false
+ },
+ {
+  "n": 4,
+  "year": 2012,
+  "title": "Synthesis and photovoltaic property of fine and uniform Zn 2 SnO 4 nanoparticles",
+  "authors": "DW Kim, Seong Sik Shin, IS Cho, S Lee, DH Kim, CW Lee, HS Jung, KS Hong",
+  "venue": "Nanoscale 4 (2), 557-562",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:u-x6o8ySG0sC",
+  "cover": false
+ },
+ {
+  "n": 3,
+  "year": 2011,
+  "title": "Electronic band structures and photovoltaic properties of MWO4 (M= Zn, Mg, Ca, Sr) compounds",
+  "authors": "DW Kim, IS Cho, Seong Sik Shin, S Lee, TH Noh, DH Kim, HS Jung, KS Hong",
+  "venue": "Journal of Solid State Chemistry 184 (8), 2103-2107",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:d1gkVwhDpl0C",
+  "cover": false
+ },
+ {
+  "n": 2,
+  "year": 2011,
+  "title": "Electronic Band Structure, Optical Properties, and Photocatalytic Hydrogen Production of Barium Niobium Phosphate Compounds (BaO–Nb2O5–P2O5)",
+  "authors": "IS Cho, DW Kim, DH Kim, Seong Sik Shin, TH Noh, DW Kim, KS Hong",
+  "venue": "European Journal of Inorganic Chemistry 2011 (14), 2206-2210",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:-nhnvRiOwuoC",
+  "cover": false
+ },
+ {
+  "n": 1,
+  "year": 2010,
+  "title": "Photophysical and Photocatalytic Properties of Ag2M2O7 (M=Mo, W)",
+  "authors": "DW Kim, IS Cho, S Lee, ST Bae, Seong Sik Shin, GS Han, HS Jung, KS Hong",
+  "venue": "Journal of the American Ceramic Society 93 (11), 3867-3872",
+  "press": [],
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:9yKSN-GCB0IC",
+  "cover": false
+ }
+]

@@ -1,0 +1,32 @@
+{
+ "lab1": {
+  "name": "실험실 1 · 소재 합성실",
+  "en": "Lab 1 · Materials Synthesis",
+  "items": [
+   "Temperature Humidity Chamber",
+   "Water Purification System",
+   "Centrifuge",
+   "Sonicator",
+   "UV Ozone",
+   "Drying Oven",
+   "Rotary Evaporator",
+   "Ultra Sonic",
+   "Chemical Bath",
+   "Fume Hood"
+  ]
+ },
+ "lab2": {
+  "name": "실험실 2 · 소자 제작 및 측정실 (항온·항습)",
+  "en": "Lab 2 · Device Fabrication & Characterization",
+  "items": [
+   "MPPT",
+   "Solar Simulator",
+   "UV-Visible & Optical Microscope",
+   "Thermal Evaporator System",
+   "Laser Patterning System",
+   "Ar Plasma",
+   "Blade Coater",
+   "Fume Hood"
+  ]
+ }
+}

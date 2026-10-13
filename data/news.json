@@ -1,0 +1,104 @@
+[
+ {
+  "date": "2026.10",
+  "title": "Science 논문 게재",
+  "desc": "“Volatile eutectics to tailor crystallization for perovskite optoelectronics”, Science 394 (6820), 228–233 (2026)",
+  "img": "assets/img/pubs/science-2026.webp",
+  "url": "https://www.science.org/doi/abs/10.1126/science.aeb4554",
+  "press": [
+   [
+    "뉴스티앤티",
+    "성균관대, 결함 대폭 줄인 페로브스카이트 박막 개발",
+    "https://www.newstnt.com/news/articleView.html?idxno=722558"
+   ],
+   [
+    "핀포인트뉴스",
+    "성균관대 신성식 교수팀, 초저결함 페로브스카이트 개발… 태양전지·LED 동시 구현",
+    "https://www.pinpointnews.co.kr/news/articleView.html?idxno=494820"
+   ],
+   [
+    "이뉴스투데이",
+    "성균관대 신성식 교수팀, 태양전지와 LED를 하나로, 차세대 반도체 기술 개발",
+    "http://www.enewstoday.co.kr/news/articleView.html?idxno=2479600"
+   ],
+   [
+    "이데일리",
+    "성균관대, 초저결함 반도체 박막 개발…태양전지·LED 동시 구현",
+    "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03712966645612592"
+   ],
+   [
+    "스마트경제",
+    "하나의 소자로 전기를 만들고 빛까지 낸다…공융 현상 기반 ‘초저결함 페로브스카이트 반도체’ 세계 최초 개발",
+    "http://www.dailysmart.co.kr/news/articleView.html?idxno=130996"
+   ]
+  ]
+ },
+ {
+  "date": "2026.01",
+  "title": "Nature Photonics 논문 게재",
+  "desc": "“Interlayer engineering in metal halide perovskite photovoltaics”",
+  "img": "assets/img/pubs/natphoton-2026.webp",
+  "url": "https://www.nature.com/articles/s41566-025-01809-8",
+  "press": []
+ },
+ {
+  "date": "2025.06",
+  "title": "Nature Energy 논문 게재 (표지 선정)",
+  "desc": "“Efficient and luminescent perovskite solar cells using defect-suppressed SnO₂ via excess ligand strategy”",
+  "img": "assets/img/pubs/natenergy-2025-cover.webp",
+  "url": "https://www.nature.com/articles/s41560-025-01781-1",
+  "press": []
+ },
+ {
+  "date": "2024.02",
+  "title": "Joule 논문 게재 (표지 선정)",
+  "desc": "“Overcoming stability limitations of efficient, flexible perovskite solar modules”",
+  "img": "assets/img/pubs/joule-2024-cover.webp",
+  "url": "https://www.cell.com/joule/fulltext/S2542-4351(24)00063-1",
+  "press": [
+   [
+    "베리타스알파",
+    "성균관대 연구진 세계 최초 가볍고 잘 휘어지는 대면적 페로브스카이트 태양전지 개발",
+    "https://www.veritas-a.com/news/articleView.html?idxno=496322"
+   ]
+  ]
+ },
+ {
+  "date": "2024.02",
+  "title": "Nature Energy 논문 게재",
+  "desc": "“Reduced recombination via tunable surface fields in perovskite thin films”",
+  "img": "assets/img/pubs/natenergy-2024.webp",
+  "url": "https://www.nature.com/articles/s41560-024-01470-5",
+  "press": [
+   [
+    "조선비즈",
+    "페로브스카이트 태양전지 효율 높이는 원리 밝혀냈다",
+    "https://biz.chosun.com/nsearch/?query=%EC%8B%A0%EC%84%B1%EC%8B%9D&siteid=chosunbiz&website=chosunbiz&opt_chk=true"
+   ]
+  ]
+ },
+ {
+  "date": "",
+  "title": "폐타이어 기반 ‘친환경 배터리 소재’ 개발 과제 선정 및 연구 개발 착수",
+  "desc": "폐타이어 재활용 기반 배터리 등급 친환경 카본복합 도전재 연구개발",
+  "img": "assets/img/news/waste-tire-project.webp",
+  "url": "",
+  "press": []
+ },
+ {
+  "date": "2021.02",
+  "title": "Nature 표지 논문 발표",
+  "desc": "“Efficient perovskite solar cells via improved carrier management”, Nature 590, 587–593 (2021)",
+  "img": "assets/img/pubs/nature-2021-cover.webp",
+  "url": "https://m.krict.re.kr/thumbnail//viewer/1617693481058/index.html",
+  "press": []
+ },
+ {
+  "date": "",
+  "title": "미국 재생에너지연구소(NREL) 효율 차트 등재",
+  "desc": "세계 기록 경신 (공인인증)",
+  "img": "assets/img/news/nrel-chart.webp",
+  "url": "https://www.sciencetimes.co.kr/news/%ED%8E%98%EB%A1%9C%EB%B8%8C-%ED%83%9C%EC%96%91%EC%A0%84%EC%A7%80-%ED%9A%A8%EC%9C%A8-25%EF%BC%85-%EC%9E%A5%EB%B2%BD-%EA%B9%BC%EB%8B%A4/",
+  "press": []
+ }
+]
