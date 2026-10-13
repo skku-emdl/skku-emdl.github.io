@@ -26,7 +26,8 @@ MENU = [
     ('ABOUT', 'professor.html', [('Professor', 'professor.html'), ('Members', 'members.html'), ('Alumni', 'alumni.html')]),
     ('RESEARCH', 'research.html', [('Oxide & Hybrid Semiconductor Materials', 'research.html#synthesis'), ('Perovskite Optoelectronics', 'research.html#applications'),
                                    ('Sustainable Battery Materials', 'research.html#waste'), ('Facilities', 'facilities.html')]),
-    ('PUBLICATIONS', 'publications.html', [('Selected Papers', 'publications.html#selected'), ('All Papers', 'publications.html#all')]),
+    ('PUBLICATIONS', 'publications.html', [('Selected Papers', 'publications.html#selected'), ('All Papers', 'publications.html#all')]
+     + ([('Patents', 'patents.html')] if json.loads((ROOT / 'data' / 'patents.json').read_text(encoding='utf-8')) else [])),
     ('COMMUNITY', 'news.html', [('News', 'news.html'), ('Media', 'media.html'), ('Gallery', 'gallery.html')]),
     ('CONTACT', 'contact.html', [('Location', 'contact.html#location'), ('Recruitment', 'contact.html#recruit')]),
 ]
@@ -460,8 +461,29 @@ def build_contact():
     page('contact.html', 'Contact', 'CONTACT', body)
 
 
+def build_patents():
+    pats = D('patents.json')
+    if not pats:
+        return
+    years = sorted({str(x['year']) for x in pats}, reverse=True)
+    out = ''
+    for y in years:
+        items = ''
+        for x in [q for q in pats if str(q['year']) == y]:
+            t = e(x['title'])
+            t = f'<a href="{e(x["url"])}">{t}</a>' if x.get('url') else t
+            meta = ' · '.join(v for v in (x.get('country', ''), x.get('status', ''), x.get('number', ''), x.get('date', '')) if v)
+            items += (f'<li class="pub"><span class="n">{e(x.get("country", ""))}</span><div><p class="tt">{t}</p>'
+                      f'<p class="au">{bold_pi(x.get("inventors", ""))}</p><p class="vn">{e(meta)}</p></div></li>')
+        out += f'<div class="year"><h2 id="p{y}">{y}</h2><ol>{items}</ol></div>'
+    reg = sum(1 for x in pats if x.get('status', '').startswith(('등록', 'Granted', 'Registered')))
+    lead = f'등록 {reg}건 · 출원 {len(pats) - reg}건'
+    body = page_head('Publications · Patents', 'Patents', lead) + f'<section class="section"><div class="wrap">{out}</div></section>'
+    page('patents.html', 'Patents', 'PUBLICATIONS', body)
+
+
 if __name__ == '__main__':
     for f in (build_home, build_professor, build_members, build_alumni, build_research, build_facilities,
-              build_publications, build_news, build_media, build_gallery, build_contact):
+              build_publications, build_patents, build_news, build_media, build_gallery, build_contact):
         f()
     print('built', len(list(ROOT.glob('*.html'))), 'pages')
