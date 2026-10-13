@@ -25,6 +25,12 @@
  },
  {
   "year": "2025",
+  "title": "Farewell to Our First Graduates",
+  "date": "2025.02",
+  "img": "assets/img/gallery/g10.webp"
+ },
+ {
+  "year": "2025",
   "title": "Baseball Game",
   "date": "2025.04.11",
   "img": "assets/img/gallery/g04.webp"
@@ -34,12 +40,6 @@
   "title": "Teacher's Day",
   "date": "2025.05.15",
   "img": "assets/img/gallery/g05.webp"
- },
- {
-  "year": "2025",
-  "title": "Farewell to Our First Graduates",
-  "date": "2025",
-  "img": "assets/img/gallery/g10.webp"
  },
  {
   "year": "2024",
