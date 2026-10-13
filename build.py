@@ -8,6 +8,9 @@ All *.html pages in the repository root are regenerated.
 import json, html, re, pathlib
 
 ROOT = pathlib.Path(__file__).parent
+
+# 공식 오픈 전: 검색엔진 수집 막기. 오픈할 때 False 로 바꾸고 다시 빌드.
+HIDE_FROM_SEARCH = True
 D = lambda n: json.loads((ROOT / 'data' / n).read_text(encoding='utf-8'))
 e = html.escape
 
@@ -68,13 +71,14 @@ FOOTER = '''<footer class="site-footer">
 
 def page(fname, title, active, body, desc=None, head_extra=''):
     desc = desc or 'Energy Material and Device Laboratory (EMDL), SAINT & Department of Nano Engineering, Sungkyunkwan University.'
+    ROBOTS = '<meta name="robots" content="noindex, nofollow">\n' if HIDE_FROM_SEARCH else ''
     full = 'Energy Material and Device Lab | SKKU' if title is None else f'{title} | EMDL, SKKU'
     out = f'''<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(full)}</title>
+{ROBOTS}<title>{e(full)}</title>
 <meta name="description" content="{e(desc)}">
 <meta property="og:title" content="{e(full)}">
 <meta property="og:description" content="{e(desc)}">
