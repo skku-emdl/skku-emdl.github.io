@@ -308,7 +308,7 @@ def build_members():
 
 def alum(p):
     en = f'<small>{e(p["en"])}</small>' if p.get('en') else ''
-    course = f'<span class="course">{e(p["course"])}</span>' if p.get('course') else ''
+    course = f'<span class="course">{e(p.get("course", ""))}</span>'
     note = f'<span class="note">{e(p["note"])}</span>' if p.get('note') else ''
     mail = f'<a class="mail" href="mailto:{e(p["email"])}">{e(p["email"])}</a>' if p.get('email') else ''
     return f'<article class="alum"><h3>{e(p["ko"])}{en}</h3>{course}{note}{mail}</article>'
