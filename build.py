@@ -168,11 +168,11 @@ def selected_grid():
 HERO_FIG = (ROOT / 'data' / 'hero_figure.html').read_text(encoding='utf-8')
 
 RESEARCH = [
-    ('synthesis', '01', 'Materials Synthesis', 'assets/img/research/oxide-synthesis.webp',
+    ('synthesis', '01', 'Materials Synthesis', 'assets/img/research/illu-synthesis.svg',
      '기능성 산화물과 유무기 하이브리드 소재의 저온 합성 공정 개발 및 합성 원리 규명. CBD, ALD 기반 SnO₂ 전자수송층.'),
-    ('applications', '02', 'Applications', 'assets/img/research/large-area-modules.webp',
+    ('applications', '02', 'Applications', 'assets/img/research/illu-module.svg',
      '페로브스카이트 태양전지, 대면적 플렉서블 모듈, 페로브스카이트 LED, 태양전지–배터리·슈퍼커패시터·수전해 하이브리드 시스템.'),
-    ('waste', '03', 'Waste Recovery', 'assets/img/research/waste-recovery.webp',
+    ('waste', '03', 'Waste Recovery', 'assets/img/research/illu-battery.svg',
      '폐자원을 재활용한 지속가능한 소재와 에너지 생산. 폐타이어 기반 친환경 배터리 소재 개발.'),
 ]
 
@@ -237,7 +237,7 @@ def build_home():
 </section>'''
     page('index.html', None, '', body,
          desc='Energy Material and Device Laboratory (EMDL), SAINT & Department of Nano Engineering, Sungkyunkwan University. Functional oxide semiconductors and hybrid perovskites for next-generation energy devices.',
-         head_extra='<link rel="stylesheet" href="assets/css/hero.css">')
+         head_extra='<link rel="stylesheet" href="assets/css/hero.css">\n<script src="assets/js/three.min.js" defer></script>\n<script src="assets/js/hero.js" defer></script>')
 
 
 # ---------- professor ----------
