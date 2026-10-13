@@ -2,71 +2,85 @@
  {
   "id": "51XGeI8l1Bc",
   "channel": "한국경제TV [킥]",
-  "title": "대한민국 연구팀, 노벨상이 주목하는 세계 최초 페로브스카이트 태양전지 원천기술 증명했다 (신성식 교수)"
- },
- {
-  "id": "htsBOmdH8XI",
-  "channel": "SKKU ANCHOR (성균관대)",
-  "title": "페로브스카이트 태양전지"
- },
- {
-  "id": "qDwhe-Kj8sA",
-  "channel": "SKKU ANCHOR (성균관대)",
-  "title": "플렉서블 페로브스카이트 태양전지"
+  "title": "대한민국 연구팀, 노벨상이 주목하는 세계 최초 페로브스카이트 태양전지 원천기술 증명했다 (신성식 교수)",
+  "date": "2026.05.07"
  },
  {
   "id": "_StGy-kG2Gc",
   "channel": "한국경제TV 글로벌 방영",
-  "title": "K-에너지, 이대로면 中에 먹힌다? 패권을 건 태양광·풍력·수소 전쟁의 진실"
+  "title": "K-에너지, 이대로면 中에 먹힌다? 패권을 건 태양광·풍력·수소 전쟁의 진실",
+  "date": "2025.06.14"
  },
  {
-  "id": "TKfB5AwwrcE",
-  "channel": "YTN 사이언스",
-  "title": "세계 최고 효율 페로브스카이트 태양전지 만드는 과정"
+  "id": "qDwhe-Kj8sA",
+  "channel": "SKKU ANCHOR (성균관대)",
+  "title": "플렉서블 페로브스카이트 태양전지",
+  "date": "2025.04.14"
  },
  {
-  "id": "1KG-fMbN4FE",
-  "channel": "YTN 사이언스",
-  "title": "한국을 1등으로 만든 신소재, 재료공학자 신성식 (국가연구개발 우수성과 100선 최우수 선정 특집)"
- },
- {
-  "id": "84czpR5ySpk",
-  "channel": "대전 SBS 뉴스",
-  "title": "차에도, 옷에도 붙이는 대면적 플렉서블 태양전지 모듈 개발 (20 cm × 20 cm)"
- },
- {
-  "id": "0Epun9Kqj-8",
-  "channel": "YTN 사이언스",
-  "title": "세계 최고 효율 탄소 전극 태양전지 개발"
+  "id": "htsBOmdH8XI",
+  "channel": "SKKU ANCHOR (성균관대)",
+  "title": "페로브스카이트 태양전지",
+  "date": "2024.07.30"
  },
  {
   "id": "2xEKi2sKXCI",
   "channel": "NTIS 인터뷰",
-  "title": "태양을 향한 멈추지 않는 도전"
+  "title": "태양을 향한 멈추지 않는 도전",
+  "date": "2023.06.21"
  },
  {
-  "id": "BXEnjpQFfKA",
-  "channel": "KBS 뉴스",
-  "title": "밝게 빛도 나는 세계 최고 효율 태양전지 (LED-태양전지)"
- },
- {
-  "id": "xgl6-bQ5WXE",
-  "channel": "YTN 뉴스",
-  "title": "세계 최고 효율 태양전지, 네이처 표지 장식"
- },
- {
-  "id": "nVt_hA5Y9ZY",
-  "channel": "MBC 뉴스",
-  "title": "“효율 세계 최고” 차세대 태양전지 기술 주도"
- },
- {
-  "id": "NDSqosilOHU",
-  "channel": "대전 SBS 뉴스",
-  "title": "차세대 태양전지도 우리가 이끈다"
+  "id": "TKfB5AwwrcE",
+  "channel": "YTN 사이언스",
+  "title": "세계 최고 효율 페로브스카이트 태양전지 만드는 과정",
+  "date": "2023.04.15"
  },
  {
   "id": "U9WleMJ36wY",
   "channel": "YTN 사이언스",
-  "title": "차세대 태양전지를 효율적으로 구현하는 연구"
+  "title": "차세대 태양전지를 효율적으로 구현하는 연구",
+  "date": "2023.04.13"
+ },
+ {
+  "id": "0Epun9Kqj-8",
+  "channel": "YTN 사이언스",
+  "title": "세계 최고 효율 탄소 전극 태양전지 개발",
+  "date": "2023.04.12"
+ },
+ {
+  "id": "1KG-fMbN4FE",
+  "channel": "YTN 사이언스",
+  "title": "한국을 1등으로 만든 신소재, 재료공학자 신성식 (국가연구개발 우수성과 100선 최우수 선정 특집)",
+  "date": "2022.12.28"
+ },
+ {
+  "id": "nVt_hA5Y9ZY",
+  "channel": "MBC 뉴스",
+  "title": "“효율 세계 최고” 차세대 태양전지 기술 주도",
+  "date": "2021.03.01"
+ },
+ {
+  "id": "BXEnjpQFfKA",
+  "channel": "KBS 뉴스",
+  "title": "밝게 빛도 나는 세계 최고 효율 태양전지 (LED-태양전지)",
+  "date": "2021.02.28"
+ },
+ {
+  "id": "xgl6-bQ5WXE",
+  "channel": "YTN 뉴스",
+  "title": "세계 최고 효율 태양전지, 네이처 표지 장식",
+  "date": "2021.02.25"
+ },
+ {
+  "id": "NDSqosilOHU",
+  "channel": "대전 SBS 뉴스",
+  "title": "차세대 태양전지도 우리가 이끈다",
+  "date": "2021.02.25"
+ },
+ {
+  "id": "84czpR5ySpk",
+  "channel": "대전 SBS 뉴스",
+  "title": "차에도, 옷에도 붙이는 대면적 플렉서블 태양전지 모듈 개발 (20 cm × 20 cm)",
+  "date": "2020.11.17"
  }
 ]

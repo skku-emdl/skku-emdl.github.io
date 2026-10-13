@@ -413,7 +413,7 @@ def build_news():
 
 def build_media():
     items = ''.join(f'''<div><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{v['id']}" title="{e(v['title'])}" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-<p class="ch">{e(v['channel'])}</p><p class="vt">{e(v['title'])}</p></div>''' for v in MEDIA)
+<p class="ch">{e(v['channel'])} · {e(v.get('date', ''))}</p><p class="vt">{e(v['title'])}</p></div>''' for v in MEDIA)
     body = page_head('Community · Media', 'Media', '방송과 인터뷰로 소개된 EMDL의 연구입니다.') + f'<section class="section"><div class="wrap"><div class="vgrid">{items}</div></div></section>'
     page('media.html', 'Media', 'COMMUNITY', body)
 
