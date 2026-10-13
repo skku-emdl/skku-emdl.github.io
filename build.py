@@ -311,7 +311,7 @@ def alum(p):
     course = f'<span class="course">{e(p.get("course", ""))}</span>'
     note = f'<span class="note">{e(p["note"])}</span>' if p.get('note') else ''
     mail = f'<a class="mail" href="mailto:{e(p["email"])}">{e(p["email"])}</a>' if p.get('email') else ''
-    return f'<article class="alum"><h3>{e(p["ko"])}{en}</h3>{course}{note}{mail}</article>'
+    return f'<article class="alum"><h3>{e(p["ko"])}{en}</h3>{note}{mail}</article>'
 
 
 def build_alumni():
