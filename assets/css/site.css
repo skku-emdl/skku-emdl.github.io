@@ -233,14 +233,14 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
   .pgrid .pcard .t{font-size:13.5px}
   .pgrid .pcard .ph .jn{font-size:18px;padding:12px}
 }
-.alumni{display:flex;flex-direction:column;border-top:1px solid var(--ink);max-width:960px}
-.alum{display:grid;grid-template-columns:minmax(200px,280px) 1fr;align-items:baseline;gap:4px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.alumni{display:flex;flex-direction:column;max-width:640px}
+.alum{display:grid;grid-template-columns:minmax(180px,240px) 1fr;align-items:baseline;gap:4px 20px;padding:5px 0}
 .alum h3{margin:0;font-size:17px}
 .alum h3 small{font-weight:400;color:var(--muted);font-size:14px;margin-left:6px}
 .alum .course{font-family:var(--mono);font-size:13px;color:var(--accent)}
 .alum .note{font-size:14px;color:var(--ink-2)}
 @media (max-width:700px){
-  .alum{grid-template-columns:auto minmax(0,1fr);gap:0 10px;padding:12px 0}
+  .alum{grid-template-columns:auto minmax(0,1fr);gap:0 10px;padding:4px 0}
   .alum h3{font-size:16px;white-space:nowrap}
   .alum h3 small{display:none}
   .alum .course{font-size:12px;white-space:nowrap}
