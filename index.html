@@ -39,12 +39,18 @@
 </div>
 <figure class="hero-fig">
 <div class="lattice">
-<video autoplay muted loop playsinline preload="auto" poster="assets/video/emdl-hero-poster.jpg" aria-label="페로브스카이트 결정 구조에서 소자 적층 구조, 대면적 플렉서블 모듈, 배터리 충전으로 이어지는 연구 개요 영상">
-<source src="assets/video/emdl-hero.mp4" type="video/mp4">
+<video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/video/emdl-intro-poster.jpg" aria-label="산화물·페로브스카이트 반도체 소재에서 태양전지, 대면적 플렉서블 모듈, 배터리 저장, LED 발광으로 이어지는 연구 소개 영상">
+<source src="assets/video/emdl-intro.mp4" type="video/mp4">
 </video>
+<button type="button" class="sound" id="heroSound" aria-pressed="false">소리 켜기</button>
 </div>
-<figcaption>소재에서 소자, 대면적 모듈, 에너지 저장까지</figcaption>
+<figcaption>소재에서 소자, 대면적 모듈, 에너지 저장과 발광까지</figcaption>
 </figure>
+<script>
+(function(){var v=document.getElementById('heroVideo'),b=document.getElementById('heroSound');if(!v||!b)return;
+b.addEventListener('click',function(){var on=v.muted;v.muted=!on;if(on){v.currentTime=0;v.play();}
+b.textContent=on?'소리 끄기':'소리 켜기';b.setAttribute('aria-pressed',on?'true':'false');});})();
+</script>
 
 </section>
 
