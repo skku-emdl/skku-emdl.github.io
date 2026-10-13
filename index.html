@@ -65,6 +65,12 @@
     var p=v.play();
     if(p&&p.catch)p.catch(function(){v.muted=true;v.play();ui();arm();});
     } else { v.muted=true; var q=v.play(); if(q&&q.catch)q.catch(function(){}); }
+  // 소리는 한 번만: 영상이 처음으로 다시 돌아가는 순간 자동으로 음소거
+  var last=0;
+  v.addEventListener('timeupdate',function(){
+    if(!v.muted&&v.currentTime+1<last){v.muted=true;ui();}
+    last=v.currentTime;
+  });
   ui();
   b.addEventListener('click',function(){
     var turnOn=v.muted;v.muted=!turnOn;
