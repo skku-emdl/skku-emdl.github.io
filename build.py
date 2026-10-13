@@ -117,7 +117,7 @@ MEDIA = D('media.json')
 
 # Selected papers: Nature, Science, Nature sister journals, Joule (as listed on the lab site)
 SELECTED = [
-    # (pub number, short journal, image or None, card colour)
+    # 메인 화면 슬라이드: 2021 Nature 이후 + 2017 Science (BaSnO3, 제1저자)
     (66, 'Science', 'assets/img/pubs/science-2026.webp', '#8C1D18'),
     (62, 'Nature Photonics', 'assets/img/pubs/natphoton-2026.webp', '#0B3B5C'),
     (61, 'Joule', None, '#C2410C'),
@@ -125,10 +125,7 @@ SELECTED = [
     (50, 'Joule', 'assets/img/pubs/joule-2024-cover.webp', '#C2410C'),
     (49, 'Nature Energy', 'assets/img/pubs/natenergy-2024.webp', '#0F5E52'),
     (44, 'Nature', 'assets/img/pubs/nature-2021-cover.webp', '#111418'),
-    (36, 'Joule', None, '#C2410C'),
-    (26, 'Science', 'assets/img/pubs/science-2017-6345.webp', '#8C1D18'),
     (25, 'Science', 'assets/img/pubs/science-2017-6334.webp', '#8C1D18', 'left'),
-    (18, 'Nature Communications', 'assets/img/pubs/natcomm-2015.webp', '#FFFFFF', 'contain'),
 ]
 PUB_BY_N = {p['n']: p for p in PUBS}
 
@@ -155,8 +152,10 @@ def selected_slider():
 # Publications 페이지 그리드에만 추가로 보이는 논문 (메인 슬라이드에는 미포함)
 EXTRA_GRID = [
     (38, 'Energy & Environmental Science', None, '#1E5A46'),
+    (36, 'Joule', None, '#C2410C'),
     (33, 'Energy & Environmental Science', None, '#1E5A46'),
     (32, 'Energy & Environmental Science', None, '#1E5A46'),
+    (26, 'Science', 'assets/img/pubs/science-2017-6345.webp', '#8C1D18'),
 ]
 
 
