@@ -1,2 +1,5 @@
-# skku-emdl.github.io
-EMDL lab homepage
+# EMDL Homepage
+
+Energy Material and Device Laboratory (EMDL), Sungkyunkwan University
+
+https://skku-emdl.github.io
