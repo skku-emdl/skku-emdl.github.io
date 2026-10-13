@@ -363,7 +363,8 @@ def build_publications():
             tag = '<span class="tag">FRONT COVER</span>' if p.get('cover') else ''
             press = ''
             if p.get('press'):
-                press = '<ul class="press">' + ''.join(f'<li><a href="{e(x["url"])}">{e(x["text"])}</a></li>' for x in p['press']) + '</ul>'
+                press = (f'<details class="press-box"><summary>언론 보도 {len(p["press"])}건</summary><ul class="press">'
+                         + ''.join(f'<li><a href="{e(x["url"])}">{e(x["text"])}</a></li>' for x in p['press']) + '</ul></details>')
             items += (f'<li class="pub"><span class="n">{p["n"]}</span><div><p class="tt">{t}</p>'
                       f'<p class="au">{bold_pi(p["authors"])}</p><p class="vn">{e(p["venue"])}{tag}</p>{press}</div></li>')
         out += f'<div class="year"><h2 id="y{y}">{y}</h2><ol>{items}</ol></div>'
@@ -387,7 +388,10 @@ def build_news():
         title = f'<a class="plain" href="{e(n["url"])}">{e(n["title"])}</a>' if n['url'] else e(n['title'])
         press = ''
         if n.get('press'):
-            press = '<ul>' + ''.join(f'<li><a href="{e(u)}">{e(src)} “{e(t)}”</a></li>' for src, t, u in n['press']) + '</ul>'
+            li = [f'<li><a href="{e(u)}"><b>{e(src)}</b> {e(t)}</a></li>' for src, t, u in n['press']]
+            press = '<ul>' + ''.join(li[:3]) + '</ul>'
+            if len(li) > 3:
+                press += f'<details class="press-box"><summary>기사 {len(li) - 3}건 더보기</summary><ul>' + ''.join(li[3:]) + '</ul></details>'
         cards += (f'<article class="news-card"><div class="ph"><img src="{n["img"]}" alt="" loading="lazy"></div><div>'
                   f'<span class="mono muted" style="font-size:14px">{e(n["date"])}</span><h3>{title}</h3><p>{e(n["desc"])}</p>{press}</div></article>')
     body = page_head('Community · News', 'News') + f'<section class="section"><div class="wrap">{cards}</div></section>'

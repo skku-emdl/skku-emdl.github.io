@@ -17,19 +17,29 @@
     "https://www.pinpointnews.co.kr/news/articleView.html?idxno=494820"
    ],
    [
-    "이뉴스투데이",
-    "성균관대 신성식 교수팀, 태양전지와 LED를 하나로, 차세대 반도체 기술 개발",
-    "http://www.enewstoday.co.kr/news/articleView.html?idxno=2479600"
-   ],
-   [
     "이데일리",
     "성균관대, 초저결함 반도체 박막 개발…태양전지·LED 동시 구현",
     "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03712966645612592"
    ],
    [
+    "이뉴스투데이",
+    "성균관대 신성식 교수팀, 태양전지와 LED를 하나로, 차세대 반도체 기술 개발",
+    "http://www.enewstoday.co.kr/news/articleView.html?idxno=2479600"
+   ],
+   [
     "스마트경제",
     "하나의 소자로 전기를 만들고 빛까지 낸다…공융 현상 기반 ‘초저결함 페로브스카이트 반도체’ 세계 최초 개발",
     "http://www.dailysmart.co.kr/news/articleView.html?idxno=130996"
+   ],
+   [
+    "로이슈",
+    "성균관대 신성식 교수팀, 페로브스카이트 반도체 박막 개발",
+    "https://www.lawissue.co.kr/view.php?ud=202610132301309422f4ab64559d_12"
+   ],
+   [
+    "에스프레스(성대뉴스)",
+    "신성식 교수팀, 공융 현상으로 초저결함 반도체 박막 개발… 태양전지·LED 동시 구현",
+    "https://www.spressnews.com/news/articleView.html?idxno=139260"
    ]
   ]
  },
@@ -47,7 +57,33 @@
   "desc": "“Efficient and luminescent perovskite solar cells using defect-suppressed SnO₂ via excess ligand strategy”",
   "img": "assets/img/pubs/natenergy-2025-cover.webp",
   "url": "https://www.nature.com/articles/s41560-025-01781-1",
-  "press": []
+  "press": [
+   [
+    "헤럴드경제",
+    "“낮에는 태양전지, 밤에는 LED 변신” 획기적 성과…꿈의 광전소자 상용화 성큼",
+    "https://biz.heraldcorp.com/article/10517345"
+   ],
+   [
+    "쿠키뉴스",
+    "“낮에는 태양전지, 밤에는 LED”… 무결점 소재 개발",
+    "https://www.kukinews.com/article/view/kuk202506250092"
+   ],
+   [
+    "대학저널",
+    "성균관대, 태양전지와 LED 동시 구현 ‘무결점 소재’ 개발",
+    "https://www.dhnews.co.kr/news/view/1065600942617400"
+   ],
+   [
+    "중앙이코노미뉴스",
+    "성균관대 신성식 교수팀, 태양전지와 LED를 동시에 구현한 ‘무결점 소재’ 개발",
+    "https://www.joongangenews.com/news/articleView.html?idxno=429281"
+   ],
+   [
+    "팝콘뉴스",
+    "성균관대 신성식 교수팀, 태양전지·LED 동시 구현한 ‘무결점 소재’ 개발",
+    "http://www.popcornnews.net/news/articleView.html?idxno=84475"
+   ]
+  ]
  },
  {
   "date": "2024.02",
@@ -60,6 +96,31 @@
     "베리타스알파",
     "성균관대 연구진 세계 최초 가볍고 잘 휘어지는 대면적 페로브스카이트 태양전지 개발",
     "https://www.veritas-a.com/news/articleView.html?idxno=496322"
+   ],
+   [
+    "한국대학신문",
+    "성균관대, 세계 최초 가볍고 잘 휘어지는 대면적 페로브스카이트 태양전지 개발",
+    "https://news.unn.net/news/articleView.html?idxno=560376"
+   ],
+   [
+    "한국강사신문",
+    "성균관대학교 신성식 교수팀, 세계 최초 가볍고 잘 휘어지는 대면적 페로브스카이트 태양전지 개발",
+    "https://www.lecturernews.com/news/articleView.html?idxno=148152"
+   ],
+   [
+    "유스라인",
+    "성균관대 연구진, 세계 최초 가볍고 잘 휘어지는 대면적 페로브스카이트 태양전지 개발",
+    "https://www.usline.kr/news/articleView.html?idxno=24819"
+   ],
+   [
+    "CWN뉴스",
+    "성균관대 연구진, 세계 최초 가볍고 잘 휘어지는 태양전지 개발",
+    "https://cwn.kr/article/179565983039020"
+   ],
+   [
+    "성대뉴스",
+    "SAINT 신성식 교수 연구팀, 세계 최초 가볍고 잘 휘어지는 대면적 페로브스카이트 태양전지 개발",
+    "https://www.skku.edu/skku/mobile/news.do?mode=view&articleNo=116028"
    ]
   ]
  },
@@ -74,6 +135,26 @@
     "조선비즈",
     "페로브스카이트 태양전지 효율 높이는 원리 밝혀냈다",
     "https://biz.chosun.com/nsearch/?query=%EC%8B%A0%EC%84%B1%EC%8B%9D&siteid=chosunbiz&website=chosunbiz&opt_chk=true"
+   ],
+   [
+    "한국대학신문",
+    "성균관대 신성식 교수 연구팀, 고효율 페로브스카이트 태양전지 원리 최초 규명",
+    "https://news.unn.net/news/articleView.html?idxno=561151"
+   ],
+   [
+    "유스라인",
+    "성균관대 신성식 교수 연구팀, 美 MIT 연구팀과 고효율 페로브스카이트 태양전지 원리 최초 규명",
+    "https://www.usline.kr/news/articleView.html?idxno=25013"
+   ],
+   [
+    "네이트 뉴스",
+    "성균관대, 美 MIT 연구팀과 함께 고효율 페로브스카이트 태양전지 원리 규명",
+    "https://news.nate.com/view/20240326n17968"
+   ],
+   [
+    "성대뉴스",
+    "SAINT 신성식 교수 연구팀, 美 MIT 연구팀과 고효율 페로브스카이트 태양전지 원리 최초 규명",
+    "https://www.skku.edu/skku/campus/skk_comm/news04.do?mode=view&articleNo=116618"
    ]
   ]
  },
@@ -91,7 +172,62 @@
   "desc": "“Efficient perovskite solar cells via improved carrier management”, Nature 590, 587–593 (2021)",
   "img": "assets/img/pubs/nature-2021-cover.webp",
   "url": "https://m.krict.re.kr/thumbnail//viewer/1617693481058/index.html",
-  "press": []
+  "press": [
+   [
+    "한국경제",
+    "태양전지 효율 25%까지 높였다…韓연구진 네이처 표지 장식",
+    "https://www.hankyung.com/article/2021022495821"
+   ],
+   [
+    "뉴시스",
+    "상용화 앞둔 세계 최고 수준 초고효율 ‘페로브스카이트 태양전지’ 개발",
+    "https://mobile.newsis.com/view.html?ar_id=NISX20210224_0001350278"
+   ],
+   [
+    "이투데이",
+    "화학연, 세계 최고효율 페로브스카이트 태양전지 소재 개발",
+    "https://www.etoday.co.kr/news/view/1997987"
+   ],
+   [
+    "뉴스웍스",
+    "페로브스카이트 태양전지 세계 최고 효율 달성",
+    "http://www.newsworks.co.kr/news/articleView.html?idxno=529663"
+   ],
+   [
+    "충청뉴스",
+    "화학연 개발 초고효율 페로브스카이트 태양전지 ‘네이처’ 표지논문 게재",
+    "https://www.ccnnews.co.kr/news/articleView.html?idxno=209821"
+   ],
+   [
+    "한국화학연구원",
+    "초고효율 페로브스카이트 태양전지 네이처 표지논문 게재 (보도자료)",
+    "https://www.krict.re.kr/thumbnail//viewer/1625033219834/index.html"
+   ]
+  ]
+ },
+ {
+  "date": "2020.11",
+  "title": "유연 페로브스카이트 태양전지 세계 최고 효율 20.7% 달성",
+  "desc": "“Record-efficiency flexible perovskite solar cell and module enabled by a porous-planar structure as an electron transport layer”, Energy & Environmental Science 13, 4854–4861 (2020)",
+  "img": "assets/img/research/large-area-modules.webp",
+  "url": "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=njJxFYYAAAAJ&sortby=pubdate&citation_for_view=njJxFYYAAAAJ:pUxgyZctzPYC",
+  "press": [
+   [
+    "이투데이",
+    "가볍고 잘 휘어지는 고효율 페로브스카이트 태양전지 개발",
+    "https://www.etoday.co.kr/news/view/1963283"
+   ],
+   [
+    "머니투데이",
+    "‘휘어지는’ 페로브스카이트 태양전지 개발…20.7% 세계 최고 효율 달성",
+    "https://www.mt.co.kr/tech/2020/11/17/2020111709233549083"
+   ],
+   [
+    "파이낸셜뉴스",
+    "휘어지는 ‘페로브스카이트 태양전지’ 신문 인쇄하듯 찍어낸다",
+    "https://www.fnnews.com/news/202011171650433969"
+   ]
+  ]
  },
  {
   "date": "2019",
