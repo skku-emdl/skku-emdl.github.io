@@ -152,8 +152,17 @@ def selected_slider():
     return f'<div class="marquee"><div class="track">{cards}{dup}</div></div>'
 
 
+# Publications 페이지 그리드에만 추가로 보이는 논문 (메인 슬라이드에는 미포함)
+EXTRA_GRID = [
+    (38, 'Energy & Environmental Science', None, '#1E5A46'),
+    (33, 'Energy & Environmental Science', None, '#1E5A46'),
+    (32, 'Energy & Environmental Science', None, '#1E5A46'),
+]
+
+
 def selected_grid():
-    return '<div class="pgrid">' + ''.join(pub_card(*s) for s in SELECTED) + '</div>'
+    items = sorted(SELECTED + EXTRA_GRID, key=lambda s: (-PUB_BY_N[s[0]]['year'], -s[0]))
+    return '<div class="pgrid">' + ''.join(pub_card(*s) for s in items) + '</div>'
 
 
 # ---------- home ----------
