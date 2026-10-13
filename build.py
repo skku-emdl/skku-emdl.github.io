@@ -24,7 +24,7 @@ FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox
 
 MENU = [
     ('ABOUT', 'professor.html', [('Professor', 'professor.html'), ('Members', 'members.html'), ('Alumni', 'alumni.html')]),
-    ('RESEARCH', 'research.html', [('Oxide Semiconductor Synthesis', 'research.html#synthesis'), ('Perovskite Optoelectronics', 'research.html#applications'),
+    ('RESEARCH', 'research.html', [('Oxide & Hybrid Semiconductor Materials', 'research.html#synthesis'), ('Perovskite Optoelectronics', 'research.html#applications'),
                                    ('Sustainable Battery Materials', 'research.html#waste'), ('Facilities', 'facilities.html')]),
     ('PUBLICATIONS', 'publications.html', [('Selected Papers', 'publications.html#selected'), ('All Papers', 'publications.html#all')]),
     ('COMMUNITY', 'news.html', [('News', 'news.html'), ('Media', 'media.html'), ('Gallery', 'gallery.html')]),
@@ -168,8 +168,8 @@ def selected_grid():
 HERO_FIG = (ROOT / 'data' / 'hero_figure.html').read_text(encoding='utf-8')
 
 RESEARCH = [
-    ('synthesis', '01', 'Oxide Semiconductor Synthesis', 'assets/img/research/illu-synthesis.svg',
-     '용액 공정(CBD)과 원자층증착(ALD) 기반 저온 공정으로 SnO₂ 등 기능성 산화물 반도체를 합성하고 그 원리를 규명합니다.'),
+    ('synthesis', '01', 'Oxide & Hybrid Semiconductor Materials', 'assets/img/research/illu-synthesis.svg',
+     'SnO₂ 등 기능성 산화물 반도체와 유무기 하이브리드 페로브스카이트 소재를 저온 용액 공정(CBD)과 원자층증착(ALD)으로 합성하고, 그 원리와 계면을 설계합니다.'),
     ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/illu-module.svg',
      '고효율 페로브스카이트 태양전지와 LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
     ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/illu-battery.svg',
@@ -326,9 +326,9 @@ def build_research():
     blocks = f'''
 <div class="rblock" id="synthesis">
 <p class="eyebrow">01</p>
-<h2>Oxide Semiconductor Synthesis</h2>
-<p class="lead">새로운 산화물 반도체 소재를 탐색하고 합성합니다. 저온·고속 합성 공정과 대면적 공정을 개발하고, 이를 기반으로 태양전지, 수소 생산, LED, 에너지 저장장치와 하이브리드 시스템으로 확장합니다.</p>
-<ul class="chips"><li>Nanomaterials Synthesis</li><li>Low-Temperature Synthesis Process</li><li>SnO₂ Electron Transport Layers</li><li>CBD · ALD</li></ul>
+<h2>Oxide &amp; Hybrid Semiconductor Materials</h2>
+<p class="lead">새로운 산화물 반도체와 유무기 하이브리드 페로브스카이트 소재를 탐색하고 합성합니다. 저온·고속 합성 공정과 대면적 공정을 개발하고, 합성 원리와 소재 간 계면을 규명해 고성능 에너지 소자의 기반을 만듭니다.</p>
+<ul class="chips"><li>SnO₂ Electron Transport Layers</li><li>Hybrid Perovskite Materials</li><li>Low-Temperature Synthesis Process</li><li>CBD · ALD</li><li>Interface Engineering</li></ul>
 <figure><img src="assets/img/research/oxide-nanomaterials.webp" alt="산화물 나노소재 연구 개요: 소재, 공정, 소자" loading="lazy"></figure>
 <figure><img src="assets/img/research/oxide-synthesis.webp" alt="주석 기반 산화물 반도체 합성 및 메커니즘 규명" loading="lazy"></figure>
 </div>
