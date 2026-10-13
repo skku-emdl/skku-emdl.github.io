@@ -24,8 +24,8 @@ FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox
 
 MENU = [
     ('ABOUT', 'professor.html', [('Professor', 'professor.html'), ('Members', 'members.html'), ('Alumni', 'alumni.html')]),
-    ('RESEARCH', 'research.html', [('Materials Synthesis', 'research.html#synthesis'), ('Applications', 'research.html#applications'),
-                                   ('Waste Recovery', 'research.html#waste'), ('Facilities', 'facilities.html')]),
+    ('RESEARCH', 'research.html', [('Oxide Semiconductor Synthesis', 'research.html#synthesis'), ('Perovskite Optoelectronics', 'research.html#applications'),
+                                   ('Sustainable Battery Materials', 'research.html#waste'), ('Facilities', 'facilities.html')]),
     ('PUBLICATIONS', 'publications.html', [('Selected Papers', 'publications.html#selected'), ('All Papers', 'publications.html#all')]),
     ('COMMUNITY', 'news.html', [('News', 'news.html'), ('Media', 'media.html'), ('Gallery', 'gallery.html')]),
     ('CONTACT', 'contact.html', [('Location', 'contact.html#location'), ('Recruitment', 'contact.html#recruit')]),
@@ -168,12 +168,12 @@ def selected_grid():
 HERO_FIG = (ROOT / 'data' / 'hero_figure.html').read_text(encoding='utf-8')
 
 RESEARCH = [
-    ('synthesis', '01', 'Materials Synthesis', 'assets/img/research/illu-synthesis.svg',
-     '기능성 산화물과 유무기 하이브리드 소재의 저온 합성 공정 개발 및 합성 원리 규명. CBD, ALD 기반 SnO₂ 전자수송층.'),
-    ('applications', '02', 'Applications', 'assets/img/research/illu-module.svg',
-     '페로브스카이트 태양전지, 대면적 플렉서블 모듈, 페로브스카이트 LED, 태양전지–배터리·슈퍼커패시터·수전해 하이브리드 시스템.'),
-    ('waste', '03', 'Waste Recovery', 'assets/img/research/illu-battery.svg',
-     '폐자원을 재활용한 지속가능한 소재와 에너지 생산. 폐타이어 기반 친환경 배터리 소재 개발.'),
+    ('synthesis', '01', 'Oxide Semiconductor Synthesis', 'assets/img/research/illu-synthesis.svg',
+     '용액 공정(CBD)과 원자층증착(ALD) 기반 저온 공정으로 SnO₂ 등 기능성 산화물 반도체를 합성하고 그 원리를 규명합니다.'),
+    ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/illu-module.svg',
+     '고효율 페로브스카이트 태양전지와 LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
+    ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/illu-battery.svg',
+     '폐타이어 재활용 카본블랙 도전재, 양극재, 집전체 등 지속가능한 이차전지 소재와 태양전지–에너지 저장 하이브리드 시스템을 연구합니다.'),
 ]
 
 
@@ -325,27 +325,27 @@ def build_alumni():
 def build_research():
     blocks = f'''
 <div class="rblock" id="synthesis">
-<p class="eyebrow">01 · Materials Synthesis</p>
-<h2>Synthesis of Oxide Semiconductors</h2>
+<p class="eyebrow">01</p>
+<h2>Oxide Semiconductor Synthesis</h2>
 <p class="lead">새로운 산화물 반도체 소재를 탐색하고 합성합니다. 저온·고속 합성 공정과 대면적 공정을 개발하고, 이를 기반으로 태양전지, 수소 생산, LED, 에너지 저장장치와 하이브리드 시스템으로 확장합니다.</p>
 <ul class="chips"><li>Nanomaterials Synthesis</li><li>Low-Temperature Synthesis Process</li><li>SnO₂ Electron Transport Layers</li><li>CBD · ALD</li></ul>
 <figure><img src="assets/img/research/oxide-nanomaterials.webp" alt="산화물 나노소재 연구 개요: 소재, 공정, 소자" loading="lazy"></figure>
 <figure><img src="assets/img/research/oxide-synthesis.webp" alt="주석 기반 산화물 반도체 합성 및 메커니즘 규명" loading="lazy"></figure>
 </div>
 <div class="rblock" id="applications">
-<p class="eyebrow">02 · Applications</p>
-<h2>Energy Conversion Devices &amp; Hybrid Systems</h2>
-<p class="lead">산화물 반도체를 응용한 고효율 페로브스카이트 태양전지와 대면적 플렉서블 모듈, 페로브스카이트 LED, 그리고 태양전지–에너지 저장장치·LED 일체형 하이브리드 소자를 연구합니다.</p>
+<p class="eyebrow">02</p>
+<h2>Perovskite Optoelectronics: Large-Area &amp; Flexible</h2>
+<p class="lead">산화물 전자수송층을 기반으로 고효율 페로브스카이트 태양전지와 LED를 만들고, 이를 최대 900 cm² 대면적 플렉서블 모듈과 태양전지–LED 양방향 융합 소자로 확장합니다. 태양전지–에너지 저장장치 하이브리드 시스템도 함께 연구합니다.</p>
 <ul class="chips"><li>Perovskite Solar Cells</li><li>Flexible Perovskite Solar Cells</li><li>Large-Area (Flexible) Solar Modules</li><li>Perovskite LEDs</li><li>Solar Cell–LED</li><li>Solar Cell–Battery</li><li>Solar Cell–Supercapacitor</li><li>Solar Cell–Water Splitting</li></ul>
 <figure><img src="assets/img/research/applications-oxide.webp" alt="산화물 반도체 소재 응용: 태양전지, LED, 태양-연료, 에너지 저장" loading="lazy"></figure>
 <figure><img src="assets/img/research/large-area-modules.webp" alt="단위소자에서 대면적 모듈까지: 30x30 유연 모듈" loading="lazy"></figure>
 <figure><img src="assets/img/research/hybrid-system.webp" alt="태양전지-에너지 저장장치 및 태양전지-LED 일체형 하이브리드 소자" loading="lazy"></figure>
 </div>
 <div class="rblock" id="waste">
-<p class="eyebrow">03 · Waste Recovery</p>
-<h2>Waste-to-Materials, Waste-to-Energy</h2>
-<p class="lead">폐타이어 등 폐자원을 재활용하여 고성능 전도성 카본블랙과 같은 지속가능한 소재 및 에너지를 생산하는 연구를 수행합니다.</p>
-<ul class="chips"><li>Waste Tire Recycling</li><li>Conductive Carbon Black</li><li>Li-ion Battery Materials</li></ul>
+<p class="eyebrow">03</p>
+<h2>Sustainable Battery Materials</h2>
+<p class="lead">폐타이어를 재활용한 고성능 전도성 카본블랙 도전재, 리튬이온전지 양극재, 산화물 기반 집전체 계면 등 지속가능한 이차전지 소재를 연구합니다.</p>
+<ul class="chips"><li>Li-ion Battery Materials</li><li>Conductive Carbon Black from Waste Tires</li><li>Cathode Materials</li><li>Current Collector Interfaces</li></ul>
 <figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 및 고성능 전도성 카본블랙 개발" loading="lazy"></figure>
 </div>'''
     body = page_head('Research', 'Research', '기능성 산화물 소재와 유무기 하이브리드 소재의 합성 원리를 규명하고, 이를 태양전지, 발광다이오드, 수소 생산, 이차전지와 하이브리드 에너지 시스템으로 확장합니다.') + \
