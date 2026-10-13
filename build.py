@@ -186,7 +186,7 @@ def build_home():
         tag = 'a' if n['url'] else 'div'
         href = f' href="{e(n["url"])}"' if n['url'] else ''
         nitems += f'<{tag} class="nitem"{href}><span class="d">{e(n["date"] or "—")}</span><span>{e(n["title"])}</span></{tag}>'
-    v = MEDIA[1]
+    v = MEDIA[0]
     body = f'''<section class="wrap hero" aria-label="연구실 소개">
 <div class="text">
 <p class="eyebrow">Sungkyunkwan University · SAINT · Dept. of Nano Engineering</p>
