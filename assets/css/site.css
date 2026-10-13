@@ -240,5 +240,5 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 .alum .course{font-family:var(--mono);font-size:13px;color:var(--accent)}
 .alum .note{font-size:14px;color:var(--ink-2)}
 .alum .mail{font-size:14px;word-break:break-all}
-.topic .ph:has(img[src$=".svg"]){padding:0;border:0;border-radius:4px}
-.topic .ph img[src$=".svg"]{object-fit:cover}
+.topic .ph{padding:0;border:0;border-radius:4px}
+.topic .ph img{object-fit:cover}

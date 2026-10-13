@@ -168,11 +168,11 @@ def selected_grid():
 HERO_FIG = (ROOT / 'data' / 'hero_figure.html').read_text(encoding='utf-8')
 
 RESEARCH = [
-    ('synthesis', '01', 'Oxide & Hybrid Semiconductor Materials', 'assets/img/research/illu-synthesis.svg',
+    ('synthesis', '01', 'Oxide & Hybrid Semiconductor Materials', 'assets/img/research/topic-1.webp',
      '다양한 기능성 산화물 나노입자와 박막, 유무기 하이브리드 페로브스카이트 소재를 용액 공정과 진공 증착 등 여러 방법으로 합성하고, 그 원리와 계면을 규명합니다.'),
-    ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/illu-module.svg',
+    ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/topic-2.webp',
      '고효율 페로브스카이트 태양전지와 페로브스카이트/페로브스카이트 탠덤 태양전지, LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
-    ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/illu-battery.svg',
+    ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/topic-3.webp',
      '리튬이온전지와 안전한 아연 수계 이차전지, 폐타이어 재활용 카본블랙 도전재 등 지속가능한 배터리 소재와 태양전지–에너지 저장 하이브리드 시스템을 연구합니다.'),
 ]
 
