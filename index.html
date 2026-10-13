@@ -42,14 +42,36 @@
 <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/video/emdl-intro-poster.jpg" aria-label="산화물·페로브스카이트 반도체 소재에서 태양전지, 대면적 플렉서블 모듈, 배터리 저장, LED 발광으로 이어지는 연구 소개 영상">
 <source src="assets/video/emdl-intro.mp4" type="video/mp4">
 </video>
-<button type="button" class="sound" id="heroSound" aria-pressed="false">소리 켜기</button>
+<button type="button" class="sound" id="heroSound" aria-pressed="false">🔇 소리 켜기</button>
 </div>
 <figcaption>소재에서 소자, 대면적 모듈, 에너지 저장과 발광까지</figcaption>
 </figure>
 <script>
-(function(){var v=document.getElementById('heroVideo'),b=document.getElementById('heroSound');if(!v||!b)return;
-b.addEventListener('click',function(){var on=v.muted;v.muted=!on;if(on){v.currentTime=0;v.play();}
-b.textContent=on?'소리 끄기':'소리 켜기';b.setAttribute('aria-pressed',on?'true':'false');});})();
+(function(){
+  var v=document.getElementById('heroVideo'),b=document.getElementById('heroSound');if(!v||!b)return;
+  var KEY='emdl-hero-sound',pref=null;
+  try{pref=localStorage.getItem(KEY);}catch(e){}
+  function ui(){b.textContent=v.muted?'🔇 소리 켜기':'🔊 소리 끄기';b.setAttribute('aria-pressed',v.muted?'false':'true');}
+  function save(x){try{localStorage.setItem(KEY,x);}catch(e){}}
+  function arm(){
+    var ev=['pointerup','keydown','touchend'];
+    function go(e){ev.forEach(function(n){document.removeEventListener(n,go,true);});
+      if(e.target===b||pref==='off')return;
+      v.muted=false;v.currentTime=0;v.play();ui();}
+    ev.forEach(function(n){document.addEventListener(n,go,true);});
+  }
+  if(pref!=='off'){
+    v.pause();v.currentTime=0;v.muted=false;
+    var p=v.play();
+    if(p&&p.catch)p.catch(function(){v.muted=true;v.play();ui();arm();});
+  }
+  ui();
+  b.addEventListener('click',function(){
+    var turnOn=v.muted;v.muted=!turnOn;
+    if(turnOn){v.currentTime=0;v.play();}
+    save(turnOn?'on':'off');pref=turnOn?'on':'off';ui();
+  });
+})();
 </script>
 
 </section>
