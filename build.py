@@ -139,10 +139,10 @@ def pub_card(n, jn, img, color, hidden=False):
     ph = (f'<img src="{img}" alt="" loading="lazy">' if img
           else f'<span class="jn">{e(jn)}</span>')
     style = '' if img else f' style="background:{color}"'
-    badge = '<span class="badge">FRONT COVER</span>' if p.get('cover') else ''
+    badge = '<em class="badge">FRONT COVER</em>' if p.get('cover') else ''
     url = p.get('url') or 'publications.html'
-    return (f'<a class="pcard" href="{e(url)}"{attrs}><div class="ph"{style}>{badge}{ph}</div>'
-            f'<div class="meta"><b>{e(jn)}</b><span>{p["year"]}</span></div>'
+    return (f'<a class="pcard" href="{e(url)}"{attrs}><div class="ph"{style}>{ph}</div>'
+            f'<div class="meta"><b>{e(jn)}</b><span>{p["year"]}</span></div>{badge}'
             f'<span class="t">{e(p["title"])}</span></a>')
 
 
@@ -150,6 +150,10 @@ def selected_slider():
     cards = ''.join(pub_card(*s) for s in SELECTED)
     dup = ''.join(pub_card(*s, hidden=True) for s in SELECTED)
     return f'<div class="marquee"><div class="track">{cards}{dup}</div></div>'
+
+
+def selected_grid():
+    return '<div class="pgrid">' + ''.join(pub_card(*s) for s in SELECTED) + '</div>'
 
 
 # ---------- home ----------
@@ -371,7 +375,7 @@ def build_publications():
     body = page_head('Publications', 'Publications', '* Corresponding author') + f'''
 <section class="section" id="selected"><div class="wrap">
 <div class="h2-row"><h2 class="h2">Selected Papers</h2></div>
-{selected_slider()}
+{selected_grid()}
 </div></section>
 <section class="section" id="all"><div class="wrap">
 <div class="h2-row"><h2 class="h2">All Papers</h2></div>
