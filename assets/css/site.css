@@ -239,7 +239,14 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 .alum h3 small{font-weight:400;color:var(--muted);font-size:14px;margin-left:6px}
 .alum .course{font-family:var(--mono);font-size:13px;color:var(--accent)}
 .alum .note{font-size:14px;color:var(--ink-2)}
-@media (max-width:700px){.alum{grid-template-columns:1fr;gap:2px}.alum .course:empty{display:none}}
+@media (max-width:700px){
+  .alum{grid-template-columns:auto auto minmax(0,1fr);gap:0 10px;padding:12px 0}
+  .alum h3{font-size:16px;white-space:nowrap}
+  .alum h3 small{display:none}
+  .alum .course{font-size:12px;white-space:nowrap}
+  .alum .course:empty{display:none}
+  .alum .note{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
 .alum .mail{font-size:14px;word-break:break-all}
 .topic .ph{padding:0;border:0;border-radius:4px}
 .topic .ph img{object-fit:cover}
