@@ -171,7 +171,7 @@ RESEARCH = [
     ('synthesis', '01', 'Oxide & Hybrid Semiconductor Materials', 'assets/img/research/illu-synthesis.svg',
      '다양한 기능성 산화물 나노입자와 박막, 유무기 하이브리드 페로브스카이트 소재를 용액 공정과 진공 증착 등 여러 방법으로 합성하고, 그 원리와 계면을 규명합니다.'),
     ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/illu-module.svg',
-     '고효율 페로브스카이트 태양전지와 LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
+     '고효율 페로브스카이트 태양전지와 페로브스카이트/페로브스카이트 탠덤 태양전지, LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
     ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/illu-battery.svg',
      '리튬이온전지와 안전한 아연 수계 이차전지, 폐타이어 재활용 카본블랙 도전재 등 지속가능한 배터리 소재와 태양전지–에너지 저장 하이브리드 시스템을 연구합니다.'),
 ]
@@ -335,8 +335,8 @@ def build_research():
 <div class="rblock" id="applications">
 <p class="eyebrow">02</p>
 <h2>Perovskite Optoelectronics: Large-Area &amp; Flexible</h2>
-<p class="lead">산화물 전자수송층을 기반으로 고효율 페로브스카이트 태양전지와 LED를 만들고, 이를 최대 900 cm² 대면적 플렉서블 모듈과 태양전지–LED 양방향 융합 소자로 확장합니다. 태양전지–에너지 저장장치 하이브리드 시스템도 함께 연구합니다.</p>
-<ul class="chips"><li>Perovskite Solar Cells</li><li>Flexible Perovskite Solar Cells</li><li>Large-Area (Flexible) Solar Modules</li><li>Perovskite LEDs</li><li>Solar Cell–LED</li><li>Solar Cell–Battery</li><li>Solar Cell–Supercapacitor</li><li>Solar Cell–Water Splitting</li></ul>
+<p class="lead">산화물 전자수송층을 기반으로 고효율 페로브스카이트 태양전지, 페로브스카이트/페로브스카이트 탠덤 태양전지, LED를 만들고, 이를 최대 900 cm² 대면적 플렉서블 모듈과 태양전지–LED 양방향 융합 소자로 확장합니다. 태양전지–에너지 저장장치 하이브리드 시스템도 함께 연구합니다.</p>
+<ul class="chips"><li>Perovskite Solar Cells</li><li>All-Perovskite Tandem Solar Cells</li><li>Flexible Perovskite Solar Cells</li><li>Large-Area (Flexible) Solar Modules</li><li>Perovskite LEDs</li><li>Solar Cell–LED</li><li>Solar Cell–Battery</li><li>Solar Cell–Supercapacitor</li><li>Solar Cell–Water Splitting</li></ul>
 <figure><img src="assets/img/research/applications-oxide.webp" alt="산화물 반도체 소재 응용: 태양전지, LED, 태양-연료, 에너지 저장" loading="lazy"></figure>
 <figure><img src="assets/img/research/large-area-modules.webp" alt="단위소자에서 대면적 모듈까지: 30x30 유연 모듈" loading="lazy"></figure>
 <figure><img src="assets/img/research/hybrid-system.webp" alt="태양전지-에너지 저장장치 및 태양전지-LED 일체형 하이브리드 소자" loading="lazy"></figure>
