@@ -125,7 +125,7 @@ SELECTED = [
     (50, 'Joule', 'assets/img/pubs/joule-2024-cover.webp', '#C2410C'),
     (49, 'Nature Energy', 'assets/img/pubs/natenergy-2024.webp', '#0F5E52'),
     (44, 'Nature', 'assets/img/pubs/nature-2021-cover.webp', '#111418'),
-    (25, 'Science', 'assets/img/pubs/science-2017-6334.webp', '#8C1D18', 'left'),
+    (25, 'Science', 'assets/img/pubs/science-2017-6334.webp', '#8C1D18'),
 ]
 PUB_BY_N = {p['n']: p for p in PUBS}
 
