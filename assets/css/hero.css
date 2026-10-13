@@ -12,3 +12,10 @@
   background:rgba(8,12,26,.6);color:#fff;font:500 13px/1 var(--sans);cursor:pointer;backdrop-filter:blur(4px)}
 .lattice .sound:hover{background:rgba(8,12,26,.85)}
 .lattice .sound:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.lattice .play-sound{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;display:flex;align-items:center;gap:10px;
+  padding:14px 22px;border:1px solid rgba(255,255,255,.55);border-radius:999px;background:rgba(8,12,26,.72);color:#fff;
+  font:600 17px/1 var(--sans);cursor:pointer;backdrop-filter:blur(6px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.lattice .play-sound[hidden]{display:none}
+.lattice .play-sound span{font-size:14px}
+.lattice .play-sound:hover{background:rgba(31,79,209,.85)}
+.lattice .play-sound:focus-visible{outline:2px solid #fff;outline-offset:3px}

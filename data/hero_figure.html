@@ -3,28 +3,29 @@
 <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/video/emdl-intro-poster.jpg" aria-label="산화물·페로브스카이트 반도체 소재에서 태양전지, 대면적 플렉서블 모듈, 배터리 저장, LED 발광으로 이어지는 연구 소개 영상">
 <source src="assets/video/emdl-intro.mp4" type="video/mp4">
 </video>
+<button type="button" class="play-sound" id="heroPlay" hidden><span aria-hidden="true">▶</span> 소리 켜고 보기</button>
 <button type="button" class="sound" id="heroSound" aria-pressed="false">🔇 소리 켜기</button>
 </div>
 <figcaption>소재에서 소자, 대면적 모듈, 에너지 저장과 발광까지</figcaption>
 </figure>
 <script>
 (function(){
-  var v=document.getElementById('heroVideo'),b=document.getElementById('heroSound');if(!v||!b)return;
+  var v=document.getElementById('heroVideo'),b=document.getElementById('heroSound'),big=document.getElementById('heroPlay');if(!v||!b)return;
   var KEY='emdl-hero-sound',pref=null;
   try{pref=localStorage.getItem(KEY);}catch(e){}
-  function ui(){b.textContent=v.muted?'🔇 소리 켜기':'🔊 소리 끄기';b.setAttribute('aria-pressed',v.muted?'false':'true');}
+  function ui(){if(big&&!v.muted)big.hidden=true;b.textContent=v.muted?'🔇 소리 켜기':'🔊 소리 끄기';b.setAttribute('aria-pressed',v.muted?'false':'true');}
   function save(x){try{localStorage.setItem(KEY,x);}catch(e){}}
   function arm(){
     var ev=['pointerup','keydown','touchend'];
     function go(e){ev.forEach(function(n){document.removeEventListener(n,go,true);});
-      if(e.target===b||pref==='off')return;
+      if(e.target===b||e.target===big||pref==='off')return;
       v.muted=false;v.currentTime=0;last=0;v.play();ui();}
     ev.forEach(function(n){document.addEventListener(n,go,true);});
   }
   if(pref!=='off'){
     v.pause();v.currentTime=0;last=0;v.muted=false;
     var p=v.play();
-    if(p&&p.catch)p.catch(function(){v.muted=true;v.play();ui();arm();});
+    if(p&&p.catch)p.catch(function(){v.muted=true;v.play();if(big)big.hidden=false;ui();arm();});
     } else { v.muted=true; var q=v.play(); if(q&&q.catch)q.catch(function(){}); }
   // 소리는 한 번만: 영상이 처음으로 다시 돌아가는 순간 자동으로 음소거
   var last=0;
@@ -33,6 +34,7 @@
     last=v.currentTime;
   });
   ui();
+  if(big)big.addEventListener('click',function(){v.muted=false;v.currentTime=0;last=0;v.play();big.hidden=true;save('on');pref='on';ui();});
   b.addEventListener('click',function(){
     var turnOn=v.muted;v.muted=!turnOn;
     if(turnOn){v.currentTime=0;last=0;v.play();}
