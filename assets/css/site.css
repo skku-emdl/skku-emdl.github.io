@@ -232,3 +232,10 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
   .pgrid .pcard .t{font-size:13.5px}
   .pgrid .pcard .ph .jn{font-size:18px;padding:12px}
 }
+.alumni{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 32px;border-top:1px solid var(--line)}
+.alum{display:flex;flex-direction:column;gap:2px;padding:20px 0;border-bottom:1px solid var(--line)}
+.alum h3{margin:0;font-size:18px}
+.alum h3 small{font-weight:400;color:var(--muted);font-size:14px;margin-left:6px}
+.alum .course{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.alum .note{font-size:14px;color:var(--ink-2)}
+.alum .mail{font-size:14px;word-break:break-all}

@@ -306,10 +306,18 @@ def build_members():
     page('members.html', 'Members', 'ABOUT', body)
 
 
+def alum(p):
+    en = f'<small>{e(p["en"])}</small>' if p.get('en') else ''
+    course = f'<span class="course">{e(p["course"])}</span>' if p.get('course') else ''
+    note = f'<span class="note">{e(p["note"])}</span>' if p.get('note') else ''
+    mail = f'<a class="mail" href="mailto:{e(p["email"])}">{e(p["email"])}</a>' if p.get('email') else ''
+    return f'<article class="alum"><h3>{e(p["ko"])}{en}</h3>{course}{note}{mail}</article>'
+
+
 def build_alumni():
     al = D('alumni.json')
     body = page_head('About · Alumni', 'Alumni') + \
-        f'<section class="section"><div class="wrap"><div class="people">{"".join(person(a, True) for a in al)}</div></div></section>'
+        f'<section class="section"><div class="wrap"><div class="alumni">{"".join(alum(a) for a in al)}</div></div></section>'
     page('alumni.html', 'Alumni', 'ABOUT', body)
 
 
