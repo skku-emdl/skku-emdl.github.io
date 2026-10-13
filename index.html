@@ -57,11 +57,11 @@
     var ev=['pointerup','keydown','touchend'];
     function go(e){ev.forEach(function(n){document.removeEventListener(n,go,true);});
       if(e.target===b||pref==='off')return;
-      v.muted=false;v.currentTime=0;v.play();ui();}
+      v.muted=false;v.currentTime=0;last=0;v.play();ui();}
     ev.forEach(function(n){document.addEventListener(n,go,true);});
   }
   if(pref!=='off'){
-    v.pause();v.currentTime=0;v.muted=false;
+    v.pause();v.currentTime=0;last=0;v.muted=false;
     var p=v.play();
     if(p&&p.catch)p.catch(function(){v.muted=true;v.play();ui();arm();});
     } else { v.muted=true; var q=v.play(); if(q&&q.catch)q.catch(function(){}); }
@@ -74,7 +74,7 @@
   ui();
   b.addEventListener('click',function(){
     var turnOn=v.muted;v.muted=!turnOn;
-    if(turnOn){v.currentTime=0;v.play();}
+    if(turnOn){v.currentTime=0;last=0;v.play();}
     save(turnOn?'on':'off');pref=turnOn?'on':'off';ui();
   });
 })();
