@@ -222,5 +222,7 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 .news-card ul a{color:var(--ink-2);text-decoration:none}
 .news-card ul a:hover{color:var(--accent);text-decoration:underline}
 .news-card ul a b{color:var(--ink);font-weight:700;margin-right:6px}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:40px 28px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:48px 32px}
 .pgrid .pcard{flex:none}
+.pcard .ph img.fit-contain{object-fit:contain;background:#fff;padding:12px}
+.pcard .ph img.fit-left{object-position:left center}

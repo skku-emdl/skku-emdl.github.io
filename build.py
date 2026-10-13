@@ -126,17 +126,17 @@ SELECTED = [
     (49, 'Nature Energy', 'assets/img/pubs/natenergy-2024.webp', '#0F5E52'),
     (44, 'Nature', 'assets/img/pubs/nature-2021-cover.webp', '#111418'),
     (36, 'Joule', None, '#C2410C'),
-    (26, 'Science', None, '#8C1D18'),
-    (25, 'Science', None, '#8C1D18'),
-    (18, 'Nature Communications', None, '#1F3A6B'),
+    (26, 'Science', 'assets/img/pubs/science-2017-6345.webp', '#8C1D18'),
+    (25, 'Science', 'assets/img/pubs/science-2017-6334.webp', '#8C1D18', 'left'),
+    (18, 'Nature Communications', 'assets/img/pubs/natcomm-2015.webp', '#FFFFFF', 'contain'),
 ]
 PUB_BY_N = {p['n']: p for p in PUBS}
 
 
-def pub_card(n, jn, img, color, hidden=False):
+def pub_card(n, jn, img, color, fit='cover', hidden=False):
     p = PUB_BY_N[n]
     attrs = ' aria-hidden="true" tabindex="-1"' if hidden else ''
-    ph = (f'<img src="{img}" alt="" loading="lazy">' if img
+    ph = (f'<img src="{img}" alt="" loading="lazy" class="fit-{fit}">' if img
           else f'<span class="jn">{e(jn)}</span>')
     style = '' if img else f' style="background:{color}"'
     badge = '<em class="badge">FRONT COVER</em>' if p.get('cover') else ''
