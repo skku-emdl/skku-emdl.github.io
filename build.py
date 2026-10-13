@@ -237,7 +237,7 @@ def build_home():
 </section>'''
     page('index.html', None, '', body,
          desc='Energy Material and Device Laboratory (EMDL), SAINT & Department of Nano Engineering, Sungkyunkwan University. Functional oxide semiconductors and hybrid perovskites for next-generation energy devices.',
-         head_extra='<link rel="stylesheet" href="assets/css/hero.css">\n<script src="assets/js/three.min.js" defer></script>\n<script src="assets/js/hero.js" defer></script>')
+         head_extra='<link rel="stylesheet" href="assets/css/hero.css">')
 
 
 # ---------- professor ----------
