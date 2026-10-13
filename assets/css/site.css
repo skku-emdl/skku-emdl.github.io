@@ -69,7 +69,8 @@ a{color:var(--accent)} a:hover{color:var(--accent-dark)}
 .hero figure{flex:1 1 460px;min-width:0;margin:0}
 
 /* research cards */
-.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+@media (max-width:860px){.grid-3{grid-template-columns:1fr;gap:36px}}
 .topic{display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit}
 .topic .ph{aspect-ratio:16/10;background:#fff;border:1px solid var(--line);overflow:hidden;padding:8px}
 .topic .ph img{width:100%;height:100%;object-fit:contain;transition:transform .4s}
