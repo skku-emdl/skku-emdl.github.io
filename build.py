@@ -190,7 +190,7 @@ def build_home():
 <div class="text">
 <p class="eyebrow">Sungkyunkwan University · SAINT · Dept. of Nano Engineering</p>
 <h1><span>Energy Material</span><span>and Device Laboratory</span></h1>
-<p class="en">Functional oxides and hybrid perovskites for next-generation energy devices</p>
+<p class="en">Functional oxide semiconductors and hybrid perovskites for next-generation energy devices</p>
 <p class="ko">산화물 반도체와 유무기 하이브리드 페로브스카이트 소재를 기반으로, 고효율 태양전지부터 발광소자, 이차전지, 대면적 모듈까지 차세대 에너지 소자를 연구합니다.</p>
 <p class="aff">성균관대학교 나노공학과 · 성균나노과학기술원(SAINT)</p>
 </div>
@@ -236,7 +236,7 @@ def build_home():
 </div>
 </section>'''
     page('index.html', None, '', body,
-         desc='Energy Material and Device Laboratory (EMDL), SAINT & Department of Nano Engineering, Sungkyunkwan University. Functional oxides and hybrid perovskites for next-generation energy devices.',
+         desc='Energy Material and Device Laboratory (EMDL), SAINT & Department of Nano Engineering, Sungkyunkwan University. Functional oxide semiconductors and hybrid perovskites for next-generation energy devices.',
          head_extra='<link rel="stylesheet" href="assets/css/hero.css">')
 
 
