@@ -151,7 +151,7 @@ def selected_slider():
 
 # Publications 페이지 그리드에만 추가로 보이는 논문 (메인 슬라이드에는 미포함)
 EXTRA_GRID = [
-    (38, 'Energy & Environmental Science', None, '#1E5A46'),
+    (38, 'Energy & Environmental Science', 'assets/img/pubs/ees-2020-13-12.webp', '#1E5A46'),
     (36, 'Joule', 'assets/img/pubs/joule-2019.webp', '#C2410C'),
     (33, 'Energy & Environmental Science', None, '#1E5A46'),
     (32, 'Energy & Environmental Science', None, '#1E5A46'),
