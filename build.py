@@ -120,7 +120,7 @@ SELECTED = [
     # 메인 화면 슬라이드: 2021 Nature 이후 + 2017 Science (BaSnO3, 제1저자)
     (66, 'Science', 'assets/img/pubs/science-2026.webp', '#8C1D18'),
     (62, 'Nature Photonics', 'assets/img/pubs/natphoton-2026.webp', '#0B3B5C'),
-    (61, 'Joule', None, '#C2410C'),
+    (61, 'Joule', 'assets/img/pubs/joule-2025.webp', '#C2410C'),
     (59, 'Nature Energy', 'assets/img/pubs/natenergy-2025-cover.webp', '#0F5E52'),
     (50, 'Joule', 'assets/img/pubs/joule-2024-cover.webp', '#C2410C'),
     (49, 'Nature Energy', 'assets/img/pubs/natenergy-2024.webp', '#0F5E52'),
