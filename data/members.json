@@ -47,7 +47,7 @@
  {
   "ko": "정동혁",
   "en": "Donghyuk Jung",
-  "course": "Combined B.S./M.S.",
+  "course": "M.S.",
   "email": "dh0603@g.skku.edu",
   "topics": [
    "Metal Oxide Synthesis",
@@ -111,7 +111,7 @@
  {
   "ko": "강세현",
   "en": "Sehyun Kang",
-  "course": "",
+  "course": "M.S.",
   "email": "woonder2002@skku.edu",
   "topics": [
    "NBG Perovskite Solar Cells",
@@ -138,5 +138,26 @@
    "Large Area Perovskite Solar Modules"
   ],
   "photo": "assets/img/people/m12.webp"
+ },
+ {
+  "ko": "우준혁",
+  "en": "Junhyeok Woo",
+  "course": "Combined M.S./Ph.D.",
+  "email": "hk0609@skku.edu",
+  "topics": [
+   "Perovskite Materials",
+   "High-Efficiency Perovskite Solar Cells"
+  ],
+  "photo": "assets/img/people/m13.webp"
+ },
+ {
+  "ko": "최수원",
+  "en": "Suwon Choi",
+  "course": "Intern",
+  "email": "suwon4893@naver.com",
+  "topics": [
+   "Oxide Semiconductor Materials"
+  ],
+  "photo": "assets/img/people/m14.webp"
  }
 ]
