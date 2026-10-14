@@ -10,7 +10,7 @@ import json, html, re, pathlib
 ROOT = pathlib.Path(__file__).parent
 
 # 공식 오픈 전: 검색엔진 수집 막기. 오픈할 때 False 로 바꾸고 다시 빌드.
-HIDE_FROM_SEARCH = True
+HIDE_FROM_SEARCH = False
 D = lambda n: json.loads((ROOT / 'data' / n).read_text(encoding='utf-8'))
 e = html.escape
 
