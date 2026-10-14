@@ -502,18 +502,14 @@ def build_patents():
             t = f'<a href="{e(x["url"])}">{t}</a>' if x.get('url') else t
             en = f'<p class="au">{e(x["title_en"])}</p>' if x.get('title_en') else ''
             parts = []
-            if x.get('status') == '등록':
-                parts.append(f'등록 {x["reg_no"]} ({x["reg_date"]})' if x.get('reg_no') else f'등록 ({x.get("reg_date", "")})')
-            elif x.get('pub_no'):
-                parts.append(f'공개 {x["pub_no"]} ({x["pub_date"]})')
-            parts.append(f'출원 {x["app_no"]} ({x["app_date"]})')
-            if x.get('applicant'):
-                parts.append(x['applicant'])
-            items += (f'<li class="pub"><span class="n">{e(x.get("country", ""))}</span><div><p class="tt">{t}</p>'
+            if x.get('status') == '등록' and x.get('reg_no'):
+                parts.append(f'등록번호 {x["reg_no"]}')
+            parts.append(f'출원번호 {x["app_no"]}')
+            items += (f'<li class="pub"><span class="n">{e(x.get("status", ""))}</span><div><p class="tt">{t}</p>'
                       f'{en}<p class="vn">{e(" · ".join(parts))}</p></div></li>')
         out += f'<div class="year"><h2 id="p{y}">{y}</h2><ol>{items}</ol></div>'
     reg = sum(1 for x in pats if x.get('status') == '등록')
-    lead = f'국내 특허 등록 {reg}건 · 공개 {len(pats) - reg}건'
+    lead = f'등록 {reg}건 · 출원 {len(pats) - reg}건'
     body = page_head('Publications · Patents', 'Patents', lead) + f'<section class="section"><div class="wrap">{out}</div></section>'
     page('patents.html', 'Patents', 'PUBLICATIONS', body)
 

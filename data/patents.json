@@ -73,7 +73,7 @@
  },
  {
   "year": 2025,
-  "status": "공개",
+  "status": "출원",
   "country": "KR",
   "title": "탄소전극을 포함하는 페로브스카이트 광전소자",
   "title_en": "Perovskite photovoltaic device containing carbon electrodes",
@@ -356,7 +356,7 @@
   "app_no": "10-2016-0040923",
   "app_date": "2016.04.04",
   "applicant": "한국화학연구원",
-  "reg_no": "",
+  "reg_no": "10-1804173",
   "reg_date": "2017.11.28"
  }
 ]
