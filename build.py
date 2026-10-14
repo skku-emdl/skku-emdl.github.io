@@ -284,11 +284,11 @@ def build_professor():
     page('professor.html', 'Professor', 'ABOUT', body)
 
 
-def person(p, alumni=False):
+def person(p, alumni=False, show_course=True):
     ph = (f'<img src="{p["photo"]}" alt="{e(p["ko"])}" loading="lazy">' if p.get('photo')
           else f'<span class="ini" aria-hidden="true">{e(p["ko"][0])}</span>')
     en = f'<small>{e(p["en"])}</small>' if p.get('en') else ''
-    course = f'<p class="course">{e(p["course"])}</p>' if p.get('course') else ''
+    course = f'<p class="course">{e(p["course"])}</p>' if p.get('course') and show_course else ''
     extra = ''
     if alumni:
         if p.get('note'):
@@ -301,8 +301,20 @@ def person(p, alumni=False):
 
 def build_members():
     ms = D('members.json')
+    groups = [('Postdoctoral Researchers', ('Postdoctoral Researcher',)),
+              ('Ph.D. Candidates', ('Ph.D. Candidate',)),
+              ('Combined M.S./Ph.D. Candidates', ('Combined M.S./Ph.D. Candidate',)),
+              ('M.S. Candidates', ('M.S. Candidate',)),
+              ('Interns', ('Intern',))]
+    known = {c for _, cs in groups for c in cs}
+    out = ''
+    for title, cs in groups + [('Members', None)]:
+        sel = [m for m in ms if (m.get('course') in cs if cs else m.get('course') not in known)]
+        if sel:
+            out += (f'<h2 class="sub-h">{title}</h2>'
+                    f'<div class="people">{"".join(person(m, show_course=False) for m in sel)}</div>')
     body = page_head('About · Members', 'Current Members', '에너지 소재와 소자를 함께 연구하는 EMDL 구성원입니다.') + \
-        f'<section class="section"><div class="wrap"><div class="people">{"".join(person(m) for m in ms)}</div></div></section>'
+        f'<section class="section"><div class="wrap members">{out}</div></section>'
     page('members.html', 'Members', 'ABOUT', body)
 
 
