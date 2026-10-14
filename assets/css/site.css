@@ -262,3 +262,6 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
   .person .mail{font-size:12px}
   .members .sub-h{font-size:21px;margin:40px 0 16px}
 }
+.cv .wide{grid-column:1/-1}
+.cv .act-h{margin:14px 0 4px;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--accent)}
+.cv .act{margin:0;font-size:15px;line-height:1.75;color:var(--ink-2)}

@@ -246,6 +246,11 @@ def build_home():
 
 
 # ---------- professor ----------
+REVIEWED = ['Nature', 'Nature Energy', 'Nature Materials', 'Nature Nanotechnology', 'Nature Communications', 'Joule',
+            'Journal of the American Chemical Society', 'Advanced Materials', 'Advanced Energy Materials',
+            'Advanced Functional Materials', 'ACS Energy Letters', 'ACS Applied Materials & Interfaces', 'Small', 'The Innovation']
+
+
 def build_professor():
     exp = [('2024–', 'Associate Professor, SKKU Advanced Institute of Nano Technology (SAINT) & Department of Nano Engineering, Sungkyunkwan University'),
            ('2022–2024', 'Assistant Professor, SKKU Advanced Institute of Nano Technology (SAINT) & Department of Nano Engineering, Sungkyunkwan University'),
@@ -285,6 +290,14 @@ def build_professor():
 <div class="cv">
 <div><h3>Selected Journal Articles</h3><ul>{sel_li}</ul></div>
 <div><h3>Honors &amp; Awards</h3><ul>{li(honors)}</ul></div>
+</div>
+<div class="cv">
+<div class="wide"><h3>Professional Activities</h3>
+<p class="act-h">Journal Reviewer</p>
+<p class="act">{', '.join(f'<i>{e(j)}</i>' for j in REVIEWED)}</p>
+<p class="act-h">Advisory</p>
+<p class="act">젊은 과학자 자문위원 (2023)</p>
+</div>
 </div>
 </div></section>'''
     page('professor.html', 'Professor', 'ABOUT', body)
