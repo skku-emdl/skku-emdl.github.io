@@ -199,7 +199,7 @@ def build_home():
 
 <section class="section soft" id="research">
 <div class="wrap">
-<div class="h2-row"><h2 class="h2">Research Topic</h2><a class="more" href="research.html">자세히 보기 →</a></div>
+<div class="h2-row"><h2 class="h2">Research Areas</h2><a class="more" href="research.html">자세히 보기 →</a></div>
 <div class="grid-3">{topics}</div>
 </div>
 </section>
