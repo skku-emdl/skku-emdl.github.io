@@ -389,8 +389,11 @@ def build_publications():
             tag = '<span class="tag">FRONT COVER</span>' if p.get('cover') else ''
             press = ''
             if p.get('press'):
-                press = (f'<details class="press-box"><summary>언론 보도 {len(p["press"])}건</summary><ul class="press">'
-                         + ''.join(f'<li><a href="{e(x["url"])}">{e(x["text"])}</a></li>' for x in p['press']) + '</ul></details>')
+                li = [f'<li><a href="{e(x["url"])}">{e(x["text"])}</a></li>' for x in p['press']]
+                press = '<ul class="press">' + ''.join(li[:3]) + '</ul>'
+                if len(li) > 3:
+                    press += (f'<details class="press-box"><summary>언론 보도 {len(li) - 3}건 더보기</summary><ul class="press">'
+                              + ''.join(li[3:]) + '</ul></details>')
             items += (f'<li class="pub"><span class="n">{p["n"]}</span><div><p class="tt">{t}</p>'
                       f'<p class="au">{bold_pi(p["authors"])}</p><p class="vn">{e(p["venue"])}{tag}</p>{press}</div></li>')
         out += f'<div class="year"><h2 id="y{y}">{y}</h2><ol>{items}</ol></div>'
