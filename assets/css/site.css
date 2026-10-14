@@ -113,7 +113,8 @@ a.nitem:hover span:last-child{text-decoration:underline}
 .news-card:last-child{border-bottom:1px solid var(--line)}
 .news-card .ph{aspect-ratio:3/4;background:var(--bg-soft);border:1px solid var(--line);overflow:hidden}
 .news-card .ph img{width:100%;height:100%;object-fit:cover}
-.news-card h3{margin:4px 0 8px;font-size:21px}
+.news-card h3{margin:4px 0 8px;font-size:21px;font-weight:500}
+.news-card h3 b,.nitem b{font-weight:700}
 .news-card p{margin:0;color:var(--ink-2)}
 .news-card ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:15px}
 @media (max-width:640px){.news-card{grid-template-columns:110px 1fr;gap:16px}}

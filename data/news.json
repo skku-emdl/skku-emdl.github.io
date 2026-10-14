@@ -1,7 +1,7 @@
 [
  {
   "date": "2026.10",
-  "title": "Science에 논문이 게재되었습니다.",
+  "title": "Our paper has been published in **Science**.",
   "desc": "“Volatile eutectics to tailor crystallization for perovskite optoelectronics”, Science 394 (6820), 228–233 (2026)",
   "img": "assets/img/pubs/science-2026.webp",
   "url": "https://www.science.org/doi/abs/10.1126/science.aeb4554",
@@ -50,7 +50,7 @@
  },
  {
   "date": "2026.01",
-  "title": "Nature Photonics에 논문이 게재되었습니다.",
+  "title": "Our paper has been published in **Nature Photonics**.",
   "desc": "“Interlayer engineering in metal halide perovskite photovoltaics”",
   "img": "assets/img/pubs/natphoton-2026.webp",
   "url": "https://www.nature.com/articles/s41566-025-01809-8",
@@ -58,7 +58,7 @@
  },
  {
   "date": "2025.06",
-  "title": "Nature Energy에 논문이 게재되었습니다. (표지 선정)",
+  "title": "Our paper has been published in **Nature Energy** and featured on the cover.",
   "desc": "“Efficient and luminescent perovskite solar cells using defect-suppressed SnO₂ via excess ligand strategy”",
   "img": "assets/img/pubs/natenergy-2025-cover.webp",
   "url": "https://www.nature.com/articles/s41560-025-01781-1",
@@ -92,7 +92,7 @@
  },
  {
   "date": "2024.02",
-  "title": "Joule에 논문이 게재되었습니다. (표지 선정)",
+  "title": "Our paper has been published in **Joule** and featured on the cover.",
   "desc": "“Overcoming stability limitations of efficient, flexible perovskite solar modules”",
   "img": "assets/img/pubs/joule-2024-cover.webp",
   "url": "https://www.cell.com/joule/fulltext/S2542-4351(24)00063-1",
@@ -131,7 +131,7 @@
  },
  {
   "date": "2024.02",
-  "title": "Nature Energy에 논문이 게재되었습니다.",
+  "title": "Our paper has been published in **Nature Energy**.",
   "desc": "“Reduced recombination via tunable surface fields in perovskite thin films”",
   "img": "assets/img/pubs/natenergy-2024.webp",
   "url": "https://www.nature.com/articles/s41560-024-01470-5",
@@ -173,7 +173,7 @@
  },
  {
   "date": "2021.02",
-  "title": "Nature에 논문이 게재되었습니다. (표지 선정)",
+  "title": "Our paper has been published in **Nature** and featured on the cover.",
   "desc": "“Efficient perovskite solar cells via improved carrier management”, Nature 590, 587–593 (2021)",
   "img": "assets/img/pubs/nature-2021-cover.webp",
   "url": "https://m.krict.re.kr/thumbnail//viewer/1617693481058/index.html",

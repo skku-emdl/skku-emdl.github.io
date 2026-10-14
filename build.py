@@ -14,6 +14,11 @@ HIDE_FROM_SEARCH = False
 D = lambda n: json.loads((ROOT / 'data' / n).read_text(encoding='utf-8'))
 e = html.escape
 
+
+def rich(t):
+    # escape, then turn **text** into <b>text</b>
+    return re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', e(t))
+
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&amp;'
@@ -184,7 +189,7 @@ def build_home():
     for n in NEWS[:5]:
         tag = 'a' if n['url'] else 'div'
         href = f' href="{e(n["url"])}"' if n['url'] else ''
-        nitems += f'<{tag} class="nitem"{href}><span class="d">{e(n["date"] or "—")}</span><span>{e(n["title"])}</span></{tag}>'
+        nitems += f'<{tag} class="nitem"{href}><span class="d">{e(n["date"] or "—")}</span><span>{rich(n["title"])}</span></{tag}>'
     v = MEDIA[0]
     body = f'''<section class="wrap hero" aria-label="연구실 소개">
 <div class="text">
@@ -426,7 +431,7 @@ def build_publications():
 def build_news():
     cards = ''
     for n in NEWS:
-        title = f'<a class="plain" href="{e(n["url"])}">{e(n["title"])}</a>' if n['url'] else e(n['title'])
+        title = f'<a class="plain" href="{e(n["url"])}">{rich(n["title"])}</a>' if n['url'] else rich(n['title'])
         press = ''
         if n.get('press'):
             li = [f'<li><a href="{e(u)}"><b>{e(src)}</b> {e(t)}</a></li>' for src, t, u in n['press']]
