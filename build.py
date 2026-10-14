@@ -169,7 +169,7 @@ HERO_FIG = (ROOT / 'data' / 'hero_figure.html').read_text(encoding='utf-8')
 
 RESEARCH = [
     ('synthesis', '01', 'Oxide & Hybrid Semiconductor Materials', 'assets/img/research/topic-1.webp',
-     '다양한 기능성 산화물 나노입자와 박막, 유무기 하이브리드 페로브스카이트 소재를 용액 공정과 진공 증착 등 여러 방법으로 합성하고, 그 원리와 계면을 규명합니다.'),
+     '다양한 기능성 산화물 반도체 나노입자와 박막, 유무기 하이브리드 페로브스카이트 반도체 소재를 용액 공정과 진공 증착 등 여러 방법으로 합성하고, 그 원리와 계면을 규명합니다.'),
     ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/topic-2.webp',
      '고효율 페로브스카이트 태양전지와 페로브스카이트/페로브스카이트 탠덤 태양전지, LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
     ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/topic-3.webp',
@@ -345,7 +345,7 @@ def build_research():
 <div class="rblock" id="synthesis">
 <p class="eyebrow">01</p>
 <h2>Oxide &amp; Hybrid Semiconductor Materials</h2>
-<p class="lead">새로운 산화물 반도체와 유무기 하이브리드 페로브스카이트 소재를 탐색하고 합성합니다. 저온·고속 합성 공정과 대면적 공정을 개발하고, 합성 원리와 소재 간 계면을 규명해 고성능 에너지 소자의 기반을 만듭니다.</p>
+<p class="lead">새로운 산화물 반도체와 유무기 하이브리드 페로브스카이트 반도체 소재를 탐색하고 합성합니다. 저온·고속 합성 공정과 대면적 공정을 개발하고, 합성 원리와 소재 간 계면을 규명해 고성능 에너지 소자의 기반을 만듭니다.</p>
 <ul class="chips"><li>Oxide Nanoparticles</li><li>Oxide Thin Films</li><li>Hybrid Perovskite Materials</li><li>Solution &amp; Vacuum Processes</li><li>Interface Engineering</li></ul>
 <figure><img src="assets/img/research/oxide-nanomaterials.webp" alt="산화물 나노소재 연구 개요: 소재, 공정, 소자" loading="lazy"></figure>
 <figure><img src="assets/img/research/oxide-synthesis.webp" alt="주석 기반 산화물 반도체 합성 및 메커니즘 규명" loading="lazy"></figure>
