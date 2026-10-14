@@ -253,7 +253,8 @@ def build_professor():
            ('2016–2017', 'Postdoctoral Researcher, Department of Mechanical Engineering, Massachusetts Institute of Technology (MIT)')]
     edu = [('2012–2017', 'Ph.D. in Materials Science & Engineering, Seoul National University (Advisor: Prof. Young-Chang Joo)'),
            ('2004–2008', 'B.S. in Chemical Engineering, Kyung Hee University')]
-    honors = [('2022', '국가연구개발 우수성과 100선 에너지·환경 부문 최우수 선정'), ('2022', '자랑스러운 영락인상 (영락재단)'),
+    honors = [('2024', '장관표창 (과학기술정책 유공), 과학기술정보통신부'), ('2023', '젊은 과학자 자문위원 선정'),
+              ('2022', '국가연구개발 우수성과 100선 에너지·환경 분야 최우수 성과 선정, 과학기술정보통신부'), ('2022', '자랑스러운 영락인상 (영락재단)'),
               ('2022', '공로상, 한국화학연구원'), ('2022', '장관상, 과학기술정보통신부'),
               ('2021', 'Highly Cited Author, Royal Society of Chemistry (RSC)'), ('2021', '우수직원상, 한국화학연구원'),
               ('2021', '공로상, 한국화학연구원'), ('2020', '장관표창, 과학기술정보통신부'), ('2020', '이사장상, 국가과학기술연구회'),
@@ -438,7 +439,9 @@ def build_news():
             press = '<ul>' + ''.join(li[:3]) + '</ul>'
             if len(li) > 3:
                 press += f'<details class="press-box"><summary>기사 {len(li) - 3}건 더보기</summary><ul>' + ''.join(li[3:]) + '</ul></details>'
-        cards += (f'<article class="news-card"><div class="ph"><img src="{n["img"]}" alt="" loading="lazy"></div><div>'
+        ph = (f'<img src="{n["img"]}" alt="" loading="lazy">' if n.get('img')
+              else f'<span class="ph-label">{e(n.get("label", "News"))}</span>')
+        cards += (f'<article class="news-card"><div class="ph">{ph}</div><div>'
                   f'<span class="mono muted" style="font-size:14px">{e(n["date"])}</span><h3>{title}</h3><p>{e(n["desc"])}</p>{press}</div></article>')
     body = page_head('Community · News', 'News') + f'<section class="section"><div class="wrap">{cards}</div></section>'
     page('news.html', 'News', 'COMMUNITY', body)

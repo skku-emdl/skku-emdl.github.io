@@ -113,6 +113,8 @@ a.nitem:hover span:last-child{text-decoration:underline}
 .news-card:last-child{border-bottom:1px solid var(--line)}
 .news-card .ph{aspect-ratio:3/4;background:var(--bg-soft);border:1px solid var(--line);overflow:hidden}
 .news-card .ph img{width:100%;height:100%;object-fit:cover}
+.news-card .ph:has(.ph-label){display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 90% at 22% 12%,#2a3f7a 0%,#121b3a 50%,#080c1a 100%);border:0}
+.news-card .ph-label{font-family:var(--serif);font-style:italic;font-weight:700;font-size:26px;color:#f3e3c4}
 .news-card h3{margin:4px 0 8px;font-size:21px;font-weight:500}
 .news-card h3 b,.nitem b{font-weight:700}
 .news-card p{margin:0;color:var(--ink-2)}
