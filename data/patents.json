@@ -358,5 +358,140 @@
   "applicant": "한국화학연구원",
   "reg_no": "10-1804173",
   "reg_date": "2017.11.28"
+ },
+ {
+  "year": 2022,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Perovskite composite",
+  "app_no": "PCT/KR2022/008809",
+  "app_date": "2022.06.21",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2021,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Optical element having protective layer",
+  "app_no": "PCT/KR2021/009348",
+  "app_date": "2021.07.20",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2020,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Organic-inorganic perovskite compound having enhanced stability",
+  "app_no": "PCT/KR2020/017178",
+  "app_date": "2020.11.27",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2021,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Wide-bandgap perovskite light absorption layer",
+  "app_no": "PCT/KR2021/011569",
+  "app_date": "2021.08.30",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2021,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Perovskite composite",
+  "app_no": "PCT/KR2021/008849",
+  "app_date": "2021.07.09",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2020,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Perovskite solution, method for manufacturing perovskite film by using same, and method for manufacturing perovskite solar cell by using same",
+  "app_no": "PCT/KR2020/017143",
+  "app_date": "2020.11.27",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2017,
+  "status": "출원",
+  "country": "PCT",
+  "title": "BaSnO3 thin film and low-temperature preparation method therefor",
+  "app_no": "PCT/KR2017/003702",
+  "app_date": "2017.04.04",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2025,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Method for manufacturing carbon electrode-based solar cell comprising perovskite thin film surface-treated through polishing, and carbon electrode-based solar cell manufactured thereby",
+  "app_no": "PCT/KR2025/002714",
+  "app_date": "2025.02.27",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2024,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Method for manufacturing carbon electrode-based device and carbon electrode-based device manufactured thereby",
+  "app_no": "PCT/KR2024/016038",
+  "app_date": "2024.10.22",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2021,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Organic hole transport material doped with acid-base by-product, and optical device using same",
+  "app_no": "PCT/KR2021/008848",
+  "app_date": "2021.07.09",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2023,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Perovskite solar cell comprising interface layer and manufacturing method therefor",
+  "app_no": "PCT/KR2023/011816",
+  "app_date": "2023.08.10",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2022,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Hole transport material including PTAA and PIF8, and optical device using same",
+  "app_no": "PCT/KR2022/014446",
+  "app_date": "2022.09.27",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2021,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Perovskite thin film having passivated crystalline grain boundary, method for preparing same, and electronic device comprising same",
+  "app_no": "PCT/KR2021/011034",
+  "app_date": "2021.08.19",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2024,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Large-area perovskite solar cell and manufacturing method therefor",
+  "app_no": "PCT/KR2024/003170",
+  "app_date": "2024.03.12",
+  "applicant": "Korea Research Institute of Chemical Technology"
+ },
+ {
+  "year": 2020,
+  "status": "출원",
+  "country": "PCT",
+  "title": "Method for mass-production of perovskite solar cell",
+  "app_no": "PCT/KR2020/012946",
+  "app_date": "2020.09.24",
+  "applicant": "Korea Research Institute of Chemical Technology"
  }
 ]

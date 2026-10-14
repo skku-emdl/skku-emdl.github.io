@@ -493,24 +493,31 @@ def build_patents():
             '<section class="section"><div class="wrap"><p class="lead">특허 목록을 정리하고 있습니다. 곧 업데이트됩니다.</p></div></section>'
         page('patents.html', 'Patents', 'PUBLICATIONS', body)
         return
-    years = sorted({str(x['year']) for x in pats}, reverse=True)
+    def entry(x):
+        t = e(x['title'])
+        t = f'<a href="{e(x["url"])}">{t}</a>' if x.get('url') else t
+        en = f'<p class="au">{e(x["title_en"])}</p>' if x.get('title_en') else ''
+        parts = []
+        if x.get('status') == '등록' and x.get('reg_no'):
+            parts.append(f'등록번호 {x["reg_no"]}')
+        parts.append(f'출원번호 {x["app_no"]}')
+        return (f'<li class="pub"><span class="n">{e(x.get("status", ""))}</span><div><p class="tt">{t}</p>'
+                f'{en}<p class="vn">{e(" · ".join(parts))}</p></div></li>')
+
+    kr = [x for x in pats if x.get('country', 'KR') == 'KR']
+    pct = sorted([x for x in pats if x.get('country') == 'PCT'], key=lambda x: x['app_date'], reverse=True)
     out = ''
-    for y in years:
-        items = ''
-        for x in [q for q in pats if str(q['year']) == y]:
-            t = e(x['title'])
-            t = f'<a href="{e(x["url"])}">{t}</a>' if x.get('url') else t
-            en = f'<p class="au">{e(x["title_en"])}</p>' if x.get('title_en') else ''
-            parts = []
-            if x.get('status') == '등록' and x.get('reg_no'):
-                parts.append(f'등록번호 {x["reg_no"]}')
-            parts.append(f'출원번호 {x["app_no"]}')
-            items += (f'<li class="pub"><span class="n">{e(x.get("status", ""))}</span><div><p class="tt">{t}</p>'
-                      f'{en}<p class="vn">{e(" · ".join(parts))}</p></div></li>')
-        out += f'<div class="year"><h2 id="p{y}">{y}</h2><ol>{items}</ol></div>'
-    reg = sum(1 for x in pats if x.get('status') == '등록')
-    lead = f'등록 {reg}건 · 출원 {len(pats) - reg}건'
-    body = page_head('Publications · Patents', 'Patents', lead) + f'<section class="section"><div class="wrap">{out}</div></section>'
+    for y in sorted({str(x['year']) for x in kr}, reverse=True):
+        out += f'<div class="year"><h2 id="p{y}">{y}</h2><ol>{"".join(entry(x) for x in kr if str(x["year"]) == y)}</ol></div>'
+    reg = sum(1 for x in kr if x.get('status') == '등록')
+    sections = f'<h2 class="sub-h" id="domestic">국내 특허 (Korea)</h2>{out}'
+    if pct:
+        pout = ''
+        for y in sorted({str(x['year']) for x in pct}, reverse=True):
+            pout += f'<div class="year"><h2>{y}</h2><ol>{"".join(entry(x) for x in pct if str(x["year"]) == y)}</ol></div>'
+        sections += f'<h2 class="sub-h" id="international">국제 특허 (PCT)</h2>{pout}'
+    lead = f'국내 등록 {reg}건 · 국내 출원 {len(kr) - reg}건 · PCT 국제출원 {len(pct)}건'
+    body = page_head('Publications · Patents', 'Patents', lead) + f'<section class="section"><div class="wrap">{sections}</div></section>'
     page('patents.html', 'Patents', 'PUBLICATIONS', body)
 
 
