@@ -153,7 +153,7 @@ def selected_slider():
 EXTRA_GRID = [
     (38, 'Energy & Environmental Science', 'assets/img/pubs/ees-2020-13-12.webp', '#1E5A46'),
     (36, 'Joule', 'assets/img/pubs/joule-2019.webp', '#C2410C'),
-    (33, 'Energy & Environmental Science', None, '#1E5A46'),
+    (33, 'Energy & Environmental Science', 'assets/img/pubs/ees-2019-12-07.webp', '#1E5A46'),
     (32, 'Energy & Environmental Science', None, '#1E5A46'),
     (26, 'Science', 'assets/img/pubs/science-2017-6345.webp', '#8C1D18'),
 ]
