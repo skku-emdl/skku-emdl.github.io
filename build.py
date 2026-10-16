@@ -266,7 +266,7 @@ def build_professor():
               ('2016', 'KRICT 창의상 (한국화학연구원)'), ('2015', '삼성휴먼테크 논문대상 (삼성전자)')]
     sel = [(66, 'Science'), (62, 'Nature Photonics'), (61, 'Joule'), (59, 'Nature Energy'), (50, 'Joule (Front Cover)'),
            (49, 'Nature Energy'), (44, 'Nature (Front Cover)'), (38, 'Energy & Environmental Science'),
-           (33, 'Energy & Environmental Science'), (26, 'Science'), (25, 'Science')]
+           (36, 'Joule'), (33, 'Energy & Environmental Science'), (32, 'Energy & Environmental Science'), (26, 'Science'), (25, 'Science')]
     li = lambda rows: ''.join(f'<li><span class="y">{y}</span><span>{e(t)}</span></li>' for y, t in rows)
     sel_li = ''.join(f'<li><span class="y">{PUB_BY_N[n]["year"]}</span><span><a href="{e(PUB_BY_N[n]["url"] or "publications.html")}" class="plain">{e(PUB_BY_N[n]["title"])}</a>. <b><i>{e(j)}</i></b></span></li>' for n, j in sel)
     body = page_head('About · Professor', 'Principal Investigator') + f'''
