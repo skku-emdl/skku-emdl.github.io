@@ -268,7 +268,7 @@ def build_professor():
            (49, 'Nature Energy'), (44, 'Nature (Front Cover)'), (38, 'Energy & Environmental Science'),
            (33, 'Energy & Environmental Science'), (26, 'Science'), (25, 'Science')]
     li = lambda rows: ''.join(f'<li><span class="y">{y}</span><span>{e(t)}</span></li>' for y, t in rows)
-    sel_li = ''.join(f'<li><span class="y">{PUB_BY_N[n]["year"]}</span><span><a href="{e(PUB_BY_N[n]["url"] or "publications.html")}" class="plain">{e(PUB_BY_N[n]["title"])}</a>. <i>{e(j)}</i></span></li>' for n, j in sel)
+    sel_li = ''.join(f'<li><span class="y">{PUB_BY_N[n]["year"]}</span><span><a href="{e(PUB_BY_N[n]["url"] or "publications.html")}" class="plain">{e(PUB_BY_N[n]["title"])}</a>. <b><i>{e(j)}</i></b></span></li>' for n, j in sel)
     body = page_head('About · Professor', 'Principal Investigator') + f'''
 <section class="section"><div class="wrap">
 <div class="prof">
