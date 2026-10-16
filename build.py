@@ -294,7 +294,7 @@ def build_professor():
 <div class="cv">
 <div class="wide"><h3>Professional Activities</h3>
 <p class="act-h">Journal Reviewer</p>
-<p class="act">{', '.join(f'<i>{e(j)}</i>' for j in REVIEWED)}</p>
+<p class="act">{', '.join(f'<i>{e(j)}</i>' for j in REVIEWED)}, and others</p>
 <p class="act-h">Advisory</p>
 <p class="act">젊은 과학자 자문위원 (2023)</p>
 </div>
