@@ -19,6 +19,7 @@ a{color:var(--accent)} a:hover{color:var(--accent-dark)}
 .section.soft + .section,.section.dark + .section{padding-top:var(--section)}
 .eyebrow{margin:0 0 16px;font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .h2{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(28px,3vw,40px);line-height:1.25}
+.h2.ko{font-family:var(--sans);font-weight:700;letter-spacing:-.02em}
 .h2-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:32px}
 .more{font-size:15px;font-weight:500;text-decoration:none}
 .mono{font-family:var(--mono)}
