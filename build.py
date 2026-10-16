@@ -247,7 +247,7 @@ def build_home():
 
 # ---------- professor ----------
 REVIEWED = ['Nature', 'Nature Energy', 'Nature Materials', 'Nature Nanotechnology', 'Nature Communications', 'Joule',
-            'Journal of the American Chemical Society', 'Advanced Materials', 'Advanced Energy Materials',
+            'Journal of the American Chemical Society', 'Energy & Environmental Science', 'Advanced Materials', 'Advanced Energy Materials',
             'Advanced Functional Materials', 'ACS Energy Letters', 'ACS Applied Materials & Interfaces', 'Small', 'The Innovation']
 
 
