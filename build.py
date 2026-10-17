@@ -151,7 +151,10 @@ def pub_card(n, jn, img, color, fit='cover', hidden=False):
 def selected_slider():
     cards = ''.join(pub_card(*s) for s in SELECTED)
     dup = ''.join(pub_card(*s, hidden=True) for s in SELECTED)
-    return f'<div class="marquee"><div class="track">{cards}{dup}</div></div>'
+    return ('<div class="slider">'
+            '<button type="button" class="sl-btn prev" aria-label="이전 논문">&#8249;</button>'
+            f'<div class="marquee"><div class="track">{cards}{dup}</div></div>'
+            '<button type="button" class="sl-btn next" aria-label="다음 논문">&#8250;</button></div>')
 
 
 # Publications 페이지 그리드에만 추가로 보이는 논문 (메인 슬라이드에는 미포함)
