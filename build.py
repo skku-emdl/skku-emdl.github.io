@@ -15,6 +15,12 @@ D = lambda n: json.loads((ROOT / 'data' / n).read_text(encoding='utf-8'))
 e = html.escape
 
 
+def V(path):
+    # cache-busting query from file content
+    import hashlib
+    return path + '?v=' + hashlib.md5((ROOT / path).read_bytes()).hexdigest()[:8]
+
+
 def rich(t):
     # escape, then turn **text** into <b>text</b>
     return re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', e(t))
@@ -59,7 +65,7 @@ def header(active):
 </header>'''
 
 
-FOOTER = '''<footer class="site-footer">
+FOOTER = f'''<footer class="site-footer">
 <div class="wrap top">
 <div class="addr"><b>Energy Material and Device Laboratory</b><br>성균관대학교 제2종합연구동 83240호 · 경기도 수원시 장안구 서부로 2066<br>Tel. 031-299-4180 · <a href="mailto:sss85@skku.edu">sss85@skku.edu</a></div>
 <div class="partners">
@@ -71,7 +77,7 @@ FOOTER = '''<footer class="site-footer">
 </div>
 <div class="wrap copy">© Energy Material and Device Laboratory, Sungkyunkwan University</div>
 </footer>
-<script src="assets/js/site.js"></script>'''
+<script src="{V('assets/js/site.js')}"></script>'''
 
 
 def page(fname, title, active, body, desc=None, head_extra=''):
@@ -90,7 +96,7 @@ def page(fname, title, active, body, desc=None, head_extra=''):
 <meta property="og:type" content="website">
 <link rel="icon" href="{FAVICON}">
 {FONTS}
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="{V('assets/css/site.css')}">
 {head_extra}
 </head>
 <body>
@@ -152,9 +158,9 @@ def selected_slider():
     cards = ''.join(pub_card(*s) for s in SELECTED)
     dup = ''.join(pub_card(*s, hidden=True) for s in SELECTED)
     return ('<div class="slider">'
-            '<button type="button" class="sl-btn prev" aria-label="이전 논문">&#8249;</button>'
+            '<button type="button" class="sl-btn prev" aria-label="이전 논문"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
             f'<div class="marquee"><div class="track">{cards}{dup}</div></div>'
-            '<button type="button" class="sl-btn next" aria-label="다음 논문">&#8250;</button></div>')
+            '<button type="button" class="sl-btn next" aria-label="다음 논문"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>')
 
 
 # Publications 페이지 그리드에만 추가로 보이는 논문 (메인 슬라이드에는 미포함)
@@ -245,7 +251,7 @@ def build_home():
 </section>'''
     page('index.html', None, '', body,
          desc='Energy Material and Device Laboratory (EMDL), SAINT & Department of Nano Engineering, Sungkyunkwan University. Functional oxide semiconductors and hybrid perovskites for next-generation energy devices.',
-         head_extra='<link rel="stylesheet" href="assets/css/hero.css">')
+         head_extra=f'<link rel="stylesheet" href="{V("assets/css/hero.css")}">')
 
 
 # ---------- professor ----------
