@@ -397,7 +397,7 @@ def build_research():
 <ul class="chips"><li>Li-ion Batteries</li><li>Aqueous Zinc Batteries</li><li>Conductive Carbon Black from Waste Tires</li><li>Solar Cell–Battery Hybrids</li></ul>
 <figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 및 고성능 전도성 카본블랙 개발" loading="lazy"></figure>
 </div>'''
-    body = page_head('Research', 'Research', '기능성 산화물 소재와 유무기 하이브리드 소재의 합성 원리를 규명하고, 이를 태양전지, 발광다이오드, 수소 생산, 이차전지와 하이브리드 에너지 시스템으로 확장합니다.') + \
+    body = page_head('Research', 'Research', '기능성 산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 이차전지와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
         f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>'
     page('research.html', 'Research', 'RESEARCH', body)
 
