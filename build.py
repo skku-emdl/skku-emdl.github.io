@@ -187,7 +187,7 @@ RESEARCH = [
     ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/topic-2.webp',
      '고효율 페로브스카이트 태양전지와 페로브스카이트/페로브스카이트 탠덤 태양전지, LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
     ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/topic-3.webp',
-     '리튬이온전지와 안전한 아연 수계 이차전지, 폐타이어 재활용 카본블랙 도전재 등 지속가능한 배터리 소재와 태양전지–에너지 저장 하이브리드 시스템을 연구합니다.'),
+     '리튬이온전지와 안전한 아연 수계 배터리, 폐타이어 재활용 카본블랙 도전재 등 지속가능한 배터리 소재와 태양전지–배터리 하이브리드 시스템을 연구합니다.'),
 ]
 
 
@@ -205,7 +205,7 @@ def build_home():
 <p class="eyebrow">Sungkyunkwan University · SAINT · Dept. of Nano Engineering</p>
 <h1><span>Energy Material</span><span>and Device Laboratory</span></h1>
 <p class="en">Functional oxide semiconductors and hybrid perovskites for next-generation energy devices</p>
-<p class="ko">산화물 반도체와 유무기 하이브리드 페로브스카이트 소재를 기반으로, 고효율 태양전지부터 발광소자, 이차전지, 대면적 모듈까지 차세대 에너지 소자를 연구합니다.</p>
+<p class="ko">산화물 반도체와 유무기 하이브리드 페로브스카이트 소재를 기반으로, 고효율 태양전지부터 발광소자, 배터리, 대면적 모듈까지 차세대 에너지 소자를 연구합니다.</p>
 <p class="aff">성균관대학교 나노공학과 · 성균나노과학기술원(SAINT)</p>
 </div>
 {HERO_FIG}
@@ -384,20 +384,20 @@ def build_research():
 <div class="rblock" id="applications">
 <p class="eyebrow">02</p>
 <h2>Perovskite Optoelectronics: Large-Area &amp; Flexible</h2>
-<p class="lead">산화물 전자수송층을 기반으로 고효율 페로브스카이트 태양전지, 페로브스카이트/페로브스카이트 탠덤 태양전지, LED를 만들고, 이를 최대 900 cm² 대면적 플렉서블 모듈과 태양전지–LED 양방향 융합 소자로 확장합니다. 태양전지–에너지 저장장치 하이브리드 시스템도 함께 연구합니다.</p>
+<p class="lead">산화물 전자수송층을 기반으로 고효율 페로브스카이트 태양전지, 페로브스카이트/페로브스카이트 탠덤 태양전지, LED를 만들고, 이를 최대 900 cm² 대면적 플렉서블 모듈과 태양전지–LED 양방향 융합 소자로 확장합니다. 태양전지–배터리 하이브리드 시스템도 함께 연구합니다.</p>
 <ul class="chips"><li>Perovskite Solar Cells</li><li>All-Perovskite Tandem Solar Cells</li><li>Flexible Perovskite Solar Cells</li><li>Large-Area (Flexible) Solar Modules</li><li>Perovskite LEDs</li><li>Solar Cell–LED</li><li>Solar Cell–Battery</li><li>Solar Cell–Supercapacitor</li><li>Solar Cell–Water Splitting</li></ul>
-<figure><img src="assets/img/research/applications-oxide.webp" alt="산화물 반도체 소재 응용: 태양전지, LED, 태양-연료, 에너지 저장" loading="lazy"></figure>
+<figure><img src="assets/img/research/applications-oxide.webp" alt="산화물 반도체 소재 응용: 태양전지, LED, 태양-연료, 배터리" loading="lazy"></figure>
 <figure><img src="assets/img/research/large-area-modules.webp" alt="단위소자에서 대면적 모듈까지: 30x30 유연 모듈" loading="lazy"></figure>
-<figure><img src="assets/img/research/hybrid-system.webp" alt="태양전지-에너지 저장장치 및 태양전지-LED 일체형 하이브리드 소자" loading="lazy"></figure>
+<figure><img src="assets/img/research/hybrid-system.webp" alt="태양전지-배터리 및 태양전지-LED 일체형 하이브리드 소자" loading="lazy"></figure>
 </div>
 <div class="rblock" id="waste">
 <p class="eyebrow">03</p>
 <h2>Sustainable Battery Materials</h2>
-<p class="lead">리튬이온전지와 물 기반 전해질을 쓰는 안전한 아연 수계 이차전지, 그리고 폐타이어를 재활용한 고성능 전도성 카본블랙 도전재 등 지속가능한 배터리 소재를 연구합니다.</p>
+<p class="lead">리튬이온전지와 물 기반 전해질을 쓰는 안전한 아연 수계 배터리, 그리고 폐타이어를 재활용한 고성능 전도성 카본블랙 도전재 등 지속가능한 배터리 소재를 연구합니다.</p>
 <ul class="chips"><li>Li-ion Batteries</li><li>Aqueous Zinc Batteries</li><li>Conductive Carbon Black from Waste Tires</li><li>Solar Cell–Battery Hybrids</li></ul>
 <figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 및 고성능 전도성 카본블랙 개발" loading="lazy"></figure>
 </div>'''
-    body = page_head('Research', 'Research', '기능성 산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 이차전지와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
+    body = page_head('Research', 'Research', '기능성 산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 배터리와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
         f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>'
     page('research.html', 'Research', 'RESEARCH', body)
 
