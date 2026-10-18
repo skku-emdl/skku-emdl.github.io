@@ -368,7 +368,7 @@ def build_alumni():
 
 
 # ---------- research ----------
-OVERVIEW = ('<figure class="overview"><div class="ov-wrap"><img src="assets/img/research/overview-flow.webp" alt="연구 흐름: 산화물·페로브스카이트 소재, 태양전지, 대면적 플렉서블 모듈, 에너지 저장, 발광 소자"><span class="ov-l l" style="left:3%;top:90%"><i>1</i><em>산화물 · 페로브스카이트 소재</em></span><span class="ov-l c" style="left:30%;top:61%"><i>2</i><em>태양전지 · 탠덤</em></span><span class="ov-l c" style="left:53.5%;top:60.5%"><i>3</i><em>대면적 플렉서블 모듈</em></span><span class="ov-l c" style="left:68.6%;top:67.5%"><i>4</i><em>에너지 저장</em></span><span class="ov-l c" style="left:84%;top:90%"><i>5</i><em>발광 (LED)</em></span></div><ol class="ov-key"><li>산화물 · 페로브스카이트 소재</li><li>태양전지 · 탠덤</li><li>대면적 플렉서블 모듈</li><li>에너지 저장</li><li>발광 (LED)</li></ol></figure>')
+OVERVIEW = ('<figure class="overview"><div class="ov-wrap"><img src="assets/img/research/overview-flow.webp" alt="연구 흐름: 산화물·페로브스카이트 소재, 태양전지, 대면적 플렉서블 모듈, 에너지 저장(배터리), 발광 소자"><span class="ov-l l" style="left:3%;top:90%"><i>1</i><em>산화물 · 페로브스카이트 소재</em></span><span class="ov-l c" style="left:30%;top:61%"><i>2</i><em>태양전지 · 탠덤</em></span><span class="ov-l c" style="left:53.5%;top:60.5%"><i>3</i><em>대면적 플렉서블 모듈</em></span><span class="ov-l c" style="left:68.6%;top:67.5%"><i>4</i><em>에너지 저장 (배터리)</em></span><span class="ov-l c" style="left:84%;top:90%"><i>5</i><em>발광 (LED)</em></span></div><ol class="ov-key"><li>산화물 · 페로브스카이트 소재</li><li>태양전지 · 탠덤</li><li>대면적 플렉서블 모듈</li><li>에너지 저장</li><li>발광 (LED)</li></ol></figure>')
 
 
 def build_research():
