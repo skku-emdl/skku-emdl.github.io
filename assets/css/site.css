@@ -273,3 +273,9 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 .cv .wide{grid-column:1/-1}
 .cv .act-h{margin:14px 0 4px;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--accent)}
 .cv .act{margin:0;font-size:15px;line-height:1.75;color:var(--ink-2)}
+
+/* research overview */
+.overview{margin:0 0 56px}
+.overview img{width:100%;border:1px solid var(--line)}
+.overview figcaption{margin-top:12px;font-size:14px;color:var(--muted);text-align:center}
+@media (max-width:560px){

@@ -368,6 +368,9 @@ def build_alumni():
 
 
 # ---------- research ----------
+OVERVIEW = ('<figure class="overview"><img src="assets/img/research/overview-flow.webp" alt="연구 흐름: 산화물·페로브스카이트 소재, 태양전지, 대면적 플렉서블 모듈, 에너지 저장, 발광 소자"><figcaption>소재 → 태양전지 → 대면적 플렉서블 모듈 → 에너지 저장 → 발광</figcaption></figure>')
+
+
 def build_research():
     blocks = f'''
 <div class="rblock" id="synthesis">
@@ -395,7 +398,7 @@ def build_research():
 <figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 및 고성능 전도성 카본블랙 개발" loading="lazy"></figure>
 </div>'''
     body = page_head('Research', 'Research', '기능성 산화물 소재와 유무기 하이브리드 소재의 합성 원리를 규명하고, 이를 태양전지, 발광다이오드, 수소 생산, 이차전지와 하이브리드 에너지 시스템으로 확장합니다.') + \
-        f'<section class="section"><div class="wrap">{blocks}</div></section>'
+        f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>'
     page('research.html', 'Research', 'RESEARCH', body)
 
 
