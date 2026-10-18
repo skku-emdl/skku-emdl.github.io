@@ -368,7 +368,7 @@ def build_alumni():
 
 
 # ---------- research ----------
-OVERVIEW = ('<figure class="overview"><img src="assets/img/research/overview-flow.webp" alt="연구 흐름: 산화물·페로브스카이트 소재, 태양전지, 대면적 플렉서블 모듈, 에너지 저장, 발광 소자"><figcaption>소재 → 태양전지 → 대면적 플렉서블 모듈 → 에너지 저장 → 발광</figcaption></figure>')
+OVERVIEW = ('<figure class="overview"><div class="ov-wrap"><img src="assets/img/research/overview-flow.webp" alt="연구 흐름: 산화물·페로브스카이트 소재, 태양전지, 대면적 플렉서블 모듈, 에너지 저장, 발광 소자"><span class="ov-l l" style="left:3%;top:90%">산화물 · 페로브스카이트 소재</span><span class="ov-l c" style="left:30%;top:61%">태양전지 · 탠덤</span><span class="ov-l c" style="left:57%;top:66%">대면적 플렉서블 모듈</span><span class="ov-l c" style="left:69.5%;top:59%">에너지 저장</span><span class="ov-l c" style="left:84%;top:90%">발광 (LED)</span></div><figcaption>소재 → 태양전지 → 대면적 플렉서블 모듈 → 에너지 저장 → 발광</figcaption></figure>')
 
 
 def build_research():

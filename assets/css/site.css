@@ -277,5 +277,10 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 /* research overview */
 .overview{margin:0 0 56px}
 .overview img{width:100%;border:1px solid var(--line)}
-.overview figcaption{margin-top:12px;font-size:14px;color:var(--muted);text-align:center}
+.overview figcaption{display:none;margin-top:12px;font-size:14px;color:var(--muted);text-align:center}
+.ov-wrap{position:relative}
+.ov-l{position:absolute;transform:translate(-50%,0);white-space:nowrap;padding:5px 12px;font-size:clamp(12px,1.15vw,16px);font-weight:500;color:#fff;
+ background:rgba(10,16,34,.62);border:1px solid rgba(255,255,255,.22);border-radius:999px;backdrop-filter:blur(3px);letter-spacing:-.01em}
+.ov-l.l{transform:none}
+@media (max-width:700px){.ov-l{display:none}.overview figcaption{display:block}}
 @media (max-width:560px){
