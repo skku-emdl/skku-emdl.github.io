@@ -187,7 +187,7 @@ RESEARCH = [
     ('applications', '02', 'Perovskite Optoelectronics: Large-Area & Flexible', 'assets/img/research/topic-2.webp',
      '고효율 페로브스카이트 태양전지와 페로브스카이트/페로브스카이트 탠덤 태양전지, LED, 최대 900 cm² 대면적 플렉서블 모듈, 태양전지–LED 양방향 융합 소자를 개발합니다.'),
     ('waste', '03', 'Sustainable Battery Materials', 'assets/img/research/topic-3.webp',
-     '리튬이온전지와 안전한 아연 수계 배터리, 폐타이어 재활용 카본블랙 도전재 등 지속가능한 배터리 소재와 태양전지–배터리 하이브리드 시스템을 연구합니다.'),
+     '리튬이온전지와 안전한 차세대 아연 수계 배터리, 폐타이어 재활용 카본블랙 도전재 등 지속가능한 배터리 소재와 태양전지–배터리 하이브리드 시스템을 연구합니다.'),
 ]
 
 
@@ -393,7 +393,7 @@ def build_research():
 <div class="rblock" id="waste">
 <p class="eyebrow">03</p>
 <h2>Sustainable Battery Materials</h2>
-<p class="lead">리튬이온전지와 물 기반 전해질을 쓰는 안전한 아연 수계 배터리, 그리고 폐타이어를 재활용한 고성능 전도성 카본블랙 도전재 등 지속가능한 배터리 소재를 연구합니다.</p>
+<p class="lead">리튬이온전지와 물 기반 전해질을 쓰는 안전한 차세대 아연 수계 배터리, 그리고 폐타이어를 재활용한 고성능 전도성 카본블랙 도전재 등 지속가능한 배터리 소재를 연구합니다.</p>
 <ul class="chips"><li>Li-ion Batteries</li><li>Aqueous Zinc Batteries</li><li>Conductive Carbon Black from Waste Tires</li><li>Solar Cell–Battery Hybrids</li></ul>
 <figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 및 고성능 전도성 카본블랙 개발" loading="lazy"></figure>
 </div>'''
