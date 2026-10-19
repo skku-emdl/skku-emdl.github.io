@@ -395,7 +395,7 @@ def build_research():
 <h2>Sustainable Battery Materials</h2>
 <p class="lead">리튬이온전지와 물 기반 전해질을 쓰는 안전한 차세대 아연 수계 배터리, 그리고 폐타이어를 재활용한 고성능 전도성 카본블랙 도전재 등 지속가능한 배터리 소재를 연구합니다.</p>
 <ul class="chips"><li>Li-ion Batteries</li><li>Aqueous Zinc Batteries</li><li>Conductive Carbon Black from Waste Tires</li><li>Solar Cell–Battery Hybrids</li></ul>
-<figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 기반 도전재와 배터리 소재 연구: 리튬이온, 차세대 아연 수계 배터리, 집전체 계면, 태양전지–배터리 일체형 소자" loading="lazy"></figure>
+<figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 기반 도전재와 배터리 소재 연구: 리튬이온, 차세대 아연 수계 배터리, 집전체 계면, 태양전지–배터리 연계 시스템" loading="lazy"></figure>
 </div>'''
     body = page_head('Research', 'Research', '산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 배터리와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
         f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>'
