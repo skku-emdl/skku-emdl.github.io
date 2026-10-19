@@ -378,7 +378,7 @@ def build_research():
 <h2>Oxide &amp; Hybrid Semiconductor Materials</h2>
 <p class="lead">새로운 산화물 반도체와 유무기 하이브리드 페로브스카이트 반도체 소재를 탐색하고 합성합니다. 저온·고속 합성 공정과 대면적 공정을 개발하고, 합성 원리와 소재 간 계면을 규명해 고성능 에너지 소자의 기반을 만듭니다.</p>
 <ul class="chips"><li>Oxide Nanoparticles</li><li>Oxide Thin Films</li><li>Hybrid Perovskite Materials</li><li>Solution &amp; Vacuum Processes</li><li>Interface Engineering</li></ul>
-<figure><img src="assets/img/research/oxide-nanomaterials.webp" alt="산화물 나노소재 연구 개요: 소재, 공정, 소자" loading="lazy"></figure>
+<figure><img src="assets/img/research/oxide-nanomaterials.webp" alt="산화물 반도체 연구 개요: 소재·공정·소자와 소재 설계 요소(형상, 도핑, 결함, 결정화, 조성, AI 기반 최적화)" loading="lazy"></figure>
 <figure><img src="assets/img/research/oxide-synthesis.webp" alt="주석 기반 산화물 반도체 합성 및 메커니즘 규명" loading="lazy"></figure>
 </div>
 <div class="rblock" id="applications">
