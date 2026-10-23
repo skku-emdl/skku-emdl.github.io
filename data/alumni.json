@@ -1,74 +1,62 @@
 [
  {
+  "ko": "염은주",
+  "course": "",
+  "note": "GS건설"
+ },
+ {
+  "ko": "김종선",
+  "course": "",
+  "note": "현대에너지솔루션"
+ },
+ {
   "ko": "서갑경",
-  "en": "Gabkyung Seo",
   "course": "Ph.D.",
   "note": ""
  },
  {
-  "ko": "이다슬",
-  "en": "Daseul Lee",
-  "course": "Research Professor",
-  "note": "경상대학교"
- },
- {
   "ko": "강규민",
-  "en": "Kyumin Kang",
   "course": "M.S.",
   "note": "전문연구요원"
  },
  {
   "ko": "박태호",
-  "en": "Taeho Park",
   "course": "M.S.",
   "note": ""
  },
  {
   "ko": "김보경",
-  "en": "Bokyung Kim",
   "course": "M.S.",
   "note": "원익머트리얼즈"
  },
  {
   "ko": "이병철",
-  "en": "Byungchul Lee",
   "course": "M.S.",
   "note": "디아이티"
  },
  {
+  "ko": "이다슬",
+  "course": "Research Professor",
+  "note": "경상대학교"
+ },
+ {
   "ko": "장은영",
-  "en": "Eunyeong Jang",
   "course": "",
   "note": "SK하이닉스"
  },
  {
   "ko": "오수민",
-  "en": "Sumin Oh",
   "course": "",
   "note": "SK하이닉스"
  },
  {
   "ko": "정종진",
-  "en": "Jongjin Jung",
   "course": "M.S.",
   "note": ""
  },
  {
   "ko": "이진호",
-  "en": "Jinho Lee",
   "course": "M.S.",
   "note": "이화다이아몬드"
- },
- {
-  "ko": "김종선",
-  "en": "",
-  "course": "",
-  "note": "현대에너지솔루션"
- },
- {
-  "ko": "염은주",
-  "en": "",
-  "course": "",
-  "note": "GS건설"
  }
 ]
