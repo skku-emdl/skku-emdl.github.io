@@ -34,7 +34,7 @@ FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox
            "text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E")
 
 MENU = [
-    ('ABOUT', 'professor.html', [('Professor', 'professor.html'), ('Members', 'members.html')]),  # Alumni hidden for now: re-add ('Alumni', 'alumni.html') and SHOW_ALUMNI
+    ('ABOUT', 'professor.html', [('Professor', 'professor.html'), ('Members', 'members.html'), ('Alumni', 'alumni.html')]),
     ('RESEARCH', 'research.html', [('Oxide & Hybrid Semiconductor Materials', 'research.html#synthesis'), ('Perovskite Optoelectronics', 'research.html#applications'),
                                    ('Sustainable Battery Materials', 'research.html#waste'), ('Facilities', 'facilities.html')]),
     ('PUBLICATIONS', 'publications.html', [('Selected Papers', 'publications.html#selected'), ('All Papers', 'publications.html#all'), ('Patents', 'patents.html')]),
@@ -354,7 +354,7 @@ def alum(p):
     return f'<article class="alum"><h3>{e(p["ko"])}{en}</h3>{note}{mail}</article>'
 
 
-SHOW_ALUMNI = False
+SHOW_ALUMNI = True
 
 
 def build_alumni():
