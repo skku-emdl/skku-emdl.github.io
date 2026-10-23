@@ -315,7 +315,7 @@ def build_professor():
 def person(p, alumni=False, show_course=True):
     ph = (f'<img src="{p["photo"]}" alt="{e(p["ko"])}" loading="lazy">' if p.get('photo')
           else f'<span class="ini" aria-hidden="true">{e(p["ko"][0])}</span>')
-    en = f'<small>{e(p["en"])}</small>' if p.get('en') else ''
+    en = ''  # English names hidden on alumni page
     course = f'<p class="course">{e(p["course"])}</p>' if p.get('course') and show_course else ''
     extra = ''
     if alumni:
@@ -347,7 +347,7 @@ def build_members():
 
 
 def alum(p):
-    en = f'<small>{e(p["en"])}</small>' if p.get('en') else ''
+    en = ''  # English names hidden on alumni page
     course = f'<span class="course">{e(p.get("course", ""))}</span>'
     note = f'<span class="note">{e(p["note"])}</span>' if p.get('note') else ''
     mail = f'<a class="mail" href="mailto:{e(p["email"])}">{e(p["email"])}</a>' if p.get('email') else ''
