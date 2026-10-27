@@ -1,6 +1,12 @@
 [
  {
   "year": "2026",
+  "title": "Lab Dinner",
+  "date": "2026.10.27",
+  "img": "assets/img/gallery/g15.webp"
+ },
+ {
+  "year": "2026",
   "title": "Teacher's Day",
   "date": "2026.05.15",
   "img": "assets/img/gallery/g00.webp"
