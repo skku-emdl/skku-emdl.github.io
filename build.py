@@ -449,7 +449,9 @@ def build_publications():
                 if len(li) > 3:
                     press += (f'<details class="press-box"><summary>언론 보도 {len(li) - 3}건 더보기</summary><ul class="press">'
                               + ''.join(li[3:]) + '</ul></details>')
-            items += (f'<li class="pub"><span class="n">{p["n"]}</span><div><p class="tt">{t}</p>'
+            _hi = ' top' if re.search(r'\(IF (\d+(?:\.\d+)?)\)', p['venue']) and float(re.search(r'\(IF (\d+(?:\.\d+)?)\)', p['venue']).group(1)) >= 20 else ''
+            _jn = re.split(r'\s*\(IF|\s+\d', p['venue'])[0]
+            items += (f'<li class="pub{_hi}"><span class="n">{p["n"]}</span><div><p class="jtop">{e(_jn)}</p><p class="tt">{t}</p>'
                       f'<p class="au">{bold_pi(p["authors"])}</p><p class="vn">{venue_html(p["venue"])}{tag}</p>{press}</div></li>')
         out += f'<div class="year"><h2 id="y{y}">{y}</h2><ol>{items}</ol></div>'
     body = page_head('Publications', 'Publications', '* Corresponding author') + f'''
