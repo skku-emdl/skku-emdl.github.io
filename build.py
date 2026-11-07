@@ -420,6 +420,18 @@ def build_facilities():
 
 
 # ---------- publications ----------
+def venue_html(v):
+    m = re.match(r'^(.*?)\s*\(IF ([\d.]+)\)\s*(.*)$', v)
+    if m:
+        j, f, rest = m.groups()
+    else:
+        m = re.match(r'^(.*?[A-Za-z&)])\s+(\d.*)$', v)
+        j, f, rest = (m.group(1), None, m.group(2)) if m else (v, None, '')
+    hi = ' hi' if f and float(f) >= 20 else ''
+    badge = f'<span class="if{hi}">IF {e(f)}</span>' if f else ''
+    return f'<b class="jn">{e(j)}</b>{badge}<span class="rest">{e(rest)}</span>'
+
+
 def build_publications():
     years = sorted({p['year'] for p in PUBS}, reverse=True)
     chips = ''.join(f'<a href="#y{y}">{y}</a>' for y in years)
@@ -438,7 +450,7 @@ def build_publications():
                     press += (f'<details class="press-box"><summary>언론 보도 {len(li) - 3}건 더보기</summary><ul class="press">'
                               + ''.join(li[3:]) + '</ul></details>')
             items += (f'<li class="pub"><span class="n">{p["n"]}</span><div><p class="tt">{t}</p>'
-                      f'<p class="au">{bold_pi(p["authors"])}</p><p class="vn">{e(p["venue"])}{tag}</p>{press}</div></li>')
+                      f'<p class="au">{bold_pi(p["authors"])}</p><p class="vn">{venue_html(p["venue"])}{tag}</p>{press}</div></li>')
         out += f'<div class="year"><h2 id="y{y}">{y}</h2><ol>{items}</ol></div>'
     body = page_head('Publications', 'Publications', '* Corresponding author') + f'''
 <section class="section" id="selected"><div class="wrap">

@@ -178,7 +178,11 @@ a.nitem:hover span:last-child{text-decoration:underline}
 .pub .tt a:hover{color:var(--accent);text-decoration:underline}
 .pub .au{margin:6px 0 0;font-size:14px;color:var(--ink-2)}
 .pub .au b{color:var(--ink)}
-.pub .vn{margin:4px 0 0;font-size:14px;font-style:italic;color:var(--accent-dark)}
+.pub .vn{margin:6px 0 0;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px}
+.pub .vn .jn{font-family:var(--serif);font-style:italic;font-weight:700;font-size:16px;color:var(--accent-dark)}
+.pub .vn .if{font-family:var(--mono);font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);background:#fff;line-height:1.4}
+.pub .vn .if.hi{background:var(--accent);color:#fff}
+.pub .vn .rest{font-size:13.5px}
 .pub .tag{display:inline-block;margin-left:8px;padding:0 6px;font-family:var(--mono);font-style:normal;font-size:11px;border:1px solid var(--accent);color:var(--accent);vertical-align:2px}
 .pub .press{margin:8px 0 0;padding:0;list-style:none;font-size:13.5px;display:flex;flex-direction:column;gap:2px}
 @media (max-width:720px){.year{grid-template-columns:1fr;gap:8px}}
@@ -292,4 +296,3 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
  .ov-key li{display:flex;align-items:center;gap:8px;counter-increment:k}
  .ov-key li::before{content:counter(k);flex:none;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
 }
-@media (max-width:560px){
