@@ -479,7 +479,7 @@ def build_news():
         ph = (f'<img src="{n["img"]}" alt="" loading="lazy">' if n.get('img')
               else f'<span class="ph-label">{e(n.get("label", "News"))}</span>')
         cards += (f'<article class="news-card"><div class="ph">{ph}</div><div>'
-                  f'<span class="mono muted" style="font-size:14px">{e(n["date"])}</span><h3>{title}</h3><p>{e(n["desc"])}</p>{press}</div></article>')
+                  f'<span class="mono muted" style="font-size:14px">{e(n["date"])}</span><h2>{title}</h2><p>{e(n["desc"])}</p>{press}</div></article>')
     body = page_head('Community · News', 'News') + f'<section class="section"><div class="wrap">{cards}</div></section>'
     page('news.html', 'News', 'COMMUNITY', body)
 

@@ -10,8 +10,8 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111418'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='16' font-weight='700' fill='%23fff' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&amp;family=Noto+Sans+KR:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=f423dc40">
-<link rel="stylesheet" href="assets/css/hero.css?v=5b942268">
+<link rel="stylesheet" href="assets/css/site.css?v=973836f2">
+<link rel="stylesheet" href="assets/css/hero.css?v=0b2c1a33">
 </head>
 <body>
 <header class="site-header">
@@ -41,8 +41,8 @@
 <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/video/emdl-intro-poster.jpg" aria-label="산화물·페로브스카이트 반도체 소재에서 태양전지, 대면적 플렉서블 모듈, 배터리 저장, LED 발광으로 이어지는 연구 소개 영상">
 <source src="assets/video/emdl-intro.mp4?v=2" type="video/mp4">
 </video>
-<button type="button" class="play-sound" id="heroPlay" hidden><span aria-hidden="true">▶</span> 소리 켜고 보기</button>
-<button type="button" class="sound" id="heroSound" aria-pressed="false">🔇 소리 켜기</button>
+<button type="button" class="play-sound" id="heroPlay" hidden><svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg> 소리 켜고 보기</button>
+<button type="button" class="sound" id="heroSound" aria-pressed="false"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2 6h2.5L8 3v10L4.5 10H2z" fill="currentColor"/><path d="M11 6l4 4M15 6l-4 4" stroke-linecap="round"/></svg> 소리 켜기</button>
 </div>
 <figcaption>소재에서 소자, 대면적 모듈, 배터리와 발광까지</figcaption>
 </figure>
@@ -51,7 +51,7 @@
   var v=document.getElementById('heroVideo'),b=document.getElementById('heroSound'),big=document.getElementById('heroPlay');if(!v||!b)return;
   var KEY='emdl-hero-sound',pref=null;
   try{pref=localStorage.getItem(KEY);}catch(e){}
-  function ui(){if(big&&!v.muted)big.hidden=true;b.textContent=v.muted?'🔇 소리 켜기':'🔊 소리 끄기';b.setAttribute('aria-pressed',v.muted?'false':'true');}
+  function ui(){if(big&&!v.muted)big.hidden=true;b.innerHTML=v.muted?'<svg aria-hidden="true" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2 6h2.5L8 3v10L4.5 10H2z" fill="currentColor"/><path d="M11 6l4 4M15 6l-4 4" stroke-linecap="round"/></svg> 소리 켜기':'<svg aria-hidden="true" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2 6h2.5L8 3v10L4.5 10H2z" fill="currentColor"/><path d="M10.5 5.5a3.5 3.5 0 0 1 0 5M12.5 3.5a6.3 6.3 0 0 1 0 9" stroke-linecap="round"/></svg> 소리 끄기';b.setAttribute('aria-pressed',v.muted?'false':'true');}
   function save(x){try{localStorage.setItem(KEY,x);}catch(e){}}
   function arm(){
     var ev=['pointerup','keydown','touchend'];
@@ -60,7 +60,9 @@
       v.muted=false;v.currentTime=0;last=0;v.play();ui();}
     ev.forEach(function(n){document.addEventListener(n,go,true);});
   }
-  if(pref!=='off'){
+  var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(still){v.removeAttribute('autoplay');v.pause();v.muted=true;if(big)big.hidden=false;}
+  else if(pref!=='off'){
     v.pause();v.currentTime=0;last=0;v.muted=false;
     var p=v.play();
     if(p&&p.catch)p.catch(function(){v.muted=true;v.play();if(big)big.hidden=false;ui();arm();});
