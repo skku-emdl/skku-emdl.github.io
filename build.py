@@ -420,16 +420,33 @@ def build_facilities():
 
 
 # ---------- publications ----------
-def venue_html(v):
+JCR = {k: v for k, v in json.load(open('data/jcr.json', encoding='utf-8')).items() if not k.startswith('_')}
+
+
+def venue_parts(v):
     m = re.match(r'^(.*?)\s*\(IF ([\d.]+)\)\s*(.*)$', v)
     if m:
         j, f, rest = m.groups()
     else:
         m = re.match(r'^(.*?[A-Za-z&)])\s+(\d.*)$', v)
         j, f, rest = (m.group(1), None, m.group(2)) if m else (v, None, '')
+    return j.strip(), f, rest.strip(' ,')
+
+
+def venue_html(v):
+    j, f, rest = venue_parts(v)
     hi = ' hi' if f and float(f) >= 20 else ''
     badge = f'<span class="if{hi}">IF {e(f)}</span>' if f else ''
     return f'<b class="jn">{e(j)}</b>{badge}<span class="rest">{e(rest)}</span>'
+
+
+def metrics_html(v):
+    j, f, _ = venue_parts(v)
+    if not f or j.lower() not in JCR:
+        return ''
+    imp, top = JCR[j.lower()]
+    return (f'<p class="mx"><span class="mx-if">IF <b>{imp:.1f}</b></span>'
+            f'<span class="mx-top">JCR 상위 <b>{top:.1f}%</b></span></p>')
 
 
 def build_publications():
@@ -449,10 +466,12 @@ def build_publications():
                 if len(li) > 3:
                     press += (f'<details class="press-box"><summary>언론 보도 {len(li) - 3}건 더보기</summary><ul class="press">'
                               + ''.join(li[3:]) + '</ul></details>')
-            items += (f'<li class="pub"><span class="n">{p["n"]}</span><div><p class="tt">{t}</p>'
-                      f'<p class="au">{bold_pi(p["authors"])}</p><p class="vn">{venue_html(p["venue"])}{tag}</p>{press}</div></li>')
+            j, _, rest = venue_parts(p['venue'])
+            items += (f'<li class="pub"><span class="n">{p["n"]:03d}</span><div>'
+                      f'<p class="vn"><b class="jn">{e(j)}</b><span class="rest">{e(rest)}</span>{tag}</p>'
+                      f'<p class="tt">{t}</p><p class="au">{bold_pi(p["authors"])}</p>{metrics_html(p["venue"])}{press}</div></li>')
         out += f'<div class="year"><h2 id="y{y}">{y}</h2><ol>{items}</ol></div>'
-    body = page_head('Publications', 'Publications', '* Corresponding author') + f'''
+    body = page_head('Publications', 'Publications', '* Corresponding author. IF와 JCR 상위 %는 2025년 JCR 기준입니다.') + f'''
 <section class="section" id="selected"><div class="wrap">
 <div class="h2-row"><h2 class="h2">Selected Papers</h2></div>
 {selected_grid()}
