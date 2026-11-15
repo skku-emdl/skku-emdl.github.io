@@ -358,3 +358,4 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
  .rcard:hover .rc-en{color:var(--accent)}
  .rcard:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 }
+.rblock .lead{line-height:1.8}
