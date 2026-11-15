@@ -393,9 +393,21 @@ f.querySelectorAll('.rf-l').forEach(function(l){function on(){c.innerHTML='<b>'+
 function off(){c.textContent=d;c.classList.remove('on')}l.addEventListener('mouseenter',on);l.addEventListener('focus',on);l.addEventListener('mouseleave',off);l.addEventListener('blur',off);});});</script>'''
 
 
+RT_JS = '''<script>(function(){var w=document.querySelector('.rtabs-wrap');if(!w)return;var t=[].slice.call(w.querySelectorAll('.rtab')),b=[].slice.call(w.querySelectorAll('.rblock'));
+function show(id,push){if(!b.some(function(x){return x.id===id}))id=b[0].id;b.forEach(function(x){x.classList.toggle('on',x.id===id)});
+t.forEach(function(x){var on=x.dataset.id===id;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});if(push)history.replaceState(null,'','#'+id);}
+w.classList.add('js');t.forEach(function(x){x.addEventListener('click',function(){show(x.dataset.id,true)})});
+show(location.hash.slice(1));window.addEventListener('hashchange',function(){show(location.hash.slice(1));var y=w.getBoundingClientRect().top+scrollY-90;scrollTo(0,y)});})();</script>'''
+
+
 def build_research():
     blocks = ''
-    for i, r in enumerate(D('research.json'), 1):
+    RS = D('research.json')
+    tabs = '<div class="rtabs" role="tablist" aria-label="연구 분야">' + ''.join(
+        f'<button type="button" role="tab" class="rtab" data-id="{r["id"]}" aria-controls="{r["id"]}"><span class="rt-n">{i:02d}</span>'
+        f'<span class="rt-en">{RESEARCH_LEGACY[r["id"] + "_h2"]}</span><span class="rt-ko">{e(r["ko"])}</span></button>'
+        for i, r in enumerate(RS, 1)) + '</div>'
+    for i, r in enumerate(RS, 1):
         L = RESEARCH_LEGACY
         steps = r.get('steps') or [(t, d) for t, d, *_ in r['labels']]
         st = ('<ol class="rsteps">' + ''.join(f'<li><b>{e(t)}</b><p>{e(d)}</p></li>' for t, d in steps) + '</ol>') if steps else ''
@@ -403,7 +415,7 @@ def build_research():
                    f'<p class="rko">{e(r["ko"])}</p><p class="lead">{e(r["summary"])}</p>{L[r["id"] + "_chips"]}'
                    f'{research_fig(r)}{st}{"".join(x for x in L[r["id"]] if "oxide-synthesis" in x)}</div>')
     body = page_head('Research', 'Research', '산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 배터리와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
-        f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>' + RF_JS
+        f'<section class="section"><div class="wrap">{OVERVIEW}<div class="rtabs-wrap">{tabs}{blocks}</div></div></section>' + RF_JS + RT_JS
     page('research.html', 'Research', 'RESEARCH', body)
 
 
