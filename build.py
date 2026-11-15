@@ -385,7 +385,7 @@ def research_fig(r):
     over = '' if r.get('baked') else (f'<svg class="rf-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{svg}</svg>{dots}{tags}')
     key = '' if not r.get('steps') else ''.join(f'<li><b>{e(t)}</b> {e(d)}</li>' for t, d, *_ in labs)
     return (f'<figure class="rfig"><div class="rf-wrap"><img src="assets/img/research/{r["img"]}" alt="{e(r["alt"])}" loading="lazy">'
-            f'{over}<span class="rf-nums">{nums}</span></div>' + (f'<ol class="rf-key">{key}</ol>' if key else '') + '</figure>')
+            + (f'{over}<span class="rf-nums">{nums}</span></div>' + (f'<ol class="rf-key">{key}</ol>' if key else '') if not r.get('baked') else '</div>') + '</figure>')
 
 
 def build_research():
