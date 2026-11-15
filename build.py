@@ -395,7 +395,13 @@ function off(){c.textContent=d;c.classList.remove('on')}l.addEventListener('mous
 
 def build_research():
     blocks = ''
-    for i, r in enumerate(D('research.json'), 1):
+    RS = D('research.json')
+    cards = '<div class="rcards">' + ''.join(
+        f'<a class="rcard" href="#{r["id"]}"><span class="rc-img"><img src="assets/img/research/{r["img"]}" alt="" loading="lazy"></span>'
+        f'<span class="rc-n">{i:02d}</span><span class="rc-en">{RESEARCH_LEGACY[r["id"] + "_h2"]}</span>'
+        f'<span class="rc-ko">{e(r["ko"])}</span><span class="rc-s">{e(r["summary"])}</span><span class="rc-go">자세히 보기 ↓</span></a>'
+        for i, r in enumerate(RS, 1)) + '</div>'
+    for i, r in enumerate(RS, 1):
         L = RESEARCH_LEGACY
         steps = r.get('steps') or [(t, d) for t, d, *_ in r['labels']]
         st = ('<ol class="rsteps">' + ''.join(f'<li><b>{e(t)}</b><p>{e(d)}</p></li>' for t, d in steps) + '</ol>') if steps else ''
@@ -403,7 +409,7 @@ def build_research():
                    f'<p class="rko">{e(r["ko"])}</p><p class="lead">{e(r["summary"])}</p>{L[r["id"] + "_chips"]}'
                    f'{research_fig(r)}{st}{"".join(x for x in L[r["id"]] if "oxide-synthesis" in x)}</div>')
     body = page_head('Research', 'Research', '산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 배터리와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
-        f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>' + RF_JS
+        f'<section class="section"><div class="wrap">{OVERVIEW}{cards}{blocks}</div></section>' + RF_JS
     page('research.html', 'Research', 'RESEARCH', body)
 
 
