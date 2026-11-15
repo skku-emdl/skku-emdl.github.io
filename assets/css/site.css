@@ -339,3 +339,7 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 .rf-cap.on{color:var(--ink-2)}
 .rf-cap b{color:var(--ink);margin-right:6px}
 @media (max-width:720px){.rf-cap{display:none}}
+.rf-more{display:none}
+@media (max-width:720px){.rf-more{display:block;margin:12px 0 0}
+ .rf-more summary{cursor:pointer;font-size:14px;color:var(--accent);list-style:none}
+ .rf-more summary::before{content:'+ '}.rf-more[open] summary::before{content:'− '}}

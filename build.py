@@ -385,7 +385,7 @@ def research_fig(r):
     over = '' if r.get('baked') else (f'<svg class="rf-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{svg}</svg>{dots}{tags}')
     key = '' if not r.get('steps') else ''.join(f'<li><b>{e(t)}</b> {e(d)}</li>' for t, d, *_ in labs)
     return (f'<figure class="rfig"><div class="rf-wrap"><img src="assets/img/research/{r["img"]}" alt="{e(r["alt"])}" loading="lazy">'
-            + (f'{over}<span class="rf-nums">{nums}</span></div><p class="rf-cap" aria-live="polite">이름표에 마우스를 올리면 설명이 여기에 나옵니다.</p>' + (f'<ol class="rf-key">{key}</ol>' if key else '') if not r.get('baked') else '</div>') + '</figure>')
+            + (f'{over}<span class="rf-nums">{nums}</span></div><p class="rf-cap" aria-live="polite">이름표에 마우스를 올리면 설명이 여기에 나옵니다.</p>' + (f'<details class="rf-more"><summary>그림 번호 설명 보기</summary><ol class="rf-key">{key}</ol></details>' if key else '') if not r.get('baked') else '</div>') + '</figure>')
 
 
 RF_JS = '''<script>document.querySelectorAll('.rfig').forEach(function(f){var c=f.querySelector('.rf-cap');if(!c)return;var d=c.textContent;
