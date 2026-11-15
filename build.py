@@ -385,7 +385,12 @@ def research_fig(r):
     over = '' if r.get('baked') else (f'<svg class="rf-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{svg}</svg>{dots}{tags}')
     key = '' if not r.get('steps') else ''.join(f'<li><b>{e(t)}</b> {e(d)}</li>' for t, d, *_ in labs)
     return (f'<figure class="rfig"><div class="rf-wrap"><img src="assets/img/research/{r["img"]}" alt="{e(r["alt"])}" loading="lazy">'
-            + (f'{over}<span class="rf-nums">{nums}</span></div>' + (f'<ol class="rf-key">{key}</ol>' if key else '') if not r.get('baked') else '</div>') + '</figure>')
+            + (f'{over}<span class="rf-nums">{nums}</span></div><p class="rf-cap" aria-live="polite">이름표에 마우스를 올리면 설명이 여기에 나옵니다.</p>' + (f'<ol class="rf-key">{key}</ol>' if key else '') if not r.get('baked') else '</div>') + '</figure>')
+
+
+RF_JS = '''<script>document.querySelectorAll('.rfig').forEach(function(f){var c=f.querySelector('.rf-cap');if(!c)return;var d=c.textContent;
+f.querySelectorAll('.rf-l').forEach(function(l){function on(){c.innerHTML='<b>'+l.querySelector('b').textContent+'</b> '+l.querySelector('.rf-tip').textContent;c.classList.add('on')}
+function off(){c.textContent=d;c.classList.remove('on')}l.addEventListener('mouseenter',on);l.addEventListener('focus',on);l.addEventListener('mouseleave',off);l.addEventListener('blur',off);});});</script>'''
 
 
 def build_research():
@@ -398,7 +403,7 @@ def build_research():
                    f'<p class="rko">{e(r["ko"])}</p><p class="lead">{e(r["summary"])}</p>{L[r["id"] + "_chips"]}'
                    f'{research_fig(r)}{st}{"".join(L[r["id"]])}</div>')
     body = page_head('Research', 'Research', '산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 배터리와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
-        f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>'
+        f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>' + RF_JS
     page('research.html', 'Research', 'RESEARCH', body)
 
 
