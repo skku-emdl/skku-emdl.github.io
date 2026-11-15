@@ -401,7 +401,7 @@ def build_research():
         st = ('<ol class="rsteps">' + ''.join(f'<li><b>{e(t)}</b><p>{e(d)}</p></li>' for t, d in steps) + '</ol>') if steps else ''
         blocks += (f'<div class="rblock" id="{r["id"]}"><p class="eyebrow">{i:02d}</p><h2>{L[r["id"] + "_h2"]}</h2>'
                    f'<p class="rko">{e(r["ko"])}</p><p class="lead">{e(r["summary"])}</p>{L[r["id"] + "_chips"]}'
-                   f'{research_fig(r)}{st}{"".join(L[r["id"]])}</div>')
+                   f'{research_fig(r)}{st}{"".join(x for x in L[r["id"]] if "oxide-synthesis" in x)}</div>')
     body = page_head('Research', 'Research', '산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 배터리와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
         f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>' + RF_JS
     page('research.html', 'Research', 'RESEARCH', body)
