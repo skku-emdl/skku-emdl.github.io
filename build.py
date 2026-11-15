@@ -378,7 +378,7 @@ def research_fig(r):
     labs = r['labels']
     svg = ''.join(f'<line x1="{lx}" y1="{ly}" x2="{dx}" y2="{dy}"/>' for _, _, lx, ly, dx, dy in labs if dx is not None)
     dots = ''.join(f'<span class="rf-dot" style="left:{dx}%;top:{dy}%"></span>' for _, _, lx, ly, dx, dy in labs if dx is not None)
-    tags = ''.join(f'<span class="rf-l" tabindex="0" style="left:{lx}%;top:{ly}%"><b>{e(t)}</b><span class="rf-tip">{e(d)}</span></span>'
+    tags = ''.join(f'<span class="rf-l{" dn" if ly < 25 else ""}" tabindex="0" style="left:{lx}%;top:{ly}%"><b>{e(t)}</b><span class="rf-tip">{e(d)}</span></span>'
                    for t, d, lx, ly, dx, dy in labs)
     nums = ''.join(f'<span class="rf-n" style="left:{dx if dx is not None else lx}%;top:{dy if dy is not None else ly}%">{k}</span>'
                    for k, (t, d, lx, ly, dx, dy) in enumerate(labs, 1))

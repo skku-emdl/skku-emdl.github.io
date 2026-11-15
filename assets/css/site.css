@@ -313,8 +313,9 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 .rf-l{position:absolute;transform:translate(-50%,-50%);z-index:1;padding:5px 13px;border-radius:999px;background:#fff;border:1px solid #d5d8de;
  color:#2b2f38;font-size:clamp(11px,1.15vw,15.5px);white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.12);cursor:default}
 .rf-l b{font-weight:700}
-.rf-tip{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);width:max-content;max-width:260px;white-space:normal;
+.rf-tip{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);width:max-content;max-width:260px;white-space:normal;
  padding:9px 12px;border-radius:6px;background:#2b2f38;color:#fff;font-size:13px;line-height:1.5;font-weight:400;opacity:0;visibility:hidden;pointer-events:none;z-index:3}
+.rf-l.dn .rf-tip{bottom:auto;top:calc(100% + 8px)}
 .rf-l:hover,.rf-l:focus-visible{z-index:4;border-color:var(--accent)}
 .rf-l:hover .rf-tip,.rf-l:focus-visible .rf-tip{opacity:1;visibility:visible}
 .rf-nums,.rf-key{display:none}
