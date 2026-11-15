@@ -442,7 +442,7 @@ def venue_html(v):
 
 def metrics_html(v):
     j, f, _ = venue_parts(v)
-    if not f or j.lower() not in JCR:
+    if j.lower() not in JCR:
         return ''
     imp, top = JCR[j.lower()]
     return (f'<p class="mx"><span class="mx-if">IF <b>{imp:.1f}</b></span>'
