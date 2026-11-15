@@ -287,7 +287,7 @@ a.plain:hover{color:var(--accent);text-decoration:underline}
 .overview img{width:100%;border:1px solid var(--line)}
 .ov-wrap{position:relative}
 .ov-l{position:absolute;transform:translate(-50%,0);white-space:nowrap;padding:5px 12px;font-size:clamp(12px,1.15vw,16px);font-weight:500;color:#fff;
- background:rgba(10,16,34,.62);border:1px solid rgba(255,255,255,.22);border-radius:999px;backdrop-filter:blur(3px);letter-spacing:-.01em}
+ background:rgba(10,16,34,.74);border:1px solid rgba(255,255,255,.22);border-radius:999px;letter-spacing:-.01em}
 .ov-l.l{transform:none}
 .ov-l i{display:none;font-style:normal}
 .ov-l em{font-style:normal}
