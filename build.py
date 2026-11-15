@@ -371,35 +371,37 @@ def build_alumni():
 OVERVIEW = ('<figure class="overview"><div class="ov-wrap"><img src="assets/img/research/overview-flow.webp" alt="연구 흐름: 산화물·페로브스카이트 소재, 태양전지, 대면적 플렉서블 모듈, 에너지 저장(배터리), 발광 소자"><span class="ov-l l" style="left:3%;top:90%"><i>1</i><em>산화물 · 페로브스카이트 소재</em></span><span class="ov-l c" style="left:30%;top:61%"><i>2</i><em>태양전지 · 탠덤</em></span><span class="ov-l c" style="left:53.5%;top:60.5%"><i>3</i><em>대면적 플렉서블 모듈</em></span><span class="ov-l c" style="left:68.6%;top:67.5%"><i>4</i><em>에너지 저장 (배터리)</em></span><span class="ov-l c" style="left:84%;top:90%"><i>5</i><em>발광 (LED)</em></span></div><ol class="ov-key"><li>산화물 · 페로브스카이트 소재</li><li>태양전지 · 탠덤</li><li>대면적 플렉서블 모듈</li><li>에너지 저장 (배터리)</li><li>발광 (LED)</li></ol></figure>')
 
 
+RESEARCH_LEGACY = {"synthesis": ["<figure><img src=\"assets/img/research/oxide-nanomaterials.webp\" alt=\"산화물 반도체 연구 개요: 소재·공정·소자와 소재 설계 요소(형상, 도핑, 결함, 결정화, 조성, AI 기반 최적화)\" loading=\"lazy\"></figure>", "<figure><img src=\"assets/img/research/oxide-synthesis.webp\" alt=\"산화물 반도체 합성 및 메커니즘 규명: Zn2SnO4, BaSnO3, SnO2, 다양한 나노소재, 과잉 리간드 전략\" loading=\"lazy\"></figure>"], "synthesis_chips": "<ul class=\"chips\"><li>Oxide Nanoparticles</li><li>Oxide Thin Films</li><li>Hybrid Perovskite Materials</li><li>Solution &amp; Vacuum Processes</li><li>Interface Engineering</li></ul>", "synthesis_h2": "Oxide &amp; Hybrid Semiconductor Materials", "applications": ["<figure><img src=\"assets/img/research/applications-oxide.webp\" alt=\"산화물 반도체 소재 응용: 태양전지, LED, 태양-연료, 배터리\" loading=\"lazy\"></figure>", "<figure><img src=\"assets/img/research/large-area-modules.webp\" alt=\"단위소자에서 대면적 모듈까지: 30x30 유연 모듈\" loading=\"lazy\"></figure>", "<figure><img src=\"assets/img/research/hybrid-system.webp\" alt=\"태양전지-배터리 및 태양전지-LED 일체형 하이브리드 소자\" loading=\"lazy\"></figure>"], "applications_chips": "<ul class=\"chips\"><li>Perovskite Solar Cells</li><li>All-Perovskite Tandem Solar Cells</li><li>Flexible Perovskite Solar Cells</li><li>Large-Area (Flexible) Solar Modules</li><li>Perovskite LEDs</li><li>Solar Cell–LED</li><li>Solar Cell–Battery</li><li>Solar Cell–Supercapacitor</li><li>Solar Cell–Water Splitting</li></ul>", "applications_h2": "Perovskite Optoelectronics: Large-Area &amp; Flexible", "waste": ["<figure><img src=\"assets/img/research/waste-recovery.webp\" alt=\"폐타이어 재활용 기반 도전재와 배터리 소재 연구: 리튬이온, 차세대 아연 수계 배터리, 집전체 계면, 태양전지–배터리 연계 시스템\" loading=\"lazy\"></figure>"], "waste_chips": "<ul class=\"chips\"><li>Li-ion Batteries</li><li>Aqueous Zinc Batteries</li><li>Conductive Carbon Black from Waste Tires</li><li>Solar Cell–Battery Hybrids</li></ul>", "waste_h2": "Sustainable Battery Materials"}
+
+
+def research_fig(r):
+    labs = r['labels']
+    svg = ''.join(f'<line x1="{lx}" y1="{ly}" x2="{dx}" y2="{dy}"/>' for _, _, lx, ly, dx, dy in labs if dx is not None)
+    dots = ''.join(f'<span class="rf-dot" style="left:{dx}%;top:{dy}%"></span>' for _, _, lx, ly, dx, dy in labs if dx is not None)
+    tags = ''.join(f'<span class="rf-l" tabindex="0" style="left:{lx}%;top:{ly}%"><b>{e(t)}</b><span class="rf-tip">{e(d)}</span></span>'
+                   for t, d, lx, ly, dx, dy in labs)
+    nums = ''.join(f'<span class="rf-n" style="left:{dx if dx is not None else lx}%;top:{dy if dy is not None else ly}%">{k}</span>'
+                   for k, (t, d, lx, ly, dx, dy) in enumerate(labs, 1))
+    over = '' if r.get('baked') else (f'<svg class="rf-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">{svg}</svg>{dots}{tags}')
+    key = '' if not r.get('steps') else ''.join(f'<li><b>{e(t)}</b> {e(d)}</li>' for t, d, *_ in labs)
+    return (f'<figure class="rfig"><div class="rf-wrap"><img src="assets/img/research/{r["img"]}" alt="{e(r["alt"])}" loading="lazy">'
+            f'{over}<span class="rf-nums">{nums}</span></div>' + (f'<ol class="rf-key">{key}</ol>' if key else '') + '</figure>')
+
+
 def build_research():
-    blocks = f'''
-<div class="rblock" id="synthesis">
-<p class="eyebrow">01</p>
-<h2>Oxide &amp; Hybrid Semiconductor Materials</h2>
-<p class="lead">새로운 산화물 반도체와 유무기 하이브리드 페로브스카이트 반도체 소재를 탐색하고 합성합니다. 저온·고속 합성 공정과 대면적 공정을 개발하고, 합성 원리와 소재 간 계면을 규명해 고성능 에너지 소자의 기반을 만듭니다.</p>
-<ul class="chips"><li>Oxide Nanoparticles</li><li>Oxide Thin Films</li><li>Hybrid Perovskite Materials</li><li>Solution &amp; Vacuum Processes</li><li>Interface Engineering</li></ul>
-<figure><img src="assets/img/research/oxide-nanomaterials.webp" alt="산화물 반도체 연구 개요: 소재·공정·소자와 소재 설계 요소(형상, 도핑, 결함, 결정화, 조성, AI 기반 최적화)" loading="lazy"></figure>
-<figure><img src="assets/img/research/oxide-synthesis.webp" alt="산화물 반도체 합성 및 메커니즘 규명: Zn2SnO4, BaSnO3, SnO2, 다양한 나노소재, 과잉 리간드 전략" loading="lazy"></figure>
-</div>
-<div class="rblock" id="applications">
-<p class="eyebrow">02</p>
-<h2>Perovskite Optoelectronics: Large-Area &amp; Flexible</h2>
-<p class="lead">산화물 전자수송층을 기반으로 고효율 페로브스카이트 태양전지, 페로브스카이트/페로브스카이트 탠덤 태양전지, LED를 만들고, 이를 최대 900 cm² 대면적 플렉서블 모듈과 태양전지–LED 양방향 융합 소자로 확장합니다. 태양전지–배터리 하이브리드 시스템도 함께 연구합니다.</p>
-<ul class="chips"><li>Perovskite Solar Cells</li><li>All-Perovskite Tandem Solar Cells</li><li>Flexible Perovskite Solar Cells</li><li>Large-Area (Flexible) Solar Modules</li><li>Perovskite LEDs</li><li>Solar Cell–LED</li><li>Solar Cell–Battery</li><li>Solar Cell–Supercapacitor</li><li>Solar Cell–Water Splitting</li></ul>
-<figure><img src="assets/img/research/applications-oxide.webp" alt="산화물 반도체 소재 응용: 태양전지, LED, 태양-연료, 배터리" loading="lazy"></figure>
-<figure><img src="assets/img/research/large-area-modules.webp" alt="단위소자에서 대면적 모듈까지: 30x30 유연 모듈" loading="lazy"></figure>
-<figure><img src="assets/img/research/hybrid-system.webp" alt="태양전지-배터리 및 태양전지-LED 일체형 하이브리드 소자" loading="lazy"></figure>
-</div>
-<div class="rblock" id="waste">
-<p class="eyebrow">03</p>
-<h2>Sustainable Battery Materials</h2>
-<p class="lead">리튬이온전지와 물 기반 전해질을 쓰는 안전한 차세대 아연 수계 배터리, 그리고 폐타이어를 재활용한 고성능 전도성 카본블랙 도전재 등 지속가능한 배터리 소재를 연구합니다.</p>
-<ul class="chips"><li>Li-ion Batteries</li><li>Aqueous Zinc Batteries</li><li>Conductive Carbon Black from Waste Tires</li><li>Solar Cell–Battery Hybrids</li></ul>
-<figure><img src="assets/img/research/waste-recovery.webp" alt="폐타이어 재활용 기반 도전재와 배터리 소재 연구: 리튬이온, 차세대 아연 수계 배터리, 집전체 계면, 태양전지–배터리 연계 시스템" loading="lazy"></figure>
-</div>'''
+    blocks = ''
+    for i, r in enumerate(D('research.json'), 1):
+        L = RESEARCH_LEGACY
+        steps = r.get('steps') or [(t, d) for t, d, *_ in r['labels']]
+        st = ('<ol class="rsteps">' + ''.join(f'<li><b>{e(t)}</b><p>{e(d)}</p></li>' for t, d in steps) + '</ol>') if steps else ''
+        blocks += (f'<div class="rblock" id="{r["id"]}"><p class="eyebrow">{i:02d}</p><h2>{L[r["id"] + "_h2"]}</h2>'
+                   f'<p class="rko">{e(r["ko"])}</p><p class="lead">{e(r["summary"])}</p>{L[r["id"] + "_chips"]}'
+                   f'{research_fig(r)}{st}{"".join(L[r["id"]])}</div>')
     body = page_head('Research', 'Research', '산화물 반도체와 페로브스카이트 반도체 소재의 합성 원리를 규명하고, 이를 고효율·대면적 태양전지, 발광다이오드, 배터리와 하이브리드 에너지 시스템으로 확장해 우주, 건물, 차량, 실내 IoT 등 다양한 분야로의 응용을 지향합니다.') + \
         f'<section class="section"><div class="wrap">{OVERVIEW}{blocks}</div></section>'
     page('research.html', 'Research', 'RESEARCH', body)
+
+
 
 
 def build_facilities():
